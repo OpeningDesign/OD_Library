@@ -13,7 +13,7 @@
 ####Proposal for [OpeningDesign's](http://openingdesign.com/) Architecture Services
 
 ---
-Thank you for the opportunity to submit our proposal for Wisconsin Interactive Network's (XXX) office expansion.  We are excited about the project and look forward to the potential of working together.  
+Thank you for the opportunity to submit our proposal for (XXX) office expansion.  We are excited about the project and look forward to the potential of working together.  
 
 As we understand it, the project will include an approximate 3,000 SF office expansion/renovation with the following functions:
 
