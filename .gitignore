@@ -1,0 +1,60 @@
+*.*.rvt
+*.ifc.log
+*.mp4
+*.bak
+*.ifc.log.html
+Ryan_Random_Tests/
+
+
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must ends with two \r.
+Icon
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+*.log
+
+# FreeCAD and Blender backup files
+*.FcStd1
+*.FcStd2
+*.fcstd1
+*.fcstd2
+*.blend1
+*.blend2
+
+#Excel temporary files
+~$*.xlsx
+
+#AutoCAD temporary files
+*.dwl*

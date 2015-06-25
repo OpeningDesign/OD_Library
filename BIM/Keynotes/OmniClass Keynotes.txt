@@ -1,0 +1,1508 @@
+#23110000	Site Products	23110000
+#23111100	Ground Anchorages	23111100
+#23111111	Retaining Stabilizing Ground Anchors	23111100
+#23111113	Earth Reinforcement Anchors	23111100
+#23111300	Ground Improvement Products	23111300
+#23111311	Soil Stabilization Products	23111300
+#23111500	Sheeting and Revetments	23111500
+#23111511	Sheeting Geosynthetics	23111500
+#23111513	Revetments	23111500
+#23111700	Retention Structures	23111700
+#23111711	Sheet Piles	23111700
+#23111713	Retaining Walls	23111700
+#23111715	Gabions	23111700
+#23111717	Fascines	23111700
+#23111900	Slide and Avalanche Protection	23111900
+#23111911	Bolt Down Snow Fences	23111900
+#23111913	Clamp on Equipment	23111900
+#23112100	Pavements	23112100
+#23112111	Porous Paving	23112100
+#23112113	Roadways	23112100
+#23112115	Runways	23112100
+#23112117	Paving Blocks	23112100
+#23112119	Pavement Slabs	23112100
+#23112121	Pavement Drainage	23112100
+#23112300	Parking Controls	23112300
+#23112311	Parking Meters	23112300
+#23112313	Parking Ticket Dispensers	23112300
+#23112315	Parking Coin Machine Units	23112300
+#23112317	Parking Key and Card Control Units	23112300
+#23112319	Parking Gates	23112300
+#23112321	Parking Dividers	23112300
+#23112323	Parking Signs	23112300
+#23112500	Site Barrier Products	23112500
+#23112511	Perimeter Entry Devices	23112500
+#23112513	Perimeter Walls	23112500
+#23112515	Perimeter Gates	23112500
+#23112517	Gate Hardware	23112500
+#23112519	Fences	23112500
+#23112700	Landscaping	23112700
+#23112711	Plant Maintenance and Preparation Products	23112700
+#23112713	Planting Accessories	23112700
+#23112715	Irrigation Equipment	23112700
+#23112717	Lawns and Grasses	23112700
+#23112719	Plants	23112700
+#23112721	Pond Equipment	23112700
+#23112900	Site Furnishings	23112900
+#23112911	Bicycle Racks and Shelters	23112900
+#23112913	Exterior Seating	23112900
+#23112915	Exterior Tables	23112900
+#23112917	Patio Furniture	23112900
+#23112919	Exterior Trash Receptacles	23112900
+#23112921	Exterior Specialties	23112900
+#23112923	Exterior Storage Structures	23112900
+#23112925	Flagpoles	23112900
+#23112927	Exterior Fountains	23112900
+#23112929	Memorials and Statuary	23112900
+#23112931	Monuments	23112900
+#23112933	Exterior Directional Signs	23112900
+#23112935	Bollards 	23112900
+#23112937	Public Lighting Columns	23112900
+#23113100	Athletic and Recreational Surfaces	23113100
+#23113111	Sports Field Surfacing	23113100
+#23113113	Playground Surfaces	23113100
+#23130000	Structural and Exterior Enclosure Products	23130000
+#23131100	Loose Granular Fills, Aggregates, Chips, and Fibers	23131100
+#23131111	Powder Fillers	23131100
+#23131113	Aggregates	23131100
+#23131115	Fibers and Shavings	23131100
+#23131300	Binding Agents and Admixtures	23131300
+#23131311	Binding Agents	23131300
+#23131313	Cement Admixtures	23131300
+#23131315	Gypsum Admixtures	23131300
+#23131500	Mixtures	23131500
+#23131511	Concretes	23131500
+#23131513	Mortars	23131500
+#23131515	Grouts	23131500
+#23131700	Profiles	23131700
+#23131711	Rigid Profiles	23131700
+#23131713	Flexible Profiles	23131700
+#23131715	Precast Profiles	23131700
+#23131717	Lath	23131700
+#23131900	Sheets, Boards, and Slabs	23131900
+#23131911	Thin Flexible Sheets 	23131900
+#23131913	Rigid Sheets, Slabs, Plates	23131900
+#23131915	Gratings	23131900
+#23131917	Blankets, Quilts	23131900
+#23132100	Blocks and Bricks	23132100
+#23132111	Concrete Masonry Units	23132100
+#23132113	Calcium Silicate Masonry Units	23132100
+#23132115	Glass Masonry Units	23132100
+#23132117	Adobe Masonry Units	23132100
+#23132119	Clay Masonry Units	23132100
+#23132121	Masonry Anchorage and Reinforcement	23132100
+#23132123	Special Profiles for Masonry 	23132100
+#23132125	Structural Support for Masonry	23132100
+#23132127	Ancillary Products for Masonry	23132100
+#23132300	Mechanical Fasteners, Adhesives, and Sealants	23132300
+#23132311	Mechanical Fasteners	23132300
+#23132313	Welded Joint Products	23132300
+#23132315	Adhesives	23132300
+#23132317	General Purpose Tape	23132300
+#23132319	Joint Fillers, Sealants, and Mastics	23132300
+#23132321	Ropes, Wires, and Cables	23132300
+#23132500	Thermal and Moisture Protective Products 	23132500
+#23132511	Fireproofing	23132500
+#23132513	Firestopping	23132500
+#23132515	Dampproofings	23132500
+#23132517	Waterproofing	23132500
+#23132519	Thermal Insulation 	23132500
+#23132521	Sound Isolation Insulation	23132500
+#23132523	Damage Prevention Products	23132500
+#23132525	Air Barriers	23132500
+#23132527	Vapor Barriers	23132500
+#23132700	Maintenance Products and Chemicals for Construction	23132700
+#23132711	Cleaning and Maintenance Products	23132700
+#23132713	Repair Products	23132700
+#23132715	Chemicals for Construction	23132700
+#23132900	Foundations	23132900
+#23132911	Foundation Piles	23132900
+#23132913	Caissons, Foundation Casings	23132900
+#23132915	Shallow Foundations	23132900
+#23132917	Special Foundations	23132900
+#23133100	Structural Concrete Products	23133100
+#23133111	Structural Concrete	23133100
+#23133113	Ready Mixed Concrete 	23133100
+#23133115	Precast Structural Concrete	23133100
+#23133117	Concrete Formwork	23133100
+#23133119	Non Formwork	23133100
+#23133121	Reinforcement and Prestressing Components	23133100
+#23133123	Concrete Finishing Products	23133100
+#23133300	Envelope Enclosure Products	23133300
+#23133311	Sliding Glass Wall Systems	23133300
+#23133313	Folding Glass Wall Systems	23133300
+#23133315	Wall Exteriors	23133300
+#23133317	Infill Facades	23133300
+#23133319	Precast Concrete Facade	23133300
+#23133321	Entrances 	23133300
+#23133323	Storefronts	23133300
+#23133325	Precast Modules 	23133300
+#23133327	Glazed Facade and Roof Structures	23133300
+#23133500	Framing Products	23133500
+#23133511	Structural Frames	23133500
+#23133513	Non Structural Framing Products	23133500
+#23133515	Space Frames	23133500
+#23133517	Geodesic Structures	23133500
+#23133519	Rafters, Beams, and Joists	23133500
+#23133521	Structural Walls	23133500
+#23133523	Structural Floors and Flat Roofs	23133500
+#23133525	Structural Profiled Roofs	23133500
+#23133700	Multi-Function Exterior Coverings, Claddings, Linings 	23133700
+#23133711	Multi-Function Exterior Claddings	23133700
+#23133713	Exterior Wall Cladding	23133700
+#23133715	Exterior Siding	23133700
+#23133717	Multi Function Exterior Linings	23133700
+#23133719	Exterior Plasters	23133700
+#23133721	Preformed Exterior Casings	23133700
+#23133723	Ancillary Products for Coverings and Claddings	23133700
+#23133900	Roof Coverings, Claddings, Linings	23133900
+#23133911	Exterior Roof Panels	23133900
+#23133913	Roof Underlayment	23133900
+#23133915	Roof Shingles	23133900
+#23133917	Roof Tiles	23133900
+#23133919	Natural Stone Roofing	23133900
+#23133921	Shake Roofing	23133900
+#23133923	Flat Roofing	23133900
+#23133925	Roof Finish Coating	23133900
+#23133927	Roof Cladding	23133900
+#23133929	Roof Coverings	23133900
+#23133931	Roof Membranes	23133900
+#23133933	Roof Decking	23133900
+#23133935	Roof Finishing Coatings	23133900
+#23133937	Renovation Products for Roof Coverings and Claddings	23133900
+#23134100	Roof Specialties and Accessories	23134100
+#23134111	Roof Edgings and Trims	23134100
+#23134113	Roof Flashings	23134100
+#23134115	Roof Expansion Joints	23134100
+#23134117	Roof Vents	23134100
+#23134119	Roof Walkways	23134100
+#23134121	Roof Snow Guards	23134100
+#23134123	Roof Piping Portals	23134100
+#23134125	Roof Domes	23134100
+#23134127	Roof Turrets	23134100
+#23134129	Roof Lanterns	23134100
+#23134131	Roof Curb	23134100
+#23134133	Roof Gutters	23134100
+#23134135	Roof Soffits	23134100
+#23134137	Roof Splash Blocks	23134100
+#23134139	Roof Drains	23134100
+#23150000	Interior and Finish Products	23150000
+#23151100	Space Division Products	23151100
+#23151111	Fixed Partitions	23151100
+#23151113	Demountable Partitions	23151100
+#23151115	Sanitary Partitions and Cubicles	23151100
+#23151117	Operable Partitions	23151100
+#23151300	Multi-Function Interior Coverings, Claddings, Linings 	23151300
+#23151311	Multi Function Interior Claddings	23151300
+#23151313	Interior Wall and Ceiling Cladding	23151300
+#23151315	Interior Siding	23151300
+#23151317	Multi Function Interior Linings	23151300
+#23151319	Wall Panels	23151300
+#23151321	Ceiling Panels	23151300
+#23151323	Interior Plasters	23151300
+#23151325	Preformed Interior Casings	23151300
+#23151500	Wall Coverings, Claddings, Linings	23151500
+#23151511	Wall Cladding Sections	23151500
+#23151513	Wall Tiles	23151500
+#23151515	Wall Cladding Panels	23151500
+#23151517	Wall Cladding Sheets	23151500
+#23151519	Wall Coverings	23151500
+#23151521	Wall Blocks	23151500
+#23151523	Wall Linings	23151500
+#23151525	Wall Finish Coatings	23151500
+#23151527	Renders	23151500
+#23151529	Acoustical Wall Finishes	23151500
+#23151531	Wall Specialties and Trim	23151500
+#23151533	Wall Finish Restoration Products	23151500
+#23151535	Security Wall Protection Products	23151500
+#23151700	Floor Coverings	23151700
+#23151711	Flooring Specialties and Accessories	23151700
+#23151713	Floor Covering Strips, Tiles, Blocks, and Slabs	23151700
+#23151715	Resilient Flooring	23151700
+#23151717	Carpet Flooring	23151700
+#23151719	Preformed Flooring Equipment Systems	23151700
+#23151721	Access Flooring Components 	23151700
+#23151723	Rigid Grid Access Flooring	23151700
+#23151725	Snap On Stringer Access Flooring	23151700
+#23151727	Stringerless Access Flooring	23151700
+#23151729	Floor Finishing Coatings	23151700
+#23151900	Ceiling Coverings, Claddings, and Linings	23151900
+#23151911	Ceiling Baffles	23151900
+#23151913	Ceiling Clouds	23151900
+#23151915	Ceiling Tiles, Panels, Strips, and Sections	23151900
+#23151917	Ceiling Finishing Coatings	23151900
+#23151919	Ceiling Specialties and Accessories	23151900
+#23151921	Ceiling Assembly Restoration Products	23151900
+#23151923	Ceilings	23151900
+#23152100	Surface Applied Coatings	23152100
+#23152111	Paints and Varnishes	23152100
+#23152113	Paints for Particular Applications	23152100
+#23152115	Powder Coating Services	23152100
+#23152117	Inorganic Metal Treatments	23152100
+#23152119	Stains and Decorative Surface Impregnations	23152100
+#23152121	High Performance Coatings	23152100
+#23152123	Protective Surface Impregnations	23152100
+#23170000	Openings, Passages, and Protection Products	23170000
+#23171100	Doors	23171100
+#23171111	Door Components 	23171100
+#23171113	Metal Doors	23171100
+#23171115	Wood Doors	23171100
+#23171117	Plastic Doors	23171100
+#23171119	Composite Doors	23171100
+#23171121	Glazed Doors	23171100
+#23171123	All Glass Doors	23171100
+#23171125	Passage Grilles	23171100
+#23171127	Access Doors	23171100
+#23171129	Access Panels	23171100
+#23171131	Fire Doors	23171100
+#23171135	Fire Shutters	23171100
+#23171137	Controlled Environment Doors	23171100
+#23171139	Detention Doors	23171100
+#23171141	Hanger Doors	23171100
+#23171143	Lightproof Doors	23171100
+#23171145	Traffic Doors	23171100
+#23171147	Pressure Resistant Doors	23171100
+#23171149	Security Rated Door	23171100
+#23171300	Windows	23171300
+#23171311	Window Components 	23171300
+#23171311	Metal Windows	23171300
+#23171315	Wood Windows	23171300
+#23171317	Plastic Windows	23171300
+#23171319	Composite Windows	23171300
+#23171321	Projecting Windows	23171300
+#23171323	Roof Windows	23171300
+#23171325	Masonry Windows	23171300
+#23171327	Special Purpose Windows	23171300
+#23171329	Security Windows	23171300
+#23171500	Glazing	23171500
+#23171511	Glass Glazing 	23171500
+#23171513	Plastic Glazing	23171500
+#23171515	Security Glass	23171500
+#23171517	Tinted Glass	23171500
+#23171519	Glazing by Special Function	23171500
+#23171521	Glazing Components 	23171500
+#23171523	Glazing Accessories	23171500
+#23171525	Protective Films	23171500
+#23171700	Skylights 	23171700
+#23171711	Skylight Components 	23171700
+#23171713	Unit Skylights	23171700
+#23171715	Metal Framed Skylights	23171700
+#23171900	Hardware for Openings	23171900
+#23171911	Hardware for Doors	23171900
+#23171913	Hardware for Windows	23171900
+#23171915	Weatherstripping and Seals	23171900
+#23171917	Other Openings Hardware	23171900
+#23172100	Protection of Openings	23172100
+#23172111	Exterior Protection of Openings	23172100
+#23172113	Interior Window Treatment	23172100
+#23172115	Fire and Smoke Shutters and Curtains	23172100
+#23172117	Insect Screens	23172100
+#23172300	Circulation and Escape Products	23172300
+#23172311	Ramps	23172300
+#23172313	Walkways	23172300
+#23172315	Ladders	23172300
+#23172317	Stairs	23172300
+#23172319	Fire Escapes	23172300
+#23172321	Evacuation Equipment	23172300
+#23172500	Circulation Guiding and Protection Products	23172500
+#23172511	Guardrails	23172500
+#23172513	Handrails	23172500
+#23172515	Impact Protection Products	23172500
+#23190000	Specialty Products	23190000
+#23191100	Information Display Specialties	23191100
+#23191111	Information Signs	23191100
+#23191113	Display Lettering	23191100
+#23191115	Display Numerals	23191100
+#23191117	Notice Boards	23191100
+#23191119	Writing Boards	23191100
+#23191121	Plaques	23191100
+#23191123	Poster Display Units	23191100
+#23191125	Display Screens	23191100
+#23191127	Pictograms	23191100
+#23191129	Directory Boards	23191100
+#23191131	Electronic Copy Boards	23191100
+#23191133	Magnetic Boards	23191100
+#23191300	Lockers	23191300
+#23191311	Metal Lockers	23191300
+#23191313	Plastic Laminate Lockers	23191300
+#23191315	Solid Core Lockers	23191300
+#23191500	Communication Specialties	23191500
+#23191511	Mail Boxes	23191500
+#23191513	Mail Racks	23191500
+#23191515	Pigeonholes	23191500
+#23191517	Mail Trolleys	23191500
+#23191519	Mail Handling Equipment	23191500
+#23191521	Telephone Booths	23191500
+#23191700	Fireplaces	23191700
+#23191711	Electric Fireplace	23191700
+#23191713	Fuel Oil Fireplace	23191700
+#23191715	Gas Fireplace	23191700
+#23191717	Solid Fuel Fireplace	23191700
+#23191719	Fireplace Doors	23191700
+#23191721	Fireplace Water Heaters	23191700
+#23191900	Flue and Chimney Products	23191900
+#23191911	Complete Flue and Chimney Systems	23191900
+#23191913	Fireplace Ductwork	23191900
+#23191915	Flue and Chimney Systems Components	23191900
+#23192100	Hearths	23192100
+#23192300	Kilns	23192300
+#23192500	Pest Control Devices	23192500
+#23192511	Bird Control Devices	23192500
+#23192513	Insect Control Devices	23192500
+#23192515	Rodent Control Devices	23192500
+#23192700	Manufactured Exterior Specialties	23192700
+#23192711	Weathervanes	23192700
+#23192713	Clocks	23192700
+#23192715	Cupolas	23192700
+#23192717	Spires	23192700
+#23192719	Steeples	23192700
+#23192721	Towers	23192700
+#23192723	Industrial Breechings	23192700
+#23192725	Industrial Chimneys	23192700
+#23192727	Industrial Stacks	23192700
+#23192900	Complete Buildings	23192900
+#23192911	Pre Engineered Structures	23192900
+#23192913	Covers and Shelters	23192900
+#23192915	Special Purpose Buildings	23192900
+#23192917	Building Modules	23192900
+#23192919	Integrated Assemblies	23192900
+#23193100	Room Units	23193100
+#23193111	General Purpose Room Units	23193100
+#23193113	Storage Room Units	23193100
+#23193115	Special Purpose Rooms	23193100
+#23193117	Sanitary Room Units 	23193100
+#23193119	Controlled Environment Rooms	23193100
+#23193121	Plant and Control Room Units	23193100
+#23193123	Corridor Units	23193100
+#23210000	Furnishings, Fixtures and Equipment Products	23210000
+#23211100	Commercial Furniture	23211100
+#23211111	Commercial Storage Units	23211100
+#23211300	Retail and Office Equipment and Furnishings	23211300
+#23211311	Registration Equipment	23211300
+#23211313	Checkroom Equipment	23211300
+#23211315	Mercantile Equipment and Furnishings	23211300
+#23211317	Barber Shop Equipment	23211300
+#23211319	Beauty Shop Equipment	23211300
+#23211321	Cash Registers	23211300
+#23211323	Checkout Equipment	23211300
+#23211325	Office Equipment 	23211300
+#23211500	Wardrobe and Closet Specialties	23211500
+#23211511	Wardrobes	23211500
+#23211513	Chests of Drawers	23211500
+#23211515	Clothing Lockers	23211500
+#23211517	Clothing Racks	23211500
+#23211519	Clothing Hangers	23211500
+#23211521	Cloakroom Units	23211500
+#23211523	Umbrella Storage Stands	23211500
+#23211525	Checkroom Equipment	23211500
+#23211527	Clothing Shelving Units	23211500
+#23211700	Interior Refuse Disposal Furniture	23211700
+#23211711	Interior Waste Bins	23211700
+#23211713	Interior Ash Trays	23211700
+#23211715	Interior Refuse Holders	23211700
+#23211900	Casework	23211900
+#23211911	Modular General Casework	23211900
+#23211913	Custom General Casework	23211900
+#23211915	Specialty Casework	23211900
+#23211917	Casework Components	23211900
+#23212100	Food Service Equipment and Furnishings	23212100
+#23212111	Commercial Food Services Cabinets	23212100
+#23212113	Commercial Food Cooking Equipment	23212100
+#23212115	Commercial Food Services Warming Equipment	23212100
+#23212117	Commercial Food Services Cooling Equipment	23212100
+#23212119	Commercial Dishwasher Equipment	23212100
+#23212121	Commercial Food Disposal Equipment	23212100
+#23212123	Commercial Food Display Equipment	23212100
+#23212125	Commercial Food and Beverage Dispensing Equipment	23212100
+#23212127	Commercial Refrigerators And Freezers	23212100
+#23212129	Commercial Ice Machines	23212100
+#23212131	Commercial Food Preparation Equipment	23212100
+#23212133	Commercial Food Service Furniture	23212100
+#23212135	Commercial Serving Counters	23212100
+#23212137	Commercial Food Service Storage Equipment	23212100
+#23212139	Commercial Food Service Delivery Equipment	23212100
+#23212141	Commercial Food Service Ventilation Equipment	23212100
+#23212143	Commercial Food Processing Equipment	23212100
+#23212145	Commercial Food Weighing Equipment	23212100
+#23212147	Commercial Food Wrapping Equipment	23212100
+#23212300	Residential Furniture and Equipment	23212300
+#23212311	Complete Residential Dining Room Suites	23212300
+#23212313	Residential Seating	23212300
+#23212315	Residential Tables	23212300
+#23212317	Residential Storage Units	23212300
+#23212319	Residential Bedroom Furniture	23212300
+#23212321	Residential Food Cabinets	23212300
+#23212323	Residential Food Cooking Equipment	23212300
+#23212325	Residential Dishwashers	23212300
+#23212327	Residential Waste Disposal Units	23212300
+#23212329	Residential Food and Beverage Dispensing Equipment	23212300
+#23212331	Residential Water Filter System	23212300
+#23212333	Residential Refrigerators And Freezers	23212300
+#23212335	Residential Ice Machines	23212300
+#23212337	Residential Food Preparation Equipment	23212300
+#23212339	Residential Kitchen and Dining Room Furniture	23212300
+#23212341	Residential Food Storage Equipment	23212300
+#23212343	Residential Cooking Ventilation Equipment	23212300
+#23212345	Residential Clothes Airers	23212300
+#23212347	Residential Combination Laundry Washer Dryers	23212300
+#23212349	Residential Ironing and Pressing Machines	23212300
+#23212351	Residential Laundry Dryers	23212300
+#23212353	Residential Washing Machines	23212300
+#23212500	Educational and Cultural Equipment and Furnishings	23212500
+#23212511	Group Seating	23212500
+#23212513	Theater and Stage Equipment	23212500
+#23212515	Planetarium Equipment and Furnishings	23212500
+#23212517	Observatory Equipment and Furnishings	23212500
+#23212519	Ecclesiastical Equipment and Furnishings	23212500
+#23212521	Library and Archive Equipment and Furnishings	23212500
+#23212523	Exhibition Equipment and Furnishings	23212500
+#23212700	Child Furnishings	23212700
+#23212711	Child Beds	23212700
+#23212713	Child Cots	23212700
+#23212715	Child Playpens	23212700
+#23212717	Child Benches	23212700
+#23212719	Child Bathtub	23212700
+#23212721	Child Chairs	23212700
+#23212723	Child Play Panels	23212700
+#23212725	Child Indoor Swings	23212700
+#23212727	Child Sofas	23212700
+#23212729	Child Strollers	23212700
+#23212731	Child Tables	23212700
+#23212733	Child Storage Units	23212700
+#23212735	Child Dressers	23212700
+#23212900	Athletic and Recreational Equipment	23212900
+#23212911	Athletic or Recreation Screening	23212900
+#23212913	Athletic Surfacing	23212900
+#23212915	Athletic Equipment	23212900
+#23212917	Playground Equipment	23212900
+#23212919	Recreational Equipment	23212900
+#23212921	Pools	23212900
+#23212923	Spectator Stands	23212900
+#23213100	Fitness and Exercise Equipment	23213100
+#23213111	Exercise Apparatus	23213100
+#23213113	Exercise Bars	23213100
+#23213115	Exercise Benches	23213100
+#23213117	Exercise Boards	23213100
+#23213119	Exercise Machines	23213100
+#23213121	Exercise Floor Mats	23213100
+#23213123	Exercise Pulleys	23213100
+#23213300	Industrial and Manufacturing Equipment and Furnishings	23213300
+#23213311	Manufacturing Equipment 	23213300
+#23213313	Manufacturing Furniture	23213300
+#23213315	Shop Equipment	23213300
+#23213317	Shop Furniture	23213300
+#23213500	Miscellaneous Equipment and Furnishings	23213500
+#23213511	Darkroom Equipment and Furnishings	23213500
+#23213513	Vending Equipment	23213500
+#23213515	Ticket Machines	23213500
+#23213517	Change Machines	23213500
+#23213519	Vehicle Service Equipment	23213500
+#23213521	Security and Vault Equipment and Furnishings	23213500
+#23213523	Detention Equipment and Furnishings	23213500
+#23213525	Agricultural Equipment	23213500
+#23213700	Furnishings, Ornaments, and Decoration	23213700
+#23213711	Soft Furnishings	23213700
+#23213713	Decoration	23213700
+#23213900	Commercial Washing and Waste Disposal Equipment	23213900
+#23213911	Commercial Washing Equipment	23213900
+#23213913	Drain Boards	23213900
+#23214100	Commercial Laundry Equipment	23214100
+#23214111	Commercial Clothes Airers	23214100
+#23214113	Commercial Combination Laundry Washer Dryers	23214100
+#23214115	Commercial Dry Cleaning Equipment	23214100
+#23214117	Commercial Laundry Dispensers	23214100
+#23214119	Commercial Dry Cleaning Machines	23214100
+#23214121	Commercial Laundry Extractors	23214100
+#23214123	Commercial Flat Work Ironers	23214100
+#23214125	Commercial Ironing and Pressing Machines	23214100
+#23214127	Commercial Laundry Folding Machines	23214100
+#23214129	Commercial Laundry Conveyors	23214100
+#23214131	Commercial Laundry Dryers	23214100
+#23214133	Commercial Laundry Presses	23214100
+#23214135	Commercial Laundry Spreader Feeders	23214100
+#23214137	Commercial Laundry Steam Tunnels	23214100
+#23214139	Commercial Laundry Tubs	23214100
+#23214141	Commercial Washing Machines	23214100
+#23214300	Cleaning Equipment	23214300
+#23214311	Buckets	23214300
+#23214313	Cleaners	23214300
+#23214315	Custodial Dispensers	23214300
+#23214317	Duct Cleaning Machines	23214300
+#23214319	Floor Cleaning Equipment	23214300
+#23214321	Room Cleaning Equipment	23214300
+#23214323	Sanitary Waste Receptacles	23214300
+#23214325	Custodial Sinks	23214300
+#23214327	Custodial Washers	23214300
+#23214500	Historic Preservation Products	23214500
+#23214511	Fine Art	23214500
+#23214513	Historic Documents	23214500
+#23214515	Historic Architectural Items	23214500
+#23214700	Musical Equipment	23214700
+#23214711	Conductor Equipment	23214700
+#23214713	Musical Instrument	23214700
+#23230000	Conveying Systems and Material Handling Products	23230000
+#23231100	Vertical Transportation Equipment	23231100
+#23231111	Elevators	23231100
+#23231113	Escalators	23231100
+#23231300	Lifting Equipment	23231300
+#23231311	Lifts	23231300
+#23231500	Horizontal Transportation Equipment	23231500
+#23231511	Moving Walks	23231500
+#23231513	People Movers	23231500
+#23231515	Jetways	23231500
+#23231517	Transportation Gangways	23231500
+#23231700	Materials Handling	23231700
+#23231711	Dumbwaiters	23231700
+#23231713	Material Transport	23231700
+#23231715	Conveyors	23231700
+#23231717	Chutes	23231700
+#23231719	Feeder Equipment	23231700
+#23231721	Pneumatic Tube Systems	23231700
+#23231723	Cranes	23231700
+#23231725	Derricks	23231700
+#23231727	Hoists	23231700
+#23231900	Turntables	23231900
+#23231911	Stage Turntables	23231900
+#23231913	Exhibit and Display Turntables	23231900
+#23231915	Vehicular Turntable	23231900
+#23232100	Parking Systems	23232100
+#23232111	Car Parking Systems	23232100
+#23232300	Loading Dock Equipment	23232300
+#23232311	Loading Dock Bumpers Seals	23232300
+#23232313	Dock Levelers	23232300
+#23232315	Loading Dock Lifts	23232300
+#23232317	Loading Dock Ramps And Bridges	23232300
+#23232319	Loading Dock Seals	23232300
+#23232321	Loading Dock Shelters	23232300
+#23232323	Loading Dock Vehicle Restraints	23232300
+#23232500	Scaffolding	23232500
+#23232511	Suspended Scaffolding	23232500
+#23232513	Scaffolding Rope Climbers	23232500
+#23232515	Scaffolding Telescoping Platforms	23232500
+#23232517	Powered Scaffolding	23232500
+#23250000	Medical and Laboratory Equipment	23250000
+#23251100	Anesthesiology and Respiratory Products	23251100
+#23251111	Anesthesiology Furnishings	23251100
+#23251113	Anesthesiology Equipment	23251100
+#23251115	Anesthesiology Prefabricated Structures	23251100
+#23251300	Audiology Products	23251300
+#23251311	Audiology Equipment	23251300
+#23251313	Audiology Prefabricated Structures	23251300
+#23251500	Autopsy and Postmortem Products	23251500
+#23251511	Autopsy and Postmortem Furnishings	23251500
+#23251513	Autopsy and Postmortem Equipment	23251500
+#23251515	Autopsy and Postmortem Prefabricated Structures	23251500
+#23251517	Autopsy and Postmortem Devices	23251500
+#23251700	Dental Products	23251700
+#23251711	Dental Furnishings	23251700
+#23251713	Dental Equipment	23251700
+#23251715	Dental Prefabricated Structures	23251700
+#23251900	Dermatology Products	23251900
+#23251911	Dermatology Furnishings	23251900
+#23251913	Dermatology Equipment	23251900
+#23251915	Dermatology Prefabricated Structures	23251900
+#23251917	Dermatology Devices	23251900
+#23252100	Emergency Trauma and Intensive Care Products	23252100
+#23252111	Emergency Trauma and Intensive Furnishings	23252100
+#23252113	Emergency Trauma and Intensive Equipment	23252100
+#23252115	Emergency Trauma and Intensive Prefabricated Structures	23252100
+#23252300	Endocrinology Products	23252300
+#23252311	Endocrinology Furnishings	23252300
+#23252313	Endocrinology Equipment	23252300
+#23252315	Endocrinology Prefabricated Structures	23252300
+#23252500	Gastroenterology and Hepatology Products	23252500
+#23252511	Gastroenterology Furnishings	23252500
+#23252513	Gastroenterology Equipment	23252500
+#23252515	Gastroenterology Prefabricated Structures	23252500
+#23252517	Gastroenterology Devices	23252500
+#23252700	General Internal Medicine Products	23252700
+#23252711	General Internal Medicine Furnishings	23252700
+#23252713	General Internal Medicine Equipment	23252700
+#23252715	General Internal Medicine Prefabricated Structures	23252700
+#23252900	Therapeutic and Physical Therapy Products	23252900
+#23252911	Therapeutic and Physical Therapy Furnishings	23252900
+#23252913	Therapeutic and Physical Therapy Equipment	23252900
+#23252915	Health Exercise and Physical Therapy Prefabricated Structures	23252900
+#23253100	Hematology Products	23253100
+#23253111	Hematology Furnishings	23253100
+#23253113	Hematology Equipment	23253100
+#23253115	Hematology Prefabricated Structures	23253100
+#23253300	Medical Gas Products	23253300
+#23253311	Medical Air Pressure Control Cabinets	23253300
+#23253313	Medical Gas Alarm Modules	23253300
+#23253315	Medical Gas Cylinder Carts	23253300
+#23253317	Medical Gas Cylinder Stands	23253300
+#23253319	Medical Gas Delivery Columns	23253300
+#23253321	Medical Gas Filtering Equipment	23253300
+#23253323	Medical Gas Manifolds	23253300
+#23253325	Medical Gas Outlets	23253300
+#23253327	Medical Gas Service Tracks	23253300
+#23253329	Medical Gas Shutoff Valves	23253300
+#23253331	Medical Gas Treatment Equipment	23253300
+#23253333	Medical Gas Valve Boxes	23253300
+#23253500	Nursing Products	23253500
+#23253511	Nursing Furnishings	23253500
+#23253513	Nursing Equipment	23253500
+#23253515	Nursing Prefabricated Structures	23253500
+#23253700	Obstetrics and Gynecology Products	23253700
+#23253711	Obstetrics and Gynecology Furnishings	23253700
+#23253713	Obstetrics and Gynecology Equipment	23253700
+#23253715	Obstetrics and Gynecology Prefabricated Structures	23253700
+#23253900	Ophthalmology Products	23253900
+#23253911	Ophthalmology Furnishings	23253900
+#23253913	Ophthalmology Equipment	23253900
+#23253915	Ophthalmology Prefabricated Structures	23253900
+#23254100	Orthopedics Products	23254100
+#23254111	Orthopedics Furnishings	23254100
+#23254113	Orthopedics Equipment	23254100
+#23254115	Orthopedic And Prosthetic And Sports Medicine Products	23254100
+#23254117	Orthopedics Prefabricated Structures	23254100
+#23254300	Otolaryngology Products	23254300
+#23254311	Otolaryngology Furnishings	23254300
+#23254313	Otolaryngology Equipment	23254300
+#23254315	Otolaryngology Prefabricated Structures	23254300
+#23254500	Patient Care Products	23254500
+#23254511	Patient Care Furnishings	23254500
+#23254513	Patient Care Equipment	23254500
+#23254515	Patient Care Prefabricated Structures	23254500
+#23254700	Patient Clinical Diagnostic Products	23254700
+#23254711	Patient Clinical Diagnostic Furnishings	23254700
+#23254713	Patient Clinical Diagnostic Equipment	23254700
+#23254715	Patient Clinical Diagnostic Prefabricated Structures	23254700
+#23254900	Patient Transportation and Lifting Equipment	23254900
+#23254911	Patient transport products	23254900
+#23254913	Patient lifts	23254900
+#23255100	Pediatrics Products	23255100
+#23255111	Pediatrics Furnishings	23255100
+#23255113	Pediatrics Equipment	23255100
+#23255115	Pediatrics Prefabricated Structures	23255100
+#23255300	Pharmacology Products	23255300
+#23255311	Pharmacology Furnishings	23255300
+#23255313	Pharmacology Equipment	23255300
+#23255315	Pharmacology Prefabricated Structures	23255300
+#23255500	Psychiatric and Psychology Products	23255500
+#23255511	Psychiatric and Psychology Furnishings	23255500
+#23255513	Psychiatric and Psychology Equipment	23255500
+#23255515	Psychiatric and Psychology Prefabricated Structures	23255500
+#23255700	Sterilization Medical Products	23255700
+#23255711	Sterilizer Equipment	23255700
+#23255900	Surgical Products	23255900
+#23255911	Surgical Furnishings	23255900
+#23255913	Surgical Equipment	23255900
+#23255915	Surgical Prefabricated Structures	23255900
+#23256100	Veterinary and Animal Products	23256100
+#23256111	Veterinary and Animal Furnishings	23256100
+#23256113	Veterinary and Animal Equipment	23256100
+#23256115	Veterinary Equipment	23256100
+#23256117	Veterinary and Animal Prefabricated Structures	23256100
+#23256300	X Ray and Imagery Products	23256300
+#23256311	X Ray and Imagery Furnishings	23256300
+#23256313	X Ray and Imagery Equipment	23256300
+#23256315	X Ray and Imagery Prefabricated Structures	23256300
+#23256317	Specialized Medical Computer Equipment	23256300
+#23256500	Biological Protection and Preservation Products	23256500
+#23256511	Biological Safety Cabinets	23256500
+#23256513	Cabinet Bases	23256500
+#23256700	Hazardous Materials Products	23256700
+#23256711	Hazardous Materials Cabinets	23256700
+#23256713	Hazardous Materials Refrigerators and Freezers	23256700
+#23256900	Laboratory and Scientific Products	23256900
+#23256911	Laboratory Furnishings	23256900
+#23256913	Laboratory And Scientific Equipment	23256900
+#23270000	General Facility Services Products	23270000
+#23271100	General Instruments and Controls	23271100
+#23271111	Temperature Measuring Instrument And Controls	23271100
+#23271113	Pressure Measuring Instrument And Controls	23271100
+#23271115	Flow Measuring Instrument And Controls	23271100
+#23271117	Concentration Measuring Instrument And Controls	23271100
+#23271119	Heat Measuring Instrument And Controls	23271100
+#23271121	Level Measuring Instrument And Controls	23271100
+#23271123	Weighing Instrument And Controls	23271100
+#23271125	Metal Concentration Instrument And Controls	23271100
+#23271127	Gas Instrument And Controls	23271100
+#23271129	Infrared Instrument And Controls	23271100
+#23271300	Control and Monitoring Boards Panels	23271300
+#23271311	Internal Climate Monitoring and Control Panel	23271300
+#23271313	Building Control Systems	23271300
+#23271315	Process Control Panels	23271300
+#23271500	Building Automation and Control	23271500
+#23271511	Building Clock Controls	23271500
+#23271513	Building Door Controls	23271500
+#23271515	Elevator Monitoring and Controls	23271500
+#23271517	Energy Monitoring and Controls	23271500
+#23271519	Building Environmental Controls	23271500
+#23271521	Building Lighting Controls	23271500
+#23271523	HVAC Controls	23271500
+#23271525	Equipment Control Panels	23271500
+#23271700	Pumps	23271700
+#23271711	Axial Split Pumps	23271700
+#23271713	Centrifugal Pumps	23271700
+#23271715	Diaphragm Pumps	23271700
+#23271717	Duplex Pumps	23271700
+#23271719	Gear Pumps	23271700
+#23271721	Liquid Ring Pumps	23271700
+#23271723	Macerator Pumps	23271700
+#23271725	Progressive Cavity Pumps	23271700
+#23271727	Ram Pumps	23271700
+#23271729	Reciprocating Pumps	23271700
+#23271731	Rotary Pumps	23271700
+#23271733	Rotating Piston Pumps	23271700
+#23271735	Sewage Ejectors	23271700
+#23271737	Simplex Pumps	23271700
+#23271739	Sliding Vane Pumps	23271700
+#23271741	Turbine Pumps	23271700
+#23271743	Worm Gear Pumps	23271700
+#23271745	Pump Components 	23271700
+#23271900	Engines	23271900
+#23271911	Reciprocating Engines	23271900
+#23271913	Rotary Engines	23271900
+#23271915	Turbine Engines	23271900
+#23272100	Compressors	23272100
+#23272111	Axial Flow Compressors	23272100
+#23272113	Centrifugal Compressors	23272100
+#23272115	Reciprocating Compressors	23272100
+#23272117	Rotary Compressors	23272100
+#23272300	Heat Exchangers	23272300
+#23272311	Heat Exchanger Economizers	23272300
+#23272313	Plate and Frame Heat Exchangers	23272300
+#23272315	Shell and Tube Heat Exchangers	23272300
+#23272317	Tube and Fin Heat Exchangers	23272300
+#23272319	Spiral Heat Exchangers	23272300
+#23272321	Adiabatic Wheel Heat Exchangers	23272300
+#23272323	Plate and Fin Heat Exchangers	23272300
+#23272325	Fluid Heat Exchangers	23272300
+#23272500	Heaters for Supplied Liquids 	23272500
+#23272511	Liquid Electric Heaters	23272500
+#23272513	Liquid Gas Heaters	23272500
+#23272515	Liquid Steam Heaters	23272500
+#23272517	Liquid Fuel Oil Heaters	23272500
+#23272700	Pressure Reducing Stations	23272700
+#23272711	Multiple Stage Pressure Reducing Stations	23272700
+#23272713	Single Stage Pressure Reducing Stations	23272700
+#23272900	Tanks and Storage Structures	23272900
+#23272911	Reservoirs	23272900
+#23272913	Tank Foundations	23272900
+#23272915	Specialized Tanks	23272900
+#23272917	Storage Constructions	23272900
+#23272919	Tanks	23272900
+#23272921	Tank Containments	23272900
+#23272923	Tank Linings	23272900
+#23272925	Tank Components	23272900
+#23273100	Valves	23273100
+#23273111	Backflow Preventors	23273100
+#23273113	Balancing Valves	23273100
+#23273115	Ball Valves	23273100
+#23273117	Butterfly Valves	23273100
+#23273119	Check Valves	23273100
+#23273121	Diaphragm Valves	23273100
+#23273123	Float Valves	23273100
+#23273125	Gate Valves	23273100
+#23273127	Globe Valves	23273100
+#23273129	Mixing Valves	23273100
+#23273131	Needle Valves	23273100
+#23273133	Orifice Valves	23273100
+#23273135	Pinch Valves	23273100
+#23273137	Plug Drain Valves	23273100
+#23273139	Plug Valves	23273100
+#23273141	Poppet Valves	23273100
+#23273143	Post Indicator Valves	23273100
+#23273145	Preaction Valves	23273100
+#23273147	Pressure Regulating Valves	23273100
+#23273149	Relief Valves	23273100
+#23273151	Rupture Disks	23273100
+#23273153	Safety Valves	23273100
+#23273155	Sentinel Valves	23273100
+#23273157	Slider Valves	23273100
+#23273159	Slush Valves	23273100
+#23273161	Thermostatic Expansion Valves	23273100
+#23273163	Valves Boxes	23273100
+#23273300	Valve Actuators	23273300
+#23273311	Electrical Valve Actuators	23273300
+#23273313	Hydraulic Valve Actuators	23273300
+#23273315	Motor Operated Valve Actuators	23273300
+#23273317	Pneumatic Valve Actuators	23273300
+#23273500	Variable Speed Drives	23273500
+#23273511	Hydraulic Variable Speed Drives	23273500
+#23273513	Variable Pitch Drives	23273500
+#23273515	Transmission Devices	23273500
+#23273700	Liquid Traps	23273700
+#23273711	Grease Traps	23273700
+#23273713	Oil Traps	23273700
+#23273715	Steam Traps	23273700
+#23273900	Piping	23273900
+#23273911	Double Walled Pipes	23273900
+#23273913	Single Walled Pipes	23273900
+#23274100	Pipe Repair Equipment	23274100
+#23274111	Pipe Band It Kits	23274100
+#23274300	Pipe Fittings	23274300
+#23274311	Mechanical Pipe Fasteners	23274300
+#23274313	Mechanical Pipe Supports	23274300
+#23274315	Pipe Expansion Joints	23274300
+#23274317	Water Hammer Arrestors	23274300
+#23274319	Pipe Expansion Compensators	23274300
+#23274500	Pipe Flanges	23274500
+#23274511	Blind Pipe Flanges	23274500
+#23274513	Lap Joint Pipe Flanges	23274500
+#23274515	Orifice Pipe Flanges	23274500
+#23274517	Plate Pipe Flanges	23274500
+#23274519	Reducing Pipe Flanges	23274500
+#23274521	Slip On Pipe Flanges	23274500
+#23274523	Socket Weld Pipe Flanges	23274500
+#23274525	Spectacle Pipe Flanges	23274500
+#23274527	Threaded Pipe Flanges	23274500
+#23274529	Weldneck Pipe Flanges	23274500
+#23274700	Pipe Adapters	23274700
+#23274711	Female Pipe Adapters	23274700
+#23274713	Male Pipe Adapters	23274700
+#23274715	Terminal Pipe Adapters	23274700
+#23274717	Hi Low Converter Pipe Adapters	23274700
+#23274719	Twist To Lock Y Cord Pipe Adapters	23274700
+#23274721	Auto Converter Pipe Adapters	23274700
+#23274723	Conduit Box Pipe Adapters	23274700
+#23274725	Reduce Drive Pipe Adapters	23274700
+#23274727	Red Pipe Adapters	23274700
+#23274900	Pipe Couplings	23274900
+#23274911	Rigid Pipe Couplings	23274900
+#23274913	Flexible Pipe Couplings	23274900
+#23275100	Pipe Elbows	23275100
+#23275111	45 Degree Pipe Elbows	23275100
+#23275113	90 Degree Pipe Elbows	23275100
+#23275115	Reducing Pipe Elbows	23275100
+#23275300	Pipe Caps	23275300
+#23275311	Threaded Pipe Caps	23275300
+#23275313	Tapered Pipe Caps	23275300
+#23275315	Anti-roll Pipe Caps	23275300
+#23275317	Knurled Pipe Caps	23275300
+#23275319	Slotted Head Pipe Caps	23275300
+#23275321	Retaining Ring Pipe Caps	23275300
+#23275323	Tear Tab Pipe Caps	23275300
+#23275325	Hanger Tip Pipe Caps	23275300
+#23275327	Pull Tab Pipe Caps	23275300
+#23275329	Vented Pipe Caps	23275300
+#23275500	Liquid Treatment Components	23275500
+#23275511	Liquid Filters	23275500
+#23275513	Liquid Sterilizers	23275500
+#23275515	Liquid Salinators	23275500
+#23275517	Liquid Chlorinators	23275500
+#23275519	Liquid Ionizers	23275500
+#23275521	Liquid Deionizers	23275500
+#23275523	Liquid Deaerators	23275500
+#23275525	Liquid Disinfecting Ultraviolet Lighting	23275500
+#23275527	Liquid Softeners	23275500
+#23275529	Liquid Strainers	23275500
+#23275531	Liquid Chemical Feeders	23275500
+#23275533	Liquid Treatment Package Units	23275500
+#23275535	Liquid Separators	23275500
+#23275700	Gas Treatment Components	23275700
+#23275711	Vapor Traps	23275700
+#23275713	Extractors	23275700
+#23275715	Air Injectors	23275700
+#23275717	Air Ejectors	23275700
+#23275719	Air Scrubbers	23275700
+#23275721	Supply Gas Treatment	23275700
+#23275723	Electronic Air Purifiers	23275700
+#23275725	Mechanically Aided Air Scrubbers	23275700
+#23275727	Air Filters	23275700
+#23275729	Dust Collectors	23275700
+#23275731	Electronic Air Cleaners	23275700
+#23275733	Air Fresheners	23275700
+#23275735	Air Treatment Components 	23275700
+#23275900	Recycling Equipment	23275900
+#23275911	Recycling Balers	23275900
+#23275913	Recycling Bins	23275900
+#23275915	Recycling Compactors	23275900
+#23276100	Incinerators	23276100
+#23276111	Trash Incinerators	23276100
+#23276113	Document Incinerators	23276100
+#23276300	Mechanical Insulation and Linings	23276300
+#23276311	Pipe Insulation	23276300
+#23276313	Equipment Insulation Blankets	23276300
+#23276500	Equipment Acoustic Insulation	23276500
+#23276511	Sound Dampening Equipment Mounts	23276500
+#23276700	Corrosion Proofing Equipment	23276700
+#23276711	Zinc Bars	23276700
+#23276713	Zinc Tapes	23276700
+#23276900	Antivibration Mountings	23276900
+#23276911	Vibration Equipment Mounts	23276900
+#23277100	Building Maintenance Equipment	23277100
+#23277111	Window Washing Systems	23277100
+#23277113	Building Maintenance Cradles and Platforms	23277100
+#23277115	Roof Trolley Systems	23277100
+#23277117	Traveling Ladder Systems	23277100
+#23277119	Ancillary Building Maintenance Items	23277100
+#23277121	Fall Arrest Systems	23277100
+#23290000	Facility and Occupant Protection Products	23290000
+#23291100	Security Detection and Monitoring	23291100
+#23291111	Closed Circuit Television Equipment	23291100
+#23291113	Security Video Imaging System Equipment	23291100
+#23291115	Explosive Detectors	23291100
+#23291117	Security Metal Detectors	23291100
+#23291119	Security X Ray Machines	23291100
+#23291121	Security Sensors	23291100
+#23291123	Intrusion Detection Devices	23291100
+#23291125	Presence Detection Registration	23291100
+#23291127	Security Keypads	23291100
+#23291129	Vehicle Inspection Devices	23291100
+#23291300	Security Access Controls	23291300
+#23291311	Personnel Biometric Readers	23291300
+#23291313	Personnel Card Readers	23291300
+#23291315	Personnel Counting Equipment	23291300
+#23291317	Security Door Answering Controls	23291300
+#23291319	Electronic Key Equipment	23291300
+#23291321	Security Personnel Access Keypads	23291300
+#23291323	Access Control Turnstiles	23291300
+#23291500	Secure Storage Structures and Products	23291500
+#23291511	Vaults	23291500
+#23291513	Safes	23291500
+#23291515	Lockers	23291500
+#23291700	Property Storage Locks	23291700
+#23291711	Bicycle Locks	23291700
+#23291713	Padlocks	23291700
+#23291900	Chemical Biological Radiological Protection	23291900
+#23291911	Prefabricated Mail Screening Products	23291900
+#23291913	Biological Safety Cabinets	23291900
+#23292100	Equipment for Security of Information	23292100
+#23292111	Centralized Code Reading Equipment	23292100
+#23292300	Fireproofing Components	23292300
+#23292311	Fireproofing Gaskets	23292300
+#23292313	Fireproofing Fillers for Threaded Couplings	23292300
+#23292315	Fireproof Pipe Sleeves	23292300
+#23292317	Smoke Seals for Ductwork	23292300
+#23292500	Fire Fighting Equipment	23292500
+#23292511	Fire Fighting Terminals	23292500
+#23292513	Fire Hydrants	23292500
+#23292515	Fire Hose Equipment	23292500
+#23292517	Fire Nozzles	23292500
+#23292519	Fire Extinguishers	23292500
+#23292700	Fire Ventilation Equipment	23292700
+#23292711	Fire Fighting Smoke Extractors	23292700
+#23292900	Fire Detection Devices	23292900
+#23292911	Fire Alarm Pull Stations	23292900
+#23292913	Fire Detectors	23292900
+#23292915	Fire Switches	23292900
+#23293100	Fire Notification Appliances	23293100
+#23293111	Fire Alarm Annunicator Panels	23293100
+#23293113	Fire Alarm Control Panels	23293100
+#23293115	Audible Fire Notification Devices	23293100
+#23293117	Visible Fire Notification Devices	23293100
+#23293119	Combination Audible and Visible Fire Notification Devices	23293100
+#23293121	Fire Alarm Communicators	23293100
+#23293123	Fire Alarm Central Stations	23293100
+#23293125	Fire Alarm Event Recorders	23293100
+#23293127	Fire Alarm Event Printers	23293100
+#23293129	Fire Alarm Remote Controllers	23293100
+#23293131	Fire Alarm Remote Amplifiers	23293100
+#23293133	Fire Pump Controllers	23293100
+#23293135	Jockey Pump Controllers	23293100
+#23293300	Fire Suppression System Components	23293300
+#23293311	Water Based Suppression Equipment	23293300
+#23293313	Non Water Based Suppression Equipment	23293300
+#23293315	Fire Blankets	23293300
+#23293500	Fire Rescue Component	23293500
+#23293511	Evacuation Chairs	23293500
+#23293513	Evacuation Slides	23293500
+#23293700	Occupational Safety and Health Equipment	23293700
+#23293711	Emergency Drench Hoses	23293700
+#23293713	Emergency Eye Wash Stations	23293700
+#23293715	Emergency Showers	23293700
+#23293900	Environmental Safety Equipment	23293900
+#23293911	Environmental Spill Kits	23293900
+#23293913	Pollution Monitoring and Control	23293900
+#23293915	Built In Failure Detection	23293900
+#23310000	Plumbing Specific Products and Equipment	23310000
+#23311100	Faucets	23311100
+#23311111	Ball Faucets	23311100
+#23311113	Compression Faucets	23311100
+#23311115	Cartridge Faucets	23311100
+#23311117	Disc Faucets	23311100
+#23311119	Faucet Mixing Valves	23311100
+#23311300	Sinks	23311300
+#23311311	Single Sinks	23311300
+#23311313	Dual Sinks	23311300
+#23311315	Multiple Sinks	23311300
+#23311317	Sink Components	23311300
+#23311319	Specialty Sinks	23311300
+#23311500	Bathtubs	23311500
+#23311511	Bath Shower Units	23311500
+#23311513	Sitz Baths	23311500
+#23311515	Jacuzzi Baths	23311500
+#23311517	Bathtub Components	23311500
+#23311700	Showers	23311700
+#23311711	Shower Compartments	23311700
+#23311713	Shower Receptors	23311700
+#23311715	Shower Enclosure Bases	23311700
+#23311717	Shower Enclosures	23311700
+#23311719	Shower Head Fixtures	23311700
+#23311721	Shower Splashbacks	23311700
+#23311723	Shower Seats	23311700
+#23311725	Shower Screens	23311700
+#23311727	Shower Curtains	23311700
+#23311729	Shower Drains	23311700
+#23311731	Shower Rods	23311700
+#23311900	Toilets	23311900
+#23311911	Combination Toilets	23311900
+#23311913	Incinerating Toilets	23311900
+#23311915	Tankless Toilets	23311900
+#23311917	Toilets With Tank	23311900
+#23311919	Water Closets 	23311900
+#23312100	Urinals	23312100
+#23312111	Incinerating Urinals	23312100
+#23312113	Water Flush Urinals	23312100
+#23312115	Waterless Urinals	23312100
+#23312300	Bidets	23312300
+#23312500	Toilet and Bath Specialties	23312500
+#23312511	Restroom Partitions	23312500
+#23312513	Bathroom Cabinets	23312500
+#23312515	Hand Dryers	23312500
+#23312517	Hair Dryers	23312500
+#23312519	Restroom Paper Towel Accessories	23312500
+#23312521	Toilet Paper Dispensers	23312500
+#23312523	Feminine Hygiene Components	23312500
+#23312525	Towel Bars	23312500
+#23312527	Robe Hooks	23312500
+#23312529	Restroom Hand Soap Components	23312500
+#23312531	Diaper Changing Units	23312500
+#23312533	Bathroom Deodorizers	23312500
+#23312700	Floor Drains	23312700
+#23312711	Floor Drain Plugs	23312700
+#23312713	Floor Drain Plug Chains	23312700
+#23312715	Floor Drain Covers	23312700
+#23312900	Hot Water Heaters	23312900
+#23312911	Instantaneous Hot Water Heaters	23312900
+#23312913	Hot Water Tank Heaters	23312900
+#23313100	Drinking Fountains	23313100
+#23313111	Drinking Fountain With Coolers	23313100
+#23313113	Drinking Fountains With Direct Expansion Cooling	23313100
+#23313300	Complete Sanitary Suites	23313300
+#23313311	Complete Bathroom Suites	23313300
+#23313500	Plumbing Tubing	23313500
+#23313511	Tubing Reducers	23313500
+#23313513	Tubing Couplings	23313500
+#23313515	Tubing Elbows	23313500
+#23313517	Tubing Plugs	23313500
+#23313519	Tubing Tees	23313500
+#23330000	HVAC Specific Products and Equipment	23330000
+#23331100	Commercial Boilers	23331100
+#23331111	Boiler Controls	23331100
+#23331113	Condensing Boilers	23331100
+#23331115	Fire Tube Boilers	23331100
+#23331117	Flexible Tube Boilers	23331100
+#23331119	Sectionalized Cast Iron Boilers	23331100
+#23331121	Water Tube Boilers	23331100
+#23331122	Electric Boilers	23331100
+#23331123	Boiler Components 	23331100
+#23331300	Furnaces	23331300
+#23331311	Furnace Controls	23331300
+#23331313	Coal Fired Furnaces	23331300
+#23331315	Electric Resistance Furnaces	23331300
+#23331317	Natural Gas Fired Furnaces	23331300
+#23331319	Gasoline Fired Furnaces	23331300
+#23331321	Fuel Oil Fired Furnaces	23331300
+#23331323	Oil Fired Furnaces	23331300
+#23331325	Propane Fired Furnaces	23331300
+#23331327	Furnace Components	23331300
+#23331500	HVAC Heating Units	23331500
+#23331511	Propane HVAC Heaters	23331500
+#23331513	Heating Stoves	23331500
+#23331515	Specialized Surface Heating Products	23331500
+#23331517	Fuel Fired HVAC Heaters	23331500
+#23331519	Forced Air Fuel Fired HVAC Heaters	23331500
+#23331521	Hydronic HVAC Heaters	23331500
+#23331523	Forced Air Hydronic HVAC Heaters	23331500
+#23331525	Electric HVAC Heaters	23331500
+#23331527	Forced Air Electric HVAC Heaters	23331500
+#23331529	HVAC Steam Hot Water Converters	23331500
+#23331700	Heat Pumps	23331700
+#23331711	Packaged Heat Pumps	23331700
+#23331713	Split System Heat Pumps	23331700
+#23331900	Cooling and Freeze Components	23331900
+#23331911	Cooling Freeze Plant Accessories	23331900
+#23332100	Chillers	23332100
+#23332111	Absorption Chillers	23332100
+#23332113	Chillers	23332100
+#23332300	Cooling Towers	23332300
+#23332311	Mechanical Draft Cooling Towers	23332300
+#23332313	Natural Draft Cooling Towers	23332300
+#23332315	Cooling Ponds	23332300
+#23332500	Air Handling Units	23332500
+#23332511	Built Up Air Handling Units	23332500
+#23332513	Customized Air Handling Units	23332500
+#23332515	Heating and Ventilating Units	23332500
+#23332517	Modular Air Handling Units	23332500
+#23332519	Pre Fabricated Air Handling Units	23332500
+#23332700	Air Humidity Control Equipment	23332700
+#23332711	Air Washers	23332700
+#23332713	Dehumidifiers	23332700
+#23332715	Air Humidifiers	23332700
+#23332717	Vaporizers	23332700
+#23332900	HVAC Dampers	23332900
+#23332911	3 Way Diverter Dampers	23332900
+#23332913	Backdraft Dampers	23332900
+#23332915	Bi Plane Dampers	23332900
+#23332917	Butterfly Dampers	23332900
+#23332919	Dampers	23332900
+#23332921	Diffuser Firestop Flaps	23332900
+#23332923	Fire Dampers	23332900
+#23332925	Smoke Dampers	23332900
+#23332927	Non Return Dampers	23332900
+#23332929	Guillotine Dampers	23332900
+#23332931	Louvre Dampers	23332900
+#23332933	Movable Blade Wall Louvers	23332900
+#23332935	Static Pressure Regulating Dampers	23332900
+#23332937	Volume Control Dampers	23332900
+#23332939	Fire Shutters for Air Ductwork	23332900
+#23333100	Air Circulators	23333100
+#23333111	Air Curtains	23333100
+#23333113	Blowers	23333100
+#23333115	Exhaust Hoods	23333100
+#23333117	Exhaust Hood Fire Suppression System	23333100
+#23333119	Fans	23333100
+#23333121	Power Ventilators	23333100
+#23333300	HVAC Fan Coil Units	23333300
+#23333311	Fan Coil Units	23333300
+#23333500	HVAC Coils	23333500
+#23333511	HVAC Coils	23333500
+#23333700	Refrigerant Condensing Units	23333700
+#23333711	Packaged Refrigerant Coils and Fan Units	23333700
+#23333713	Refrigerant Condensing Coils	23333700
+#23333715	Refrigerant Evaporators	23333700
+#23333900	Air Conditioning Equipment	23333900
+#23333911	Air Conditioners	23333900
+#23333913	High Pressure Air Conditioning Units	23333900
+#23333915	Make Up Air Units	23333900
+#23333917	Packaged Air Conditioners	23333900
+#23333919	Packaged Terminal Air Conditioning Units	23333900
+#23333921	Split System Air Conditioning Units	23333900
+#23334100	HVAC Air Terminals	23334100
+#23334111	Fan Powered Terminal Air Units	23334100
+#23334113	Induction Terminal Air Units	23334100
+#23334115	HVAC Mixing Boxes	23334100
+#23334117	Terminal Air Units	23334100
+#23334119	Exhaust Terminals	23334100
+#23334300	HVAC Condenser Units	23334300
+#23334311	Air Cooled Condenser Units	23334300
+#23334313	Evaporative Condenser Units	23334300
+#23334315	Refrigeration Condenser Units	23334300
+#23334317	Water Cooled Condenser Units	23334300
+#23334500	HVAC Coolers	23334500
+#23334511	HVAC Dry Coolers	23334500
+#23334513	HVAC Evaporative Coolers	23334500
+#23334700	Air Dryers	23334700
+#23334711	Refrigerated Air Dryers	23334700
+#23334713	Regenerative Desiccant Air Dryers	23334700
+#23334900	HVAC Ductwork	23334900
+#23334911	Ventilation Diffusers	23334900
+#23334913	Ventilation Ducts	23334900
+#23334915	Duct Access Panels	23334900
+#23334917	Duct Insulation	23334900
+#23334919	Ductwork Distribution Collectors	23334900
+#23334921	Ductwork Expansion Vessels	23334900
+#23334923	Grilles	23334900
+#23334925	Ventilation Registers	23334900
+#23334927	Ventilators	23334900
+#23334929	Air Ductwork Accessories	23334900
+#23335100	HVAC Specialized Equipment	23335100
+#23335111	Refrigerant Monitors	23335100
+#23335113	Refrigerant Purge Units	23335100
+#23335115	Ultraviolet Disinfection Lighting	23335100
+#23335300	Solar Water Heating Equipment	23335300
+#23335311	Solar Water Heating Packaged Units	23335300
+#23335313	Solar Water Heating Collector Components 	23335300
+#23335315	Solar Water Heating Collector Units	23335300
+#23335500	Energy HVAC Recovery Equipment	23335500
+#23335511	Heat Pipes	23335500
+#23335513	Heat Wheels	23335500
+#23350000	Electrical and Lighting Specific Products and Equipment	23350000
+#23351100	Electrical Generators	23351100
+#23351111	Single Unit Electrical Generators	23351100
+#23351112	Single Unit Electrical Generator Engines	23351100
+#23351113	Motor Generator Sets	23351100
+#23351115	Engine Generator Sets	23351100
+#23351117	Photovoltaic Generators	23351100
+#23351300	Transformers	23351300
+#23351311	Current Transformers	23351300
+#23351313	Instrument Transformers	23351300
+#23351315	Electrical Network Transformers	23351300
+#23351317	Power Transformers	23351300
+#23351319	Transformer Accessories	23351300
+#23351500	Electric Motors	23351500
+#23351511	Alternating Current (AC) Motors	23351500
+#23351513	Direct Current (DC) Motors	23351500
+#23351515	DC Servo Motors	23351500
+#23351517	Dynamotors	23351500
+#23351519	Hydraulic Driven Motors	23351500
+#23351521	Pneumatic Driven Motors	23351500
+#23351523	Steam Driven Motors	23351500
+#23351700	Variable Speed Drives	23351700
+#23351711	Direct Current Electronic Speed Controller Drives	23351700
+#23351713	Slip Controlled Drives	23351700
+#23351715	Variable Frequency Drives	23351700
+#23351900	Batteries	23351900
+#23351911	Battery Racks	23351900
+#23351913	Non Rechargeable Batteries	23351900
+#23351915	Rechargeable Batteries	23351900
+#23352100	Battery Chargers	23352100
+#23352300	Power Conditioning Equipment	23352300
+#23352311	Harmonic Control Devices	23352300
+#23352313	Power Converters	23352300
+#23352315	Static Power Converters	23352300
+#23352317	Power Inverters	23352300
+#23352319	Powerfactor Correction Devices	23352300
+#23352321	Uninterrupted Power Supply (UPS) Units	23352300
+#23352500	Electrical Instrumentation and Controls	23352500
+#23352511	Electrical Meters	23352500
+#23352513	Electrical Energy Recording Devices	23352500
+#23352515	Electrical Network Protection Modules	23352500
+#23352517	Electrical Power Protection Modules	23352500
+#23352519	Motor Starters	23352500
+#23352521	Programmable Logic Controllers	23352500
+#23352523	Electrical Control Panels	23352500
+#23352525	Electrical Line Supervisor Sets	23352500
+#23352700	Electrical Terminals	23352700
+#23352711	Electrical Receptacles	23352700
+#23352713	Electrical Plug Connectors	23352700
+#23352900	Circuit Breakers	23352900
+#23352911	Air Circuit Breakers	23352900
+#23352913	Gas Circuit Breakers	23352900
+#23352915	Ground Fault Circuit Breakers	23352900
+#23352917	Molded Case Circuit Breakers	23352900
+#23352919	Oil Circuit Breakers	23352900
+#23352921	Vacuum Circuit Breakers	23352900
+#23352923	Ground Fault Circuit Interrupters	23352900
+#23352925	Network Protectors	23352900
+#23352927	Electrical Disconnects	23352900
+#23352929	Fuses	23352900
+#23353100	Electrical Power Distribution Devices	23353100
+#23353111	Power Supply Devices	23353100
+#23353113	Distribution Panel Boards	23353100
+#23353115	Electrical Distribution Control Panels	23353100
+#23353117	Electrical Panel Boards	23353100
+#23353119	Electrical Panel Meter Sockets	23353100
+#23353121	Load Centers	23353100
+#23353123	Motor Control Centers	23353100
+#23353125	Power Control and Monitoring Assemblies	23353100
+#23353127	Power Distribution Units	23353100
+#23353129	Switchboards	23353100
+#23353131	Switchgear	23353100
+#23353133	Electrical Busbars	23353100
+#23353135	Electrical Feeders	23353100
+#23353300	Electrical Ducting Wireways Components	23353300
+#23353311	Electrical Service Penetrations	23353300
+#23353313	Electrical Conductor Components	23353300
+#23353315	Electrical Junction Boxes	23353300
+#23353317	Electrical Conduits	23353300
+#23353319	Electrical Cable Trays	23353300
+#23353321	Electrical Bus Ducts	23353300
+#23353323	Electrical Racks	23353300
+#23353325	Electrical Wireways 	23353300
+#23353500	Electrical Contactors	23353500
+#23353700	Electrical Switches	23353700
+#23353711	Automatic Transfer Switches	23353700
+#23353713	Manual Transfer Switches	23353700
+#23353715	Barrel Switches	23353700
+#23353717	Dimmer Control Switches	23353700
+#23353719	Disconnect Switches	23353700
+#23353721	Drum Switches	23353700
+#23353723	Flow Switches	23353700
+#23353725	Key Lock Switches	23353700
+#23353727	Limit Switches	23353700
+#23353729	Modular Wiring System Switches	23353700
+#23353731	Photocell Switches	23353700
+#23353733	Pressure Switches	23353700
+#23353735	Rocker Switches	23353700
+#23353737	Time Switches	23353700
+#23353739	Foot Switches	23353700
+#23353741	Joysticks	23353700
+#23353743	Programmable Logic Control Switches	23353700
+#23353745	Proximity Switches	23353700
+#23353747	Pull Chain Switches	23353700
+#23353749	Push Button Switches	23353700
+#23353751	Radio Frequency Switches	23353700
+#23353753	Rotary Switches	23353700
+#23353755	Slide Switches	23353700
+#23353757	Snap Switches	23353700
+#23353759	Speed Switches	23353700
+#23353761	Tamper Switches	23353700
+#23353763	Temperature Switches	23353700
+#23353765	Vacuum Switches	23353700
+#23353900	Electric Power Protection Devices	23353900
+#23353911	Electrical Grounding Device	23353900
+#23353913	Earth Connection Electrodes	23353900
+#23353915	Lightning Protection	23353900
+#23353917	Surge Protection Devices	23353900
+#23354100	Electrical Isolation Equipment	23354100
+#23354111	Electronic Chokes	23354100
+#23354113	Signal Converters	23354100
+#23354300	Electrical Relays	23354300
+#23354311	Auxiliary Protective Relays	23354300
+#23354313	Control Relays	23354300
+#23354315	Current Differential Relays	23354300
+#23354317	General Purpose Relays	23354300
+#23354319	Ground Fault Relays	23354300
+#23354321	Load Shedding Relays	23354300
+#23354323	Lockout Relays	23354300
+#23354325	Mercury Relays	23354300
+#23354327	Over Current Relays	23354300
+#23354329	Overload Relays	23354300
+#23354331	Phase Failure Relays	23354300
+#23354333	Power Relays	23354300
+#23354335	Time Relays	23354300
+#23354337	Voltage Relays	23354300
+#23354500	Non Electrical Lighting 	23354500
+#23354511	Lanterns	23354500
+#23354513	Torches	23354500
+#23354515	Lamps	23354500
+#23354517	Solar Tubes	23354500
+#23354519	Strobe Light Fixtures	23354500
+#23354700	Electrical Lighting	23354700
+#23354711	Lighting Fixtures	23354700
+#23354713	Emergency Lighting	23354700
+#23354715	Exit Illuminated Signs	23354700
+#23354717	Fiber Optic Lighting	23354700
+#23354719	Communication Lighting Specialties	23354700
+#23354721	Accessories for Lighting	23354700
+#23354723	Lamps	23354700
+#23370000	Information and Communication Specific Products and Equipment	23370000
+#23371100	Information Technology and Telecommunications Ducting Wireways Components	23371100
+#23371111	Communication Service Penetrations	23371100
+#23371113	Communication Cable Trays	23371100
+#23371115	Communication Racks	23371100
+#23371117	Communication Wireways 	23371100
+#23371300	Information Technology Equipment	23371300
+#23371311	Personal Computer Equipment 	23371300
+#23371313	Personal Computer and Network Security Devices 	23371300
+#23371315	Local Area Network Devices 	23371300
+#23371317	Wide Area Network Devices 	23371300
+#23371319	Computer Storage Devices 	23371300
+#23371321	Computer Monitors 	23371300
+#23371323	Computer Printers 	23371300
+#23371325	Computer Scanners	23371300
+#23371327	Computer Video Conferencing Equipment 	23371300
+#23371500	Audio Visual Equipment	23371500
+#23371511	Cameras	23371500
+#23371513	Camera Recorders	23371500
+#23371515	Digital Music Players	23371500
+#23371517	Projection Equipment	23371500
+#23371519	Video Projectors	23371500
+#23371521	Audio Visual Recorders	23371500
+#23371523	Stereo Equipment	23371500
+#23371525	Televisions	23371500
+#23371527	Video Recording Equipment	23371500
+#23371529	Audio Equipment	23371500
+#23371700	Audio Information Equipment	23371700
+#23371711	Sound Devices	23371700
+#23371713	Signal Devices 	23371700
+#23371715	Public Address Equipment	23371700
+#23371900	Visual Information Systems	23371900
+#23371911	Cathode Ray Tube (CRT) Video Monitors	23371900
+#23371913	Liquid Crystal Display (LCD) Video Monitors	23371900
+#23371915	Plasma Video Monitors	23371900
+#23371917	Video Walls	23371900
+#23372100	Audio Visual Systems	23372100
+#23372111	Broadcasting Receiving Equipment	23372100
+#23372113	Film Projectors	23372100
+#23372115	Data Multi Media Projectors	23372100
+#23372117	Video Reproduction	23372100
+#23372300	Telecommunications Equipment	23372300
+#23372311	Wireless Phone Equipment	23372300
+#23372313	Telephones	23372300
+#23372315	Telephone Equipment	23372300
+#23372317	Intercom Equipment	23372300
+#23372319	Radio Broadcast Equipment	23372300
+#23372321	Radio Communication Equipment	23372300
+#23372323	Satellite Communication Equipment	23372300
+#23372500	Broadcasting Communications Equipment	23372500
+#23372511	Broadcasting Communication Circuits	23372500
+#23372513	Broadcasting Intercommunication Equipment	23372500
+#23372515	Broadcasting Communication and Data Processing Equipment	23372500
+#23372517	Broadcasting Cable Transmission and Reception Equipment	23372500
+#23372519	Broadcast Transmission and Reception Equipment	23372500
+#23372521	Broadcasting Microwave Transmission and Reception Equipment	23372500
+#23372523	Broadcasting Equipment	23372500
+#23372700	Emergency Communications	23372700
+#23372711	Duress Notification Devices	23372700
+#23372713	Mass Notification Systems	23372700
+#23372715	Intercoms	23372700
+#23372717	Emergency Call Equipment	23372700
+#23390000	Utility and Transportation Products	23390000
+#23391100	Roadway Monitoring and Control	23391100
+#23391111	Traffic Safety Barriers and Protections	23391100
+#23391113	Roadway Signage	23391100
+#23391115	Roadway Markers	23391100
+#23391117	Vehicle Control Barriers	23391100
+#23391119	Bollards 	23391100
+#23391300	Tunnels and Bridges	23391300
+#23391311	Tunnels	23391300
+#23391313	Bridges	23391300
+#23391500	Railways	23391500
+#23391511	Railway Track Equipment	23391500
+#23391513	Railway Platform Components	23391500
+#23391515	Railway Electrification Equipment	23391500
+#23391517	Railway Monitoring and Control	23391500
+#23391519	Railway Locomotives	23391500
+#23391521	Railway Cars	23391500
+#23391700	Funiculars	23391700
+#23391711	Cable Trams	23391700
+#23391713	Cable Cars	23391700
+#23391715	Funicular Cable Rails	23391700
+#23391717	Funicular Cables	23391700
+#23391719	Aerial Tramways	23391700
+#23391721	Chair Lifts	23391700
+#23391723	Ski Lifts	23391700
+#23391900	Aviation Equipment	23391900
+#23391911	Aviation Monitoring and Control	23391900
+#23391913	Aviation Barriers	23391900
+#23392100	Marine Construction Waterways and Seaways	23392100
+#23392111	Navigation Facilities	23392100
+#23392113	Waterflow Controls	23392100
+#23392115	Breakwater Products	23392100
+#23392117	Marine Monitoring and Control	23392100
+#23392300	Electrical Utility Equipment	23392300
+#23392311	Electrical Transmission Equipment	23392300
+#23392500	Natural Gas Utility Equipment	23392500
+#23392511	Natural Gas Utility Pipeline Equipment	23392500
+#23392700	Water Utility Equipment	23392700
+#23392711	Water Utility Pipeline Equipment	23392700
+#23392900	Waste Water Collection and Removal	23392900
+#23392911	Waste Water Drains	23392900
+#23392913	Waste Water Subdrainage	23392900
+#23392915	Waste Water Channels, Gullies, Gratings, Covers	23392900
+#23393100	Packaged Waste Water Treatment	23393100
+#23393111	Packaged Stations	23393100
+#23393113	Packaged Sewage Treatment Plants	23393100
+#23393300	Water and Waste Water Preliminary Treatment Equipment	23393300
+#23393311	Screening Equipment	23393300
+#23393313	Grit Removal and Handling Equipment	23393300
+#23393315	Grinding and Shredding Equipment	23393300
+#23393317	Oil and Grease Separation and Removal Equipment	23393300
+#23393500	Water and Wastewater Chemical Feed Equipment	23393500
+#23393511	Gas Chemical Feed Equipment	23393500
+#23393513	Liquid Chemical Feed Equipment	23393500
+#23393515	Dry Chemical Feed Equipment	23393500
+#23393700	Water and Wastewater Clarification and Mixing Equipment	23393700
+#23393711	Mixing Equipment	23393700
+#23393713	Clarifier Equipment	23393700
+#23393715	Sediment Removal Equipment	23393700
+#23393900	Water and Wastewater Secondary Treatment Equipment	23393900
+#23393911	Air and Gas Diffusion Equipment	23393900
+#23393913	Biological Treatment Systems	23393900
+#23394100	Water and Wastewater Advanced Treatment Equipment	23394100
+#23394111	Filtration Equipment	23394100
+#23394113	Demineralization Equipment	23394100
+#23394115	Ultraviolet Equipment	23394100
+#23394300	Water and Wastewater Residuals Handling and Treatment	23394300
+#23394311	Residuals Thickening Equipment	23394300
+#23394313	Residuals Stabilization 	23394300
+#23394315	Residuals Dewatering Equipment	23394300
+#23394317	Thermal Treatment of Residuals	23394300
+#23394500	Septic System Equipment	23394500
+#23394511	Liquid Waste Treatment	23394500
+#23394513	Liquid Waste Monitoring and Control	23394500
+#23394515	Solid Waste Disposal Plant Products	23394500
+#23394517	Solid Waste Handling Products 	23394500
+#23394519	Solid Waste Impelling Equipment	23394500
+#23394521	Solid Waste Treatment Equipment	23394500
+#23394523	Solid Waste Monitoring and Control Equipment	23394500
+#23394525	Solid Waste Collection and Removal Products	23394500
+#23394527	Solid Waste Handling Systems	23394500
+#23394700	Offshore Structures	23394700
