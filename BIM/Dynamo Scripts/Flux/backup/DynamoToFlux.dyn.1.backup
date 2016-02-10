@@ -1,0 +1,48 @@
+<Workspace Version="0.8.2.2392" X="-36.1502833002702" Y="139.540731826812" zoom="0.743483769730131" Name="Home" Description="" RunType="Automatic" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <FluxPipe.Dynamo.NodeModels.FluxProjects guid="54593347-c8c0-433f-9525-bd9fa1c18cc4" type="FluxPipe.Dynamo.NodeModels.FluxProjects" nickname="Flux Projects" x="175.851751719976" y="73.1106905572336" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" />
+    <FluxPipe.Dynamo.NodeModels.FluxSelector guid="080c678b-ac4f-45c9-a608-c8a3abd6af72" type="FluxPipe.Dynamo.NodeModels.FluxSelector" nickname="Select Project" x="310.518418386643" y="72.4440238905669" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False">
+      <instance id="axRAd7qDORq2jeRN3" type="Flux.SDK.Types.FluxProject" />
+    </FluxPipe.Dynamo.NodeModels.FluxSelector>
+    <FluxPipe.Dynamo.NodeModels.FluxProjectKeys guid="e1f10460-9363-409e-9eb6-167bb0494820" type="FluxPipe.Dynamo.NodeModels.FluxProjectKeys" nickname="Data Keys" x="556.518418386643" y="71.7773572239003" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" />
+    <FluxPipe.Dynamo.NodeModels.FluxSelector guid="ebe264ab-ad1d-4a12-8fbd-624f6300343a" type="FluxPipe.Dynamo.NodeModels.FluxSelector" nickname="Select Key" x="727.18508505331" y="71.7773572239003" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False">
+      <instance id="40b89f4e0fe29550cc55d1f06f2e24cc" type="FluxPipe.Dynamo.Utilities.MyFluxKey" />
+    </FluxPipe.Dynamo.NodeModels.FluxSelector>
+    <FluxPipe.Dynamo.NodeModels.FluxModeSwitcher guid="a4efda18-6c61-4593-98f4-0d51a556eac1" type="FluxPipe.Dynamo.NodeModels.FluxModeSwitcher" nickname="Flow Control" x="791.036964584368" y="170.193515514369" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <instance data="PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8QXJyYXlPZkFueVR5cGUgeG1sbnM6eHNkPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSI+DQogIDxhbnlUeXBlIHhzaTp0eXBlPSJ4c2Q6c3RyaW5nIj5Db25zdGFudGx5PC9hbnlUeXBlPg0KPC9BcnJheU9mQW55VHlwZT4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+    </FluxPipe.Dynamo.NodeModels.FluxModeSwitcher>
+    <Dynamo.Nodes.DSFunction guid="b0626ebc-760a-4050-a2ec-6cb9c258de50" type="Dynamo.Nodes.DSFunction" nickname="Cuboid.ByCorners" x="1042.02252371702" y="228.003912989324" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Cuboid.ByCorners@Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <FluxPipe.Dynamo.NodeModels.ToFlux guid="ebed03a0-6fa1-4e6a-91a2-31c19cc85a2e" type="FluxPipe.Dynamo.NodeModels.ToFlux" nickname="To Flux" x="1286.75853823323" y="82.8215314966557" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False">
+      <PortInfo index="1" default="True" />
+    </FluxPipe.Dynamo.NodeModels.ToFlux>
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="54593347-c8c0-433f-9525-bd9fa1c18cc4" start_index="0" end="080c678b-ac4f-45c9-a608-c8a3abd6af72" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="080c678b-ac4f-45c9-a608-c8a3abd6af72" start_index="0" end="e1f10460-9363-409e-9eb6-167bb0494820" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="e1f10460-9363-409e-9eb6-167bb0494820" start_index="0" end="ebe264ab-ad1d-4a12-8fbd-624f6300343a" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="ebe264ab-ad1d-4a12-8fbd-624f6300343a" start_index="0" end="ebed03a0-6fa1-4e6a-91a2-31c19cc85a2e" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="a4efda18-6c61-4593-98f4-0d51a556eac1" start_index="0" end="ebed03a0-6fa1-4e6a-91a2-31c19cc85a2e" end_index="1" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations>
+    <Dynamo.Models.AnnotationModel guid="41b31ed9-5659-4c18-ae94-251481a67ff6" annotationText="Flux Workflow to select the Flux Project and Data Key that you would like to work with.&#xD;&#xA;Learn more on our resources pages! flux.io/r/" left="165.851751719976" top="28.444023890567" width="787.185212864392" height="266.082824957135" fontSize="14" InitialTop="71.7773572239003" InitialHeight="247.564406570493" TextblockHeight="33.3333333333333" backgrouund="#FFB5B5B5">
+      <Models ModelGuid="54593347-c8c0-433f-9525-bd9fa1c18cc4" />
+      <Models ModelGuid="080c678b-ac4f-45c9-a608-c8a3abd6af72" />
+      <Models ModelGuid="e1f10460-9363-409e-9eb6-167bb0494820" />
+      <Models ModelGuid="ebe264ab-ad1d-4a12-8fbd-624f6300343a" />
+      <Models ModelGuid="a4efda18-6c61-4593-98f4-0d51a556eac1" />
+    </Dynamo.Models.AnnotationModel>
+    <Dynamo.Models.AnnotationModel guid="bff385ba-46ff-486c-a3bb-a69a2a03d831" annotationText="Connect the &quot;Cuboid&quot; output to the &quot;Value&quot; input to send data to Flux" left="1032.02252371702" top="39.4881981633223" width="351.402681182877" height="307.515714826001" fontSize="14" InitialTop="82.8215314966557" InitialHeight="294.182381492668" TextblockHeight="33.3333333333333" backgrouund="#FF48B9FF">
+      <Models ModelGuid="b0626ebc-760a-4050-a2ec-6cb9c258de50" />
+      <Models ModelGuid="ebed03a0-6fa1-4e6a-91a2-31c19cc85a2e" />
+    </Dynamo.Models.AnnotationModel>
+  </Annotations>
+  <Presets />
+  <Cameras>
+    <Camera Name="background_preview" eyeX="2.15695159266303" eyeY="1.81682598657864" eyeZ="1.54466574632608" lookX="-0.355232341386877" lookY="-0.308291938299045" lookZ="-0.372162647684039" />
+  </Cameras>
+</Workspace>
