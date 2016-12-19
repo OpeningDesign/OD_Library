@@ -1,10 +1,12 @@
 *.*.rvt
 *.*.rte
+*000*.rfa
 *.ifc.log
 *.mp4
 *.bak
 *.ifc.log.html
 Ryan_Random_Tests/
+.dropbox
 
 
 
