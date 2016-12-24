@@ -1,6 +1,3 @@
-[submodule "BIM/RevitIFCImportClassMap/RevitIfcImportClassMap"]
-	path = BIM/RevitIFCImportClassMap/RevitIfcImportClassMap
-	url = https://github.com/jmirtsch/RevitIfcImportClassMap.git
-[submodule "BIM/--force"]
-	path = BIM/--force
-	url = https://github.com/jmirtsch/RevitIfcImportClassMap.git
+[submodule "RevitIfcImportClassMap"]
+	path = BIM/RevitIfcImportClassMap
+	url = https://github.com/OpeningDesign/RevitIfcImportClassMap.git
