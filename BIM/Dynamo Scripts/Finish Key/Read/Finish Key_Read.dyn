@@ -1,18 +1,12 @@
-<Workspace Version="1.2.1.3083" X="-965.628639067306" Y="-84.2246294835041" zoom="0.657430092705201" Name="Home" Description="" RunType="Automatic" RunPeriod="1000" HasRunWithoutCrash="True">
+<Workspace Version="1.2.1.3083" X="-1236.89634122721" Y="-235.915382494215" zoom="0.711257684955321" Name="Home" Description="" RunType="Automatic" RunPeriod="1000" HasRunWithoutCrash="True">
   <NamespaceResolutionMap />
   <Elements>
-    <DSRevitNodesUI.Views guid="b9bb771d-cfd3-4df2-aeeb-9d44732c64fd" type="DSRevitNodesUI.Views" nickname="Views" x="2522.47406864615" y="456.125013817082" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="2:FINISH SCHEDULE KEYNOTES" />
-    <CoreNodeModels.Input.Filename guid="8a2a5825-305b-4435-a635-d39b6b04b003" type="CoreNodeModels.Input.Filename" nickname="File Path" x="1696.26915231556" y="715.700024956723" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+    <DSRevitNodesUI.Views guid="b9bb771d-cfd3-4df2-aeeb-9d44732c64fd" type="DSRevitNodesUI.Views" nickname="Views" x="2529.01513779015" y="601.336748813987" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="2:FINISH SCHEDULE KEYNOTES" />
+    <CoreNodeModels.Input.Filename guid="8a2a5825-305b-4435-a635-d39b6b04b003" type="CoreNodeModels.Input.Filename" nickname="File Path" x="1957.91191807575" y="757.562867478353" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.String>.\Finish_Key_Read.csv</System.String>
       <HintPath>C:\Dropbox\GitHub\OD_Library\BIM\Dynamo Scripts\Finish Key\Read\Finish_Key_Read.csv</HintPath>
     </CoreNodeModels.Input.Filename>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="9e4bf594-2da2-44f3-ae56-cb07451cdf5e" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="CSV.ReadFromFile" x="1779.30834747092" y="227.985529561031" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.IO.CSV.ReadFromFile@var">
-      <PortInfo index="0" default="False" />
-    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <CoreNodeModels.Input.FileObject guid="da27e370-2817-42be-ac82-8c0ffef2300e" type="CoreNodeModels.Input.FileObject" nickname="File.FromPath" x="1608.78108311859" y="233.707811092148" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
-      <PortInfo index="0" default="False" />
-    </CoreNodeModels.Input.FileObject>
-    <Dynamo.Graph.Nodes.CustomNodes.Function guid="5fc3345a-fa44-4ab4-a6c2-913d9efcca10" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Key Schedule" x="3076.54131973528" y="658.659514255241" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="5fc3345a-fa44-4ab4-a6c2-913d9efcca10" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Key Schedule" x="3114.47952077051" y="839.193022629772" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="False" />
       <PortInfo index="2" default="False" />
@@ -30,11 +24,11 @@
         <Output value="ViewSchedule" />
       </Outputs>
     </Dynamo.Graph.Nodes.CustomNodes.Function>
-    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="689fa365-70df-43ef-94eb-086ba8632fe4" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="2065.75019739139" y="1188.04105700237" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="{&quot;FS_Key_Code&quot;,&quot;FS_Key_Description&quot;,&quot;FS_Key_Manufacturer&quot;,&quot;FS_Key_Dimensions&quot;,&quot;FS_Key_Thickness&quot;,&quot;FS_Key_Product_Style&quot;,&quot;FS_Key_Color_Finish&quot;,&quot;FS_Key_Substrate&quot;,&quot;FS_Key_Notes_Location&quot;,&quot;FS_Key_Unit_Cost&quot;,&quot;FS_Key_Contact&quot;};" ShouldFocus="false" />
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="689fa365-70df-43ef-94eb-086ba8632fe4" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="2123.31160585863" y="1229.903899524" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="{&quot;FS_Key_Code&quot;,&quot;FS_Key_Description&quot;,&quot;FS_Key_Manufacturer&quot;,&quot;FS_Key_Dimensions&quot;,&quot;FS_Key_Thickness&quot;,&quot;FS_Key_Product_Style&quot;,&quot;FS_Key_Color_Finish&quot;,&quot;FS_Key_Substrate&quot;,&quot;FS_Key_Notes_Location&quot;,&quot;FS_Key_Unit_Cost&quot;,&quot;FS_Key_Contact&quot;};" ShouldFocus="false" />
     <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="4eeb1d50-91d8-4802-a453-d44d7acf3288" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Csv.ByFilePath" x="2235.11028054326" y="757.664366937505" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\..\..\Users\theor_000\AppData\Roaming\Dynamo\Dynamo%20Revit\1.2\packages\archi-lab.net\bin\Archi-lab_Grimshaw.dll" function="Archilab.Grimshaw.CsvParsers.Csv.ByFilePath@var">
       <PortInfo index="0" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="ba36d548-216d-4e93-a4a0-785460ddc8d5" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Csv.ValuesByRowNumber" x="2581.7935601513" y="780.219889911942" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true" assembly="..\..\..\..\..\..\..\Users\theor_000\AppData\Roaming\Dynamo\Dynamo%20Revit\1.2\packages\archi-lab.net\bin\Archi-lab_Grimshaw.dll" function="Archilab.Grimshaw.CsvParsers.Csv.ValuesByRowNumber@int">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="ba36d548-216d-4e93-a4a0-785460ddc8d5" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Csv.ValuesByRowNumber" x="2575.2524910073" y="793.302028199951" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true" assembly="..\..\..\..\..\..\..\Users\theor_000\AppData\Roaming\Dynamo\Dynamo%20Revit\1.2\packages\archi-lab.net\bin\Archi-lab_Grimshaw.dll" function="Archilab.Grimshaw.CsvParsers.Csv.ValuesByRowNumber@int">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
@@ -42,21 +36,14 @@
   </Elements>
   <Connectors>
     <Dynamo.Graph.Connectors.ConnectorModel start="b9bb771d-cfd3-4df2-aeeb-9d44732c64fd" start_index="0" end="5fc3345a-fa44-4ab4-a6c2-913d9efcca10" end_index="0" portType="0" />
-    <Dynamo.Graph.Connectors.ConnectorModel start="8a2a5825-305b-4435-a635-d39b6b04b003" start_index="0" end="da27e370-2817-42be-ac82-8c0ffef2300e" end_index="0" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="8a2a5825-305b-4435-a635-d39b6b04b003" start_index="0" end="4eeb1d50-91d8-4802-a453-d44d7acf3288" end_index="0" portType="0" />
-    <Dynamo.Graph.Connectors.ConnectorModel start="da27e370-2817-42be-ac82-8c0ffef2300e" start_index="0" end="9e4bf594-2da2-44f3-ae56-cb07451cdf5e" end_index="0" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="689fa365-70df-43ef-94eb-086ba8632fe4" start_index="0" end="5fc3345a-fa44-4ab4-a6c2-913d9efcca10" end_index="2" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="4eeb1d50-91d8-4802-a453-d44d7acf3288" start_index="0" end="ba36d548-216d-4e93-a4a0-785460ddc8d5" end_index="0" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="ba36d548-216d-4e93-a4a0-785460ddc8d5" start_index="0" end="5fc3345a-fa44-4ab4-a6c2-913d9efcca10" end_index="1" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="65b1b1ef-99ee-41cd-bb7d-9fc20aad231d" start_index="0" end="ba36d548-216d-4e93-a4a0-785460ddc8d5" end_index="1" portType="0" />
   </Connectors>
   <Notes />
-  <Annotations>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="b805d37a-a220-4ab0-9724-f2e134fbcf81" annotationText="old" left="1598.78108311859" top="197.985529561031" width="359.527264352329" height="128.722281531117" fontSize="14" InitialTop="227.985529561031" InitialHeight="128.722281531117" TextblockHeight="20" backgrouund="#FFC1D676">
-      <Models ModelGuid="9e4bf594-2da2-44f3-ae56-cb07451cdf5e" />
-      <Models ModelGuid="da27e370-2817-42be-ac82-8c0ffef2300e" />
-    </Dynamo.Graph.Annotations.AnnotationModel>
-  </Annotations>
+  <Annotations />
   <Presets />
   <Cameras>
     <Camera Name="Background Preview" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
