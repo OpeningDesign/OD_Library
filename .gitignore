@@ -7,7 +7,7 @@
 *.ifc.log.html
 Ryan_Random_Tests/
 .dropbox
-
+*.backup
 
 
 
@@ -64,3 +64,4 @@ Icon
 
 #AutoCAD temporary files
 *.dwl*
+
