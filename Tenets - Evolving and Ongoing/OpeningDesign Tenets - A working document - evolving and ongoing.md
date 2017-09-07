@@ -5,7 +5,10 @@
 	 - Open Source software 
 	 - Proprietary software
  - Process or Workflow development should be bidirectional.
- - Try to work with the same people over and over again. 
+ - Try to work with the same people over and over again.
+ - Try not to duplicate content--one content
+   - Example: An ARCH structural file and the STRUCT's structural file...or
+   - ELECT's lighting and ARCH's lighting.
  - Push it out!
 
 

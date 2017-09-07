@@ -1,0 +1,50 @@
+<Workspace Version="1.2.1.3083" X="336" Y="30" zoom="1" Name="Home" Description="" RunType="Automatic" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="a1303281-c602-4e88-a31f-a99e5e74342f" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="PolySurface.BySweep" x="1183" y="387" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.PolySurface.BySweep@Autodesk.DesignScript.Geometry.Curve,Autodesk.DesignScript.Geometry.Curve">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="b3e4ec85-ced0-4663-8817-b5eccf907895" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="PolyCurve by Profile Family Type" x="340" y="214" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true">
+      <PortInfo index="0" default="False" />
+      <ID value="ef877af9-cc74-41b9-9d2d-acac6a601186" />
+      <Name value="PolyCurve by Profile Family Type" />
+      <Description value="It takes an input of a profile family type and extract curves from it converting them to polycurves and curve segments for use in Dynamo (sweeps)." />
+      <Inputs>
+        <Input value="Family Type" />
+      </Inputs>
+      <Outputs>
+        <Output value="Poly Curve(s)" />
+        <Output value="Curve Segments" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <DSRevitNodesUI.FamilyTypes guid="3c92ccf3-1af2-4315-91d2-0dcf93566bb4" type="DSRevitNodesUI.FamilyTypes" nickname="Family Types" x="-255" y="187" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="59:Fascia-Flat:1x8" />
+    <CoreNodeModels.Watch guid="2a27df45-8e2a-4fb9-9dec-3e8ecbba4df3" type="CoreNodeModels.Watch" nickname="Watch" x="938" y="73" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <CoreNodeModels.Watch guid="7b9d95fa-ca31-4dc1-b602-da40a3f56241" type="CoreNodeModels.Watch" nickname="Watch" x="940" y="526" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="10dacee4-248d-493e-abc4-afbc55f596f4" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Curve.Extrude" x="1069" y="198" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Curve.Extrude@Autodesk.DesignScript.Geometry.Vector,double">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="5905f732-3239-4f60-9daf-87222bea0917" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Vector.ZAxis" x="860" y="292" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Vector.ZAxis" />
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="554a5876-9801-4fd6-bbc1-a3b1db8ca1ff" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="944" y="417" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="1000;" ShouldFocus="false" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="b3e4ec85-ced0-4663-8817-b5eccf907895" start_index="0" end="2a27df45-8e2a-4fb9-9dec-3e8ecbba4df3" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="b3e4ec85-ced0-4663-8817-b5eccf907895" start_index="0" end="10dacee4-248d-493e-abc4-afbc55f596f4" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="b3e4ec85-ced0-4663-8817-b5eccf907895" start_index="1" end="7b9d95fa-ca31-4dc1-b602-da40a3f56241" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="3c92ccf3-1af2-4315-91d2-0dcf93566bb4" start_index="0" end="b3e4ec85-ced0-4663-8817-b5eccf907895" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="5905f732-3239-4f60-9daf-87222bea0917" start_index="0" end="10dacee4-248d-493e-abc4-afbc55f596f4" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="554a5876-9801-4fd6-bbc1-a3b1db8ca1ff" start_index="0" end="10dacee4-248d-493e-abc4-afbc55f596f4" end_index="2" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>

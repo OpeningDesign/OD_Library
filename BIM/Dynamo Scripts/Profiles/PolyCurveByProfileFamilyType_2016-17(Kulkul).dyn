@@ -1,0 +1,70 @@
+<Workspace Version="1.2.1.3083" X="-3583.86794335883" Y="-66.7256659599221" zoom="1.33157928308587" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="False">
+  <NamespaceResolutionMap />
+  <Elements>
+    <PythonNodeModels.PythonNode guid="bf8a6887-5b35-48ab-9d39-245edb7ed497" type="PythonNodeModels.PythonNode" nickname="Python Script" x="3092.13760657179" y="161.533367848298" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="true" inputcount="1">
+      <PortInfo index="0" default="False" />
+      <Script>
+import clr
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+
+# Import ToDSType(bool) extension method
+clr.AddReference("RevitNodes")
+import Revit
+clr.ImportExtensions(Revit.Elements)
+
+# Import DocumentManager and TransactionManager
+clr.AddReference("RevitServices")
+import RevitServices
+from RevitServices.Persistence import DocumentManager
+from RevitServices.Transactions import TransactionManager
+
+from System.Collections.Generic import *
+
+# Import RevitAPI
+clr.AddReference("RevitAPI")
+import Autodesk
+from Autodesk.Revit.DB import *
+
+doc = DocumentManager.Instance.CurrentDBDocument
+uiapp = DocumentManager.Instance.CurrentUIApplication
+app = uiapp.Application
+
+type = UnwrapElement(IN[0].Family.Name)
+name = UnwrapElement(IN[0].Name)
+
+family = UnwrapElement(IN[0]).Family
+
+TransactionManager.Instance.ForceCloseTransaction()
+famDoc = doc.EditFamily(family)
+
+famCollector = FilteredElementCollector(famDoc)
+sketch = famCollector.OfClass(Sketch)
+
+for i in sketch:
+	cArray = list(i.Profile)
+cArray[:] = [[Revit.GeometryConversion.RevitToProtoCurve.ToProtoType(y, True ) for y in x] for x in cArray]
+OUT = cArray
+
+</Script>
+    </PythonNodeModels.PythonNode>
+    <CoreNodeModels.Watch guid="6d1cfead-5a6f-4660-8cea-1eb1e8ccffc3" type="CoreNodeModels.Watch" nickname="Watch" x="3269.52619490126" y="160.074753778973" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="23daf3bc-c341-416c-bcaf-b9cf7337f31f" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="PolyCurve.ByJoinedCurves" x="3399.55674778725" y="163.463765219081" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.PolyCurve.ByJoinedCurves@Autodesk.DesignScript.Geometry.Curve[]">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <DSRevitNodesUI.FamilyTypes guid="301d7844-559b-42a3-83e0-f02072f1d53d" type="DSRevitNodesUI.FamilyTypes" nickname="Family Types" x="2757.96362324996" y="155.51452001352" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="91:Parapet Cap-Precast:14&quot; Wide" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="bf8a6887-5b35-48ab-9d39-245edb7ed497" start_index="0" end="6d1cfead-5a6f-4660-8cea-1eb1e8ccffc3" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="6d1cfead-5a6f-4660-8cea-1eb1e8ccffc3" start_index="0" end="23daf3bc-c341-416c-bcaf-b9cf7337f31f" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="301d7844-559b-42a3-83e0-f02072f1d53d" start_index="0" end="bf8a6887-5b35-48ab-9d39-245edb7ed497" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="4564.49755859375" eyeY="4482.8271484375" eyeZ="3562.34545898438" lookX="-5634.98876953125" lookY="-4844.13134765625" lookZ="-2650.34741210938" upX="-0.389572083950043" upY="0.90258526802063" upZ="-0.183230429887772" />
+  </Cameras>
+</Workspace>
