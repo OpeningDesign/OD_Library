@@ -2,7 +2,8 @@
  - Order of importance.
 	 - Open source software that supports open standards
 	 - Proprietary software that supports open standards
-	 - Open Source software 
+	 - Open Source software
+	 - Propretary software where public projects are free
 	 - Proprietary software
  - Process or Workflow development should be bidirectional.
  - Try to work with the same people over and over again.
