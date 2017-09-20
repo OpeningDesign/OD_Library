@@ -18,6 +18,16 @@ Values
 2. Purpose: use your strengths to help others
 3. Transcendence: experience connection to higher dimensions by experiencing nature and creating art
 4. Experience: share meaningful stories defined by redemption, growth, love and care to connect people
+
+Manager Behaviors
+1. Be a good coach
+2. Empower Team and do not micromanage
+3. Express interest/concern for Team member's success and personal well-being
+4. Be productive and results-oriented
+5. Be a good communicator
+6. Help with career development
+7. Have clear vision/strategy for the Team
+8. Have important technical skills that help to advise the Team
 ----------
 
 
