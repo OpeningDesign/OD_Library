@@ -12,7 +12,12 @@
    - ELECT's lighting and ARCH's lighting.
  - Push it out!
 
+Values
 
+1. Belonging: treat people with care and attention
+2. Purpose: use your strengths to help others
+3. Transcendence: experience connection to higher dimensions by experiencing nature and creating art
+4. Experience: share meaningful stories defined by redemption, growth, love and care to connect people
 ----------
 
 
