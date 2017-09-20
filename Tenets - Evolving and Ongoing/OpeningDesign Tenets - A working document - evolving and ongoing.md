@@ -15,12 +15,14 @@ Behaviors
 - Have important technical skills that help to advise the Team
 - Utilize distributed workflows over central servers
 - Support open source software that supports open standards
+
     Order of importance:
         Open source software that supports open standards (60% of all the Bells and Whistles)
         Open Source software (70% of all the Bells and Whistles)
         Proprietary software that supports open standards (80% of all the Bells and Whistles)
         Propretary software where public projects are free (90% of all the Bells and Whistles)
         Proprietary software (100% of all the Bells and Whistles)
+
 - Process/workflow should be bi-directional
 - Improve efficiency and coordination by working with the same Teams
 - Do not to duplicate content
