@@ -1,0 +1,171 @@
+<Workspace Version="1.2.0.2831" X="-3161.8823075969" Y="-1013.38786384882" zoom="0.926237117735691" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap>
+    <ClassMap partialName="List" resolvedName="DSCore.List" assemblyName="DSCoreNodes.dll" />
+  </NamespaceResolutionMap>
+  <Elements>
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="90490d16-81e0-4663-8300-144792a275f4" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="3678.58991781301" y="1148.03908803132" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;SHEET_SCHEDULED&quot;;" ShouldFocus="false" />
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="d58219eb-7f50-4f06-9344-f0c9811a4978" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Get Built In Parameter" x="3924.8704483499" y="1215.70142623915" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <ID value="a1e64de5-460f-4dd3-8357-d9ec9980e47e" />
+      <Name value="Get Built In Parameter" />
+      <Description value="This node will take an input of a built in parameter name and element to return that parameters value. " />
+      <Inputs>
+        <Input value="ParameterNames" />
+        <Input value="Elements" />
+      </Inputs>
+      <Outputs>
+        <Output value="OUT" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <CoreNodeModels.Formula guid="b32c1390-972b-4891-9f21-b2f67c15a629" type="CoreNodeModels.Formula" nickname="Formula" x="4216.06177050058" y="1211.60020810339" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+      <FormulaText>x==1</FormulaText>
+    </CoreNodeModels.Formula>
+    <CoreNodeModels.Input.BoolSelector guid="a451258f-8c4f-4803-b96e-04cfe1d1b3ab" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="4216.06177050058" y="1403.60020810339" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>False</System.Boolean>
+    </CoreNodeModels.Input.BoolSelector>
+    <CoreNodeModels.Input.BoolSelector guid="d8bafe17-a19f-416c-9f6b-5f2c40278e16" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="4216.06177050058" y="1320.60020810339" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>True</System.Boolean>
+    </CoreNodeModels.Input.BoolSelector>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="96826be5-22dd-4640-8f1b-53f418732b46" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="List.FilterByBoolMask" x="4693.06177050058" y="1233.60020810339" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.List.FilterByBoolMask@var[]..[],var[]..[]">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Logic.If guid="90445c47-9074-4a1a-8553-620e3c1396e8" type="CoreNodeModels.Logic.If" nickname="If" x="4455.17955001711" y="1320.36690085141" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+    </CoreNodeModels.Logic.If>
+    <CoreNodeModels.Input.BoolSelector guid="cb6237f3-1cc3-4ccc-9603-cbe9c70e5d1f" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="4216.06177050058" y="1128.10020810339" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>True</System.Boolean>
+    </CoreNodeModels.Input.BoolSelector>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="96d1f859-3902-40de-b211-3fa553d5c0b2" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Get All Revisions" x="4452.06177050058" y="1165.10020810339" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="True" />
+      <ID value="e4f67d90-ea21-4d85-acbf-a9388cf512c8" />
+      <Name value="Get All Revisions" />
+      <Description value="This node will return all Revisions currently defined in the mode." />
+      <Inputs>
+        <Input value="RunIt" />
+      </Inputs>
+      <Outputs>
+        <Output value="Revision" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="6967b808-0442-4ade-b6f8-2e8af92ddf08" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Revision Properties" x="4735.68123942769" y="936.353600569684" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+      <ID value="a704bedc-ef2e-49be-8135-3bfe583d0cba" />
+      <Name value="Revision Properties" />
+      <Description value="This node will return some most common Revision properties like Description or Issue Date." />
+      <Inputs>
+        <Input value="Revision" />
+      </Inputs>
+      <Outputs>
+        <Output value="Sequence" />
+        <Output value="Date" />
+        <Output value="Description" />
+        <Output value="Issued" />
+        <Output value="issuedTo" />
+        <Output value="issuedBy" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <CoreNodeModels.Watch guid="94a76113-87a5-4818-b926-4d960c3a566f" type="CoreNodeModels.Watch" nickname="Revisions" x="5136.03800974906" y="1049.88630967439" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="ba243220-3941-402c-8e49-6ef604f361cb" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="4699.66773120651" y="1350.82678533576" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="List.GetItemAtIndex(inputList, 0..2);" ShouldFocus="false">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.CodeBlockNodeModel>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="a913dac8-6ae5-4599-8259-8c388f3bf181" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Add Revisions to Sheet" x="5205.40433883175" y="1264.92674818335" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="True" />
+      <ID value="b489e87e-6c60-4887-ab3c-88ef8a099209" />
+      <Name value="Add Revisions to Sheet" />
+      <Description value="This node will add specified revisions to a sheet. " />
+      <Inputs>
+        <Input value="Sheet" />
+        <Input value="Revision" />
+        <Input value="RunIt" />
+      </Inputs>
+      <Outputs>
+        <Output value="Sheet" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <CoreNodeModels.Input.BoolSelector guid="c7c4a92e-d315-4a00-a586-c08195670889" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="4963.26276414802" y="1526.23898507648" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>True</System.Boolean>
+    </CoreNodeModels.Input.BoolSelector>
+    <CoreNodeModels.Watch guid="64d28f81-5afd-4cb5-8992-af6975a9efb9" type="CoreNodeModels.Watch" nickname="Sheet Name" x="5785.90132110695" y="1340.44531507918" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="a7d6b36d-68a0-45a2-bc9c-e92ae838370e" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Element.Name" x="5444.09766476634" y="1097.5964160404" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="RevitNodes.dll" function="Revit.Elements.Element.Name">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="cf2a484c-0a6d-4a0c-8382-2d87f47cf176" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Sheet.SheetNumber" x="5432.70265663099" y="1318.79972012644" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="RevitNodes.dll" function="Revit.Elements.Views.Sheet.SheetNumber">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Watch guid="c883b913-695b-407c-bfc9-8cd3198d639e" type="CoreNodeModels.Watch" nickname="Sheet No" x="5643.91833275106" y="1450.35729246348" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <archilabUI.ViewSetUI guid="fe9f6695-3225-42b3-a4eb-2f76f75c6a65" type="archilabUI.ViewSetUI" nickname="View Sets" x="3445.06962354434" y="1325.7908077301" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="0:Issue Set" />
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="23190417-5d34-4b7f-964a-20702d6944d6" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Get Views from View Set" x="3669.9239527647" y="1374.11977912915" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true">
+      <PortInfo index="0" default="False" />
+      <ID value="018628e6-7bd7-40b6-9255-e49d2291097c" />
+      <Name value="Get Views from View Set" />
+      <Description value="This node will take a name of a view set and return views/sheet elements contained in it. " />
+      <Inputs>
+        <Input value="ViewSet" />
+      </Inputs>
+      <Outputs>
+        <Output value="Views" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="dcbad435-703e-4e4d-9f3b-4f14739bb5b9" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Remove Revision from Sheet" x="5207.15230306297" y="1442.94748032955" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="True" />
+      <ID value="52961270-6b09-462b-8ba6-561422d5a5e0" />
+      <Name value="Remove Revision from Sheet" />
+      <Description value="This node will remove specified Revisions from a sheet." />
+      <Inputs>
+        <Input value="Sheet" />
+        <Input value="Revision" />
+        <Input value="RunIt" />
+      </Inputs>
+      <Outputs>
+        <Output value="Sheet" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="90490d16-81e0-4663-8300-144792a275f4" start_index="0" end="d58219eb-7f50-4f06-9344-f0c9811a4978" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="d58219eb-7f50-4f06-9344-f0c9811a4978" start_index="0" end="b32c1390-972b-4891-9f21-b2f67c15a629" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="b32c1390-972b-4891-9f21-b2f67c15a629" start_index="0" end="90445c47-9074-4a1a-8553-620e3c1396e8" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="a451258f-8c4f-4803-b96e-04cfe1d1b3ab" start_index="0" end="90445c47-9074-4a1a-8553-620e3c1396e8" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="d8bafe17-a19f-416c-9f6b-5f2c40278e16" start_index="0" end="90445c47-9074-4a1a-8553-620e3c1396e8" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="96826be5-22dd-4640-8f1b-53f418732b46" start_index="0" end="a913dac8-6ae5-4599-8259-8c388f3bf181" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="90445c47-9074-4a1a-8553-620e3c1396e8" start_index="0" end="96826be5-22dd-4640-8f1b-53f418732b46" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="cb6237f3-1cc3-4ccc-9603-cbe9c70e5d1f" start_index="0" end="96d1f859-3902-40de-b211-3fa553d5c0b2" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="96d1f859-3902-40de-b211-3fa553d5c0b2" start_index="0" end="6967b808-0442-4ade-b6f8-2e8af92ddf08" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="96d1f859-3902-40de-b211-3fa553d5c0b2" start_index="0" end="ba243220-3941-402c-8e49-6ef604f361cb" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="6967b808-0442-4ade-b6f8-2e8af92ddf08" start_index="2" end="94a76113-87a5-4818-b926-4d960c3a566f" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="ba243220-3941-402c-8e49-6ef604f361cb" start_index="0" end="a913dac8-6ae5-4599-8259-8c388f3bf181" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="a913dac8-6ae5-4599-8259-8c388f3bf181" start_index="0" end="a7d6b36d-68a0-45a2-bc9c-e92ae838370e" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="a913dac8-6ae5-4599-8259-8c388f3bf181" start_index="0" end="cf2a484c-0a6d-4a0c-8382-2d87f47cf176" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="c7c4a92e-d315-4a00-a586-c08195670889" start_index="0" end="a913dac8-6ae5-4599-8259-8c388f3bf181" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="a7d6b36d-68a0-45a2-bc9c-e92ae838370e" start_index="0" end="64d28f81-5afd-4cb5-8992-af6975a9efb9" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="cf2a484c-0a6d-4a0c-8382-2d87f47cf176" start_index="0" end="c883b913-695b-407c-bfc9-8cd3198d639e" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="fe9f6695-3225-42b3-a4eb-2f76f75c6a65" start_index="0" end="23190417-5d34-4b7f-964a-20702d6944d6" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="23190417-5d34-4b7f-964a-20702d6944d6" start_index="0" end="d58219eb-7f50-4f06-9344-f0c9811a4978" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="23190417-5d34-4b7f-964a-20702d6944d6" start_index="0" end="96826be5-22dd-4640-8f1b-53f418732b46" end_index="0" portType="0" />
+  </Connectors>
+  <Notes>
+    <Dynamo.Graph.Notes.NoteModel guid="28069d56-34b0-41f0-bf7a-099b8821b917" text="Select a Sheet Set to add Revisions" x="3445.04853842714" y="1291.92727200992" />
+    <Dynamo.Graph.Notes.NoteModel guid="319c3511-3064-43e5-b863-b20b748e5dd3" text="List of Sheets affected" x="5658.31460743764" y="1272.19194345208" />
+    <Dynamo.Graph.Notes.NoteModel guid="f69859c0-9728-43f0-ba84-43f24c7499ea" text="Input a range of Revisions based on the numbers in the Watch list above.  Do one by one if the required Revisions are not within a close range. E.g. 0 then 2." x="4814.64606763498" y="1438.92204335668" />
+  </Notes>
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>
