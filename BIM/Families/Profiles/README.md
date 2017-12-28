@@ -1,2 +1,2 @@
 Revit Profiles moved to...
-ttps://github.com/OpeningDesign/BIM_Profiles
+https://github.com/OpeningDesign/BIM_Profiles
