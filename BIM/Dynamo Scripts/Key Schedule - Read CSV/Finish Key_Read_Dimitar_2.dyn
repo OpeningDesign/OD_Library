@@ -1,0 +1,144 @@
+<Workspace Version="1.3.2.2480" X="-1444.63159756842" Y="-552.553661019498" zoom="0.911771599776553" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="False">
+  <NamespaceResolutionMap />
+  <Elements>
+    <DSRevitNodesUI.Views guid="b9bb771d-cfd3-4df2-aeeb-9d44732c64fd" type="DSRevitNodesUI.Views" nickname="Schedule View" x="1662.77230550043" y="769.94732600849" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="78:PARTITION TAG NOMENCLATURE" />
+    <CoreNodeModels.Input.Filename guid="8a2a5825-305b-4435-a635-d39b6b04b003" type="CoreNodeModels.Input.Filename" nickname="CSV File Path" x="1662.77230550043" y="855.685643099918" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>..\..\Data\Partition Tag Nomenclature.csv</System.String>
+      <HintPath>C:\Dropbox\GitHub\OD_Library\BIM\Data\Partition Tag Nomenclature.csv</HintPath>
+    </CoreNodeModels.Input.Filename>
+    <PythonNodeModels.PythonNode guid="b3e9e004-6e80-4110-961e-8d411c7b8494" type="PythonNodeModels.PythonNode" nickname="csv.ReadUnicode" x="2043.60798946193" y="852.854601713581" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="4">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+      <PortInfo index="3" default="False" />
+      <Script># Copyright(c) 2016, Bad Monkeys
+# www.badmonkeys.net
+
+import clr
+import System
+pf_path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.ProgramFilesX86)
+import sys
+sys.path.append('%s\IronPython 2.7\Lib' %pf_path)
+import csv
+import io
+
+csv_path, to_replace, rep, _ = IN
+
+with io.open(csv_path, 'rU') as f:
+	data = csv.reader(f)
+	OUT = [[c.replace('\n', rep) for c in row] for row in data] if to_replace else list(data)</Script>
+    </PythonNodeModels.PythonNode>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="87cb1247-b81d-4eb8-ae0f-28aba9a6d838" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="List.Deconstruct" x="2184.80533685467" y="852.774995828049" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.List.Deconstruct@var[]..[]">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Watch guid="250a82aa-ad6c-4f5a-a023-39ad8505c8d0" type="CoreNodeModels.Watch" nickname="Watch" x="2551.98790982251" y="823.383964109416" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <PythonNodeModels.PythonNode guid="ae88e609-d7dc-404d-b280-deca278f3027" type="PythonNodeModels.PythonNode" nickname="KeySchedule.Populate" x="2383.47042593194" y="825.49420099099" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="4">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+      <PortInfo index="3" default="False" />
+      <Script># Copyright(c) 2017, Dimitar Venkov
+# @5devene, dimitar.ven@gmail.com
+# www.badmonkeys.net
+# inspired by the Key Schedule node from arcni-lab.net
+
+import clr
+
+clr.AddReference('RevitAPI')
+from Autodesk.Revit.DB import *
+
+clr.AddReference('RevitServices')
+from RevitServices.Persistence import DocumentManager
+from RevitServices.Transactions import TransactionManager
+doc = DocumentManager.Instance.CurrentDBDocument
+
+ks1 = UnwrapElement(IN[0])
+headers = IN[1]
+data = IN[2]
+
+try:
+	TransactionManager.Instance.EnsureInTransaction(doc)
+	if any(isinstance(item, list) for item in data):
+		col_count = max(map(len, data) )
+		if col_count != ks1.Definition.GetFieldCount() or col_count != len(headers):
+			raise Exception('Prepare the key schedule fields in\nadvance, so that they match the data set.')
+		else:
+			tableData = ks1.GetTableData()
+			sectionData = tableData.GetSectionData(SectionType.Body)
+			row_count = sectionData.NumberOfRows
+			firstRows = 1
+			if row_count != 1:
+				st1 = SubTransaction(doc)
+				st1.Start()
+				try:
+					sectionData.RemoveRow(1)
+				except:
+					firstRows = 2
+				st1.RollBack()
+				st1.Dispose()
+			if row_count - firstRows &lt; len(data):
+				rowsToAdd = len(data) - row_count + firstRows
+				for _ in xrange(0, rowsToAdd):
+					sectionData.InsertRow(0)
+			else:
+				# schedule when updating might already have too many rows 
+				rowsToDelete = row_count - firstRows - len(data)
+				for i in xrange(row_count -1, row_count - rowsToDelete -1, -1):
+					sectionData.RemoveRow(i)
+			doc.Regenerate()
+			row_elems = FilteredElementCollector(doc, ks1.Id)
+			i = 0
+			for e in row_elems:
+				params = e.ParametersMap
+				for j in xrange(col_count):
+					params[headers[j] ].Set(str(data[i][j]) )
+				i += 1
+	TransactionManager.Instance.TransactionTaskDone()
+	OUT = "Schedule set successfully."
+except Exception, ex:
+	OUT = ex</Script>
+    </PythonNodeModels.PythonNode>
+    <CoreNodeModels.Input.BoolSelector guid="3f21436c-35a1-41d2-9dc6-68cb43c5c869" type="CoreNodeModels.Input.BoolSelector" nickname="Refresh" x="1662.77230550043" y="1083.74166137266" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>True</System.Boolean>
+    </CoreNodeModels.Input.BoolSelector>
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="c0310612-87e0-467c-a143-2a7b4fbea68b" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1146.1032836211" y="735.865696137215" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="/*&#xA;&#xA;DYNAMO VERSION: 1.1+&#xA;REVIT VERSION: 2015+&#xA;&#xA;Created by: Dimitar Venkov&#xA;Created on: 09/01/17&#xA;&#xA;Modified by:&#xA;Modified on:&#xA;&#xA;REQUIRED PACKAGES:&#xA;------------------------------&#xA;&#xA;DESCRIPTION:&#xA;------------------------------&#xA;- Make sure that you've created a Schedule beforehand&#xA;  and have added a new Text field (Fields &gt; Add Parameter,&#xA;  Type of Parameter &gt; Text) for each header name in the&#xA;  csv file.&#xA;- As of the graph creation date, key schedule fields can&#xA;  not be created and added programatically through the API.&#xA;&#xA;ISSUES:&#xA;------------------------------&#xA;&#xA;*/;" ShouldFocus="false" />
+    <CoreNodeModels.Input.BoolSelector guid="aee38477-dfcd-4383-8c0b-f18fc41db905" type="CoreNodeModels.Input.BoolSelector" nickname="Replace NewLine" x="1662.77230550043" y="950.758428420376" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>False</System.Boolean>
+    </CoreNodeModels.Input.BoolSelector>
+    <CoreNodeModels.Input.StringInput guid="fa6a663b-2db2-44e0-b945-59b5b0aa1e96" type="CoreNodeModels.Input.StringInput" nickname="Replacement" x="1662.77230550043" y="1009.63815339506" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>, </System.String>
+      <System.String value=", " />
+    </CoreNodeModels.Input.StringInput>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="b9bb771d-cfd3-4df2-aeeb-9d44732c64fd" start_index="0" end="ae88e609-d7dc-404d-b280-deca278f3027" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="8a2a5825-305b-4435-a635-d39b6b04b003" start_index="0" end="b3e9e004-6e80-4110-961e-8d411c7b8494" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="b3e9e004-6e80-4110-961e-8d411c7b8494" start_index="0" end="87cb1247-b81d-4eb8-ae0f-28aba9a6d838" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="87cb1247-b81d-4eb8-ae0f-28aba9a6d838" start_index="0" end="ae88e609-d7dc-404d-b280-deca278f3027" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="87cb1247-b81d-4eb8-ae0f-28aba9a6d838" start_index="1" end="ae88e609-d7dc-404d-b280-deca278f3027" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="ae88e609-d7dc-404d-b280-deca278f3027" start_index="0" end="250a82aa-ad6c-4f5a-a023-39ad8505c8d0" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="3f21436c-35a1-41d2-9dc6-68cb43c5c869" start_index="0" end="ae88e609-d7dc-404d-b280-deca278f3027" end_index="3" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="3f21436c-35a1-41d2-9dc6-68cb43c5c869" start_index="0" end="b3e9e004-6e80-4110-961e-8d411c7b8494" end_index="3" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="aee38477-dfcd-4383-8c0b-f18fc41db905" start_index="0" end="b3e9e004-6e80-4110-961e-8d411c7b8494" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="fa6a663b-2db2-44e0-b945-59b5b0aa1e96" start_index="0" end="b3e9e004-6e80-4110-961e-8d411c7b8494" end_index="2" portType="0" />
+  </Connectors>
+  <Notes>
+    <Dynamo.Graph.Notes.NoteModel guid="e839ffb5-792f-4f51-96fc-b30a604643ef" text="filePath: string&#xD;&#xA;repNewLine: bool&#xD;&#xA;replacement: str&#xD;&#xA;Refresh: bool" x="1907.22134423689" y="904.729246710682" />
+    <Dynamo.Graph.Notes.NoteModel guid="5b8043e6-5ef4-4f9d-bde5-e8f5b8258a22" text="scheduleView: view&#xD;&#xA;headers: string[]&#xD;&#xA;data: string[][]&#xD;&#xA;refresh: bool" x="2251.49274259619" y="768.223779398588" />
+  </Notes>
+  <Annotations>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="9614cf5b-5694-4fa4-a587-7ed1d63f42a1" annotationText="INPUT:" left="1652.77230550043" top="739.94732600849" width="281" height="411.79433536417" fontSize="14" InitialTop="769.94732600849" InitialHeight="411.794335364167" TextblockHeight="20" backgrouund="#FF848484">
+      <Models ModelGuid="b9bb771d-cfd3-4df2-aeeb-9d44732c64fd" />
+      <Models ModelGuid="8a2a5825-305b-4435-a635-d39b6b04b003" />
+      <Models ModelGuid="3f21436c-35a1-41d2-9dc6-68cb43c5c869" />
+      <Models ModelGuid="aee38477-dfcd-4383-8c0b-f18fc41db905" />
+      <Models ModelGuid="fa6a663b-2db2-44e0-b945-59b5b0aa1e96" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+  </Annotations>
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>

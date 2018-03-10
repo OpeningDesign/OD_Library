@@ -5,40 +5,43 @@ PT_Column_1,PT_Column_2,PT_Column_3,PT_Column_4,PT_Column_5,PT_Column_6,PT_Colum
 ,W=,WOOD,,,,,,
 ,M=,METAL,,,,,,
 ,C=,CONCRETE,,,,,,
-,M=,MASONRY,,,,,,
+,M=,"MASONRY
+TEST",,,,,,
 ,,,,,,,,
 "SIZE OF CORE
 (2ND NUMBER)",,,,,,,,
-,,WOOD: NOMINAL STUD SIZES (EX: 4 = 3 1/2î),,,,,,
-,,METAL STUD: (EX 358 = 3 5/8î),,,,,,
-,,CONCRETE: ACTUAL WALL THICKNESS (EX: 8 = 8î),,,,,,
-,,MASONRY: NOMINAL BRICK MODULES (EX: 8 = 7 5/8î),,,,,,
+,,WOOD: NOMINAL STUD SIZES (EX: 4 = 3 1/2‚Äù),,,,,,
+,,METAL STUD: (EX 358 = 3 5/8‚Äù),,,,,,
+,,CONCRETE: ACTUAL WALL THICKNESS (EX: 8 = 8‚Äù),,,,,,
+,,MASONRY: NOMINAL BRICK MODULES (EX: 8 = 7 5/8‚Äù),,,,,,
 ,,,,,,,,
-FINISH & SUBSTRATE LAYERS,,,,,,,,
+LAYER MATERIAL,,,,,,,,
 (3RD LETTER),,,,,,,,
 ,,"LAYER 1
 (TAG SIDE)","LAYER 2
 (TAG SIDE)","LAYER 3
 (TAG SIDE)",CORE,LAYER 1,LAYER 2,LAYER 3
 ,A=,-,-,-,-,-,-,-
-,B=,-,-,5/8î GYP. BD.,STUDS 16î O.C. (20 GA. IF METAL),5/8î GYP. BD.,-,-
-,C=,-,-,5/8î GYP. BD.,"STUDS 16î O.C.  (20 GA. IF METAL)
-BATT INSULATION",5/8î GYP. BD.,-,-
-,D=,-,-,1/2î GYP. BD.,STUDS 16î O.C. (20 GA. IF METAL),1/2î GYP. BD.,-,-
-,E=,-,-,1/2î GYP. BD.,"STUDS 16î O.C.  (20 GA. IF METAL)
-BATT INSULATION",1/2î GYP. BD.,-,-
+,B=,-,-,5/8‚Äù GYP. BD.,STUDS 16‚Äù O.C. (20 GA. IF METAL),5/8‚Äù GYP. BD.,-,-
+,C=,-,-,5/8‚Äù GYP. BD.,"STUDS 16‚Äù O.C.  (20 GA. IF METAL)
+BATT INSULATION",5/8‚Äù GYP. BD.,-,-
+,D=,-,-,5/8‚Äù GYP. BD.,STUDS 16‚Äù O.C. (20 GA. IF METAL),-,-,-
+,E=,-,-,5/8‚Äù GYP. BD.,"STUDS 16‚Äù O.C.  (20 GA. IF METAL)
+BATT INSULATION",-,-,-
+,F=,-,-,5/8‚Äù GYP. BD.,"STUDS 16‚Äù O.C.  (20 GA. IF METAL)
+RIGID INSULATION",-,-,-
 ,,,,,,,,
 ,,,,,,,,
 "FIRE RATING
-(4TH ñ NUMBER)",,,,,,,,
-,ÿ=,0 HOUR,,,,,,
+(4TH ‚Äì NUMBER)",,,,,,,,
+,√ò=,0 HOUR,,,,,,
 ,1=,1 HOUR,,,,,,
 ,2=,1 HOUR,,,,,,
 ,3=,1 HOUR,,,,,,
-,5=,Ω HOUR,,,,,,
+,5=,¬Ω HOUR,,,,,,
 ,,,,,,,,
 "MODIFIERS
-(5TH ñ LETTER)",A=,<USER CREATED>,,,,,,
+(5TH ‚Äì LETTER)",A=,<USER CREATED>,,,,,,
 ,B=,<USER CREATED>,,,,,,
 ,C=,<USER CREATED>,,,,,,
 ,D=,<USER CREATED>,,,,,,
