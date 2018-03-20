@@ -1,0 +1,295 @@
+<Workspace Version="0.8.2.2392" X="288.762245025471" Y="287.750863005745" zoom="0.575154263372676" Name="Home" Description="" RunType="Manual" RunPeriod="100" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap>
+    <ClassMap partialName="FamilySymbol" resolvedName="Revit.Elements.FamilySymbol" assemblyName="RevitNodes.dll" />
+    <ClassMap partialName="Point" resolvedName="Autodesk.DesignScript.Geometry.Point" assemblyName="ProtoGeometry.dll" />
+    <ClassMap partialName="Math" resolvedName="DSCore.Math" assemblyName="DSCoreNodes.dll" />
+    <ClassMap partialName="List" resolvedName="DSCore.List" assemblyName="DSCoreNodes.dll" />
+    <ClassMap partialName="Vector" resolvedName="Autodesk.DesignScript.Geometry.Vector" assemblyName="ProtoGeometry.dll" />
+    <ClassMap partialName="PolyCurve.ByJoinedCurves" resolvedName="Autodesk.DesignScript.Geometry.PolyCurve" assemblyName="ProtoGeometry.dll" />
+    <ClassMap partialName="Transaction.st" resolvedName="Revit.Transaction.Transaction" assemblyName="RevitNodes.dll" />
+    <ClassMap partialName="Rectangle" resolvedName="Autodesk.DesignScript.Geometry.Rectangle" assemblyName="ProtoGeometry.dll" />
+    <ClassMap partialName="Line" resolvedName="Autodesk.DesignScript.Geometry.Line" assemblyName="ProtoGeometry.dll" />
+    <ClassMap partialName="DSCore.Object" resolvedName="DSCore.Object" assemblyName="DSCoreNodes.dll" />
+    <ClassMap partialName="NurbsCurve" resolvedName="Autodesk.DesignScript.Geometry.NurbsCurve" assemblyName="ProtoGeometry.dll" />
+    <ClassMap partialName="NurbsCurve.Z" resolvedName="Autodesk.DesignScript.Geometry.NurbsCurve" assemblyName="ProtoGeometry.dll" />
+    <ClassMap partialName="Thread" resolvedName="DSCore.Thread" assemblyName="DSCoreNodes.dll" />
+    <ClassMap partialName="ModelCurve" resolvedName="Revit.Elements.ModelCurve" assemblyName="RevitNodes.dll" />
+  </NamespaceResolutionMap>
+  <Elements>
+    <DSRevitNodesUI.Categories guid="1f9472a5-45f2-4ee5-bc6b-f239c5586089" type="DSRevitNodesUI.Categories" nickname="Categories" x="-95.03569329368" y="31.4577483390583" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" index="371:GenericModel" />
+    <DSCoreNodesUI.BoolSelector guid="33577a35-463f-44c1-898b-a197f9c33cc1" type="DSCoreNodesUI.BoolSelector" nickname="Create new tags?" x="-62.03569329368" y="394.701827373539" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Boolean>True</System.Boolean>
+    </DSCoreNodesUI.BoolSelector>
+    <DSCoreNodesUI.Input.DoubleSlider guid="97ddea52-f3b9-4091-b7f4-ef9aa6cfc501" type="DSCoreNodesUI.Input.DoubleSlider" nickname="View depth cut-off distance [feet]" x="-235.03569329368" y="114.106564145954" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Double>2.181</System.Double>
+      <Range min="0.001" max="11" step="0.01" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <DSCoreNodesUI.BoolSelector guid="a1b2bdb2-2b58-47d6-9893-bbec75dc83cf" type="DSCoreNodesUI.BoolSelector" nickname="Refresh" x="-62.03569329368" y="337.053011566643" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Boolean>False</System.Boolean>
+    </DSCoreNodesUI.BoolSelector>
+    <DSRevitNodesUI.FamilyTypes guid="e2ca6d49-fc50-4990-a152-972e983e3105" type="DSRevitNodesUI.FamilyTypes" nickname="Material Tag Type" x="-137.03569329368" y="171.755379952851" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" index="532:Material Tag 1:Right" />
+    <DSRevitNodesUI.FamilyTypes guid="14d7e011-6fb5-4e58-bda7-a1e4198d3fee" type="DSRevitNodesUI.FamilyTypes" nickname="Material Tag Type" x="-130.03569329368" y="254.404195759747" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" index="531:Material Tag 1:Left" />
+    <Dynamo.Nodes.Watch guid="38540bbc-4d9a-4a38-a78a-30d4efbc8462" type="Dynamo.Nodes.Watch" nickname="Watch" x="324.305540636607" y="197.634844228204" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" />
+    <Dynamo.Nodes.CodeBlockNodeModel guid="2c0f7535-32c4-4cef-bd21-df7f6e8c4c6c" type="Dynamo.Nodes.CodeBlockNodeModel" nickname="Code Block" x="160.600516994404" y="-41.6236034194895" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" CodeText="//The workflow had to be split in two parts.&#xA;//Therefore you must run the graph twice.&#xA;//The initial run must be set to False&#xA;//and the secondary run must be set to True" ShouldFocus="false" />
+    <Dynamo.Nodes.CodeBlockNodeModel guid="951e740f-a859-482b-be43-670ba9c1cc32" type="Dynamo.Nodes.CodeBlockNodeModel" nickname="Code Block" x="-338.726889035372" y="-215.617684406943" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" CodeText="/* TO DO:&#xA;+ need to re-work the tag uncrossing algorithm (no uncrossing atm)&#xA;+ find a workaround for the tag size (so that we can merge the scripts)&#xA;+ further improve the tag distribution algorithm?&#xA;*/;" ShouldFocus="false" />
+    <DSCoreNodesUI.BoolSelector guid="fd77fce9-1a7c-43ad-891f-e7088c7cd702" type="DSCoreNodesUI.BoolSelector" nickname="SET ME" x="153.185165134464" y="104.615708555618" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Boolean>True</System.Boolean>
+    </DSCoreNodesUI.BoolSelector>
+    <Dynamo.Nodes.CodeBlockNodeModel guid="92ec0467-e66f-47c7-b83b-10f49f20c2ea" type="Dynamo.Nodes.CodeBlockNodeModel" nickname="Code Block" x="324.305540636607" y="104.615708555618" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" CodeText="switch ? input : null;" ShouldFocus="false" />
+    <DSIronPythonNode.PythonNode guid="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" type="DSIronPythonNode.PythonNode" nickname="Pandora's box" x="156.785165134464" y="162.796174583609" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" inputcount="6">
+      <Script>import clr
+from math import floor
+
+clr.AddReference("RevitServices")
+from RevitServices.Persistence import DocumentManager
+from RevitServices.Transactions import TransactionManager
+doc = DocumentManager.Instance.CurrentDBDocument
+uidoc = DocumentManager.Instance.CurrentUIApplication.ActiveUIDocument
+
+clr.AddReference("RevitAPI")
+from  Autodesk.Revit.DB import *
+
+clr.AddReference("RevitNodes")
+import Revit
+clr.ImportExtensions(Revit.Elements)
+clr.ImportExtensions(Revit.GeometryConversion)
+
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+
+clr.AddReference("System")
+import System
+from System.Collections.Generic import List
+PF_path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.ProgramFilesX86)
+Lib_path = '\IronPython 2.7\Lib'
+import sys
+sys.path.append("%s%s" % (PF_path, Lib_path))
+import ctypes
+import time
+
+SetForegroundWindow = ctypes.windll.user32.SetForegroundWindow
+SendKeys = ctypes.windll.user32.keybd_event
+
+def UP1():
+	SendKeys(0x26, 0, 0, 0)
+	SendKeys(0x26, 0, 0x0002, 0)
+def DN1():
+	SendKeys(0x28, 0, 0, 0)
+	SendKeys(0x28, 0, 0x0002, 0)
+
+Cat1 = UnwrapElement(IN[0])
+cutoff1 = IN[1]
+IfcTag = UnwrapElement(IN[2])
+IfcTag_L = UnwrapElement(IN[3])
+boolean = IN[5]
+
+#get active view's data
+view = doc.ActiveView
+view_or = view.Origin.ToPoint()
+view_nr = view.ViewDirection.ToVector()
+view_pl = Plane.ByOriginNormal(view_or,view_nr)
+vscale = view.Scale
+viewR = view.RightDirection.ToVector()
+#temporarily modify the view's clip depth
+TransactionManager.Instance.EnsureInTransaction(doc)
+fco = view.LookupParameter("Far Clip Offset")
+subT = SubTransaction(doc)
+subT.Start()
+parset1 = fco.Set(cutoff1)
+doc.Regenerate()
+#extract only the visible elements
+fec1 = FilteredElementCollector(doc, view.Id).OfCategoryId(Cat1.Id).ToElements()
+VisibleEl = [e.ToDSType(True) for e in fec1]
+subT.RollBack()
+TransactionManager.Instance.TransactionTaskDone()
+#get the crop region and shrink appropriately to the tagscale
+crop1 = view.GetCropRegionShapeManager().GetCropRegionShape()
+crop_pl = crop1.GetPlane()
+viewdims = crop1.GetRectangularHeight(crop_pl) 
+viewdims1 = crop1.GetRectangularWidth(crop_pl)
+dynpts = [c.GetEndPoint(0).ToPoint() for c in crop1]
+crop_perimeter = Rectangle.ByCornerPoints(dynpts)
+v1 = Vector.ByTwoPoints(dynpts[0], dynpts[3]).Normalized().Scale(viewdims *0.1) #10% buffer
+v2 = Vector.ByTwoPoints(dynpts[0], dynpts[1]).Normalized().Scale(viewdims1 *0.1)
+dynpts[0] = dynpts[0].Add(v1.Reverse()).Add(v2)
+dynpts[1] = dynpts[1].Add(v1.Reverse()).Add(v2.Reverse())
+dynpts[2] = dynpts[2].Add(v1).Add(v2.Reverse())
+dynpts[3] = dynpts[3].Add(v1).Add(v2)
+dyncrop = Rectangle.ByCornerPoints(dynpts)
+#get an accurate element location point in the view
+cbox = view.CropBox
+boxmin =cbox.Min.ToPoint()
+boxmax = cbox.Max.ToPoint()
+viewbox = Cuboid.ByCorners(boxmin, boxmax)
+tf1 = cbox.Transform
+cs1 = CoordinateSystem.ByOriginVectors(tf1.Origin.ToPoint(),tf1.BasisX.ToVector(),tf1.BasisY.ToVector(), tf1.BasisZ.ToVector())
+viewbox = viewbox.Transform(cs1)
+#elements that fail at any step, will be popped out of the list; xrange + pop is convoluted but faster to execute
+ElLoc1 = []
+for i in xrange(len(VisibleEl)-1,-1,-1):
+	try:
+		s1 = viewbox.Intersect(VisibleEl[i].Geometry()[0])[0]
+		pl1 = Plane.ByOriginNormal(s1.Centroid(), view_nr)
+		sf1 = s1.Intersect(pl1)[0]
+		p1 = sf1.PointAtParameter(0,0)
+		p2 = sf1.PointAtParameter(1,1)
+		l1 = Line.ByStartPointEndPoint(p1,p2)
+		cl1 = sf1.Intersect(l1)
+		if len(cl1) &lt;= 1:
+			p1 = sf1.PointAtParameter(0,1)
+			p2 = sf1.PointAtParameter(1,0)
+			l1 = Line.ByStartPointEndPoint(p1,p2)
+			cl1 = sf1.Intersect(l1)
+		cl_pt = min(cl1, key = dyncrop.DistanceTo).PointAtParameter(0.5)
+		ElLoc1.append(view_pl.ClosestPointTo(cl_pt))
+		to_disp = [cl_pt,l1,p1,p2,sf1,pl1,s1]
+		[x.Dispose() for x in to_disp]
+		[x.Dispose() for x in cl1]
+	except: VisibleEl.pop(i) ; pass
+ElLoc1.reverse()
+#helper function for sorting
+def sortElements(l1): return l1[1].Z
+VisibleEl2 = [[a,b] for a,b in zip(VisibleEl, ElLoc1)]
+VisibleEl3 = sorted(VisibleEl2, key = sortElements)
+ElLoc3 = [e[1] for e in VisibleEl3]
+VisibleEl3 = [e[0] for e in VisibleEl3]
+#get the location points @ cropbox
+def Avrg(l1): return sum(l1)/len(l1)
+def PtAvrg(pts):
+	xA = Avrg([p.X for p in pts])
+	yA = Avrg([p.Y for p in pts])
+	zA = Avrg([p.Z for p in pts])
+	return Point.ByCoordinates(xA,yA,zA)
+def TagPts1(pt1,ap1,box,v1,margin,pl1):
+	isRight = True
+	l1 = Line.ByStartPointDirectionLength(pt1,v1,margin)
+	l2 = Line.ByStartPointDirectionLength(pt1,v1.Reverse(),margin)
+	try:
+		pt2a = box.Intersect(l1)[0]
+		pt2b = box.Intersect(l2)[0]
+		dist1 = pt1.DistanceTo(pt2a)
+		dist2 = pt1.DistanceTo(pt2b)
+		if dist1 &gt; dist2: pt2 = pt2b; isRight = False
+		else: pt2 = pt2a
+	except: pt2 = pt1
+	try: pt2.Z
+	except: pt2 = pt2.PointAtParameter(0)
+	return pt2, isRight
+ap1 = PtAvrg(ElLoc3)
+ElLoc4 = [TagPts1(pt1,ap1,crop_perimeter,viewR,viewdims,view_pl) for pt1 in ElLoc3]
+isRight = [e[1] for e in ElLoc4]
+ElLoc4 = [e[0] for e in ElLoc4]
+ElementsToTag = UnwrapElement(VisibleEl3)
+#create the tags
+if boolean:
+	#collect all existing tags in the view and the tagged elements
+	ViewTags = FilteredElementCollector(doc).OfClass(IndependentTag).OwnedByView(view.Id).ToElements()
+	TaggedElId = [t.TaggedLocalElementId for t in ViewTags]
+	tags = []
+	tagHead = [p.ToXyz(True) for p in ElLoc4]
+	tagEnd = [p1.ToXyz(True) for p1 in ElLoc3]
+	tm1 = TagMode.TM_ADDBY_MATERIAL
+	to1 = TagOrientation.Horizontal
+	TransactionManager.Instance.EnsureInTransaction(doc)
+	for i, j, k, l in zip(ElementsToTag, tagHead, tagEnd, isRight):
+		if i.Id not in TaggedElId:
+			tag = doc.Create.NewTag(view, i, True , tm1, to1, j)
+			if l: tag.ChangeTypeId(IfcTag.Id)
+			else: tag.ChangeTypeId(IfcTag_L.Id)
+			tag.LeaderEnd = k
+			tag.TagHeadPosition = j
+			tags.append(tag)
+	tagsId = [t.Id for t in tags]
+	tagsId2 = List[ElementId](tagsId)
+	uidoc.Selection.SetElementIds(tagsId2)
+	TransactionManager.Instance.TransactionTaskDone()
+	rvt_proc = System.Diagnostics.Process.GetProcessesByName("Revit")
+	rvt_winH = rvt_proc[0].MainWindowHandle
+	active_win = SetForegroundWindow(rvt_winH)
+	UP1()
+	DN1()
+	OUT = tags, tagHead, isRight
+else:
+	OUT = "Tag creation is disabled.\nPlease set to True"</Script>
+    </DSIronPythonNode.PythonNode>
+    <DSIronPythonNode.PythonNode guid="80afe97b-f9a6-45c0-a5e8-4ec821e9f2ff" type="DSIronPythonNode.PythonNode" nickname="Tag alignment" x="605.458739170328" y="107.189694237312" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" inputcount="1">
+      <Script>import clr
+
+clr.AddReference("RevitServices")
+from RevitServices.Persistence import DocumentManager
+from RevitServices.Transactions import TransactionManager
+doc = DocumentManager.Instance.CurrentDBDocument
+
+clr.AddReference("RevitAPI")
+from  Autodesk.Revit.DB import *
+
+def ElSize(bb):
+	min = bb.Min
+	max = bb.Max
+	corner = XYZ(max.X,max.Y,min.Z)
+	len1 = min.DistanceTo(corner)
+	h1 = max.DistanceTo(corner)
+	return h1
+def distTags(taglist):
+	z1 = taglist[0][2].Z
+	for i in xrange(len(taglist)):
+		oldPt = taglist[i][2]
+		if oldPt.Z &lt; z1:
+			newPt = XYZ(oldPt.X, oldPt.Y, z1)
+			taglist[i][0].TagHeadPosition = newPt
+		elif oldPt.Z &gt;= z1:
+			z1 = oldPt.Z
+		if i + 1 &lt; len(taglist): z1 += (taglist[i][1]*0.6 + taglist[i+1][1]*0.6)
+	return None
+def AddElbow(tag):
+	head = tag[0].TagHeadPosition
+	tag[0].LeaderElbow = head.Add(v1)
+	
+input1 = UnwrapElement(IN[0])
+tags = input1[0]
+tagHead = input1[1]
+isRight = input1[2]
+
+view = doc.ActiveView
+bb1 = [t.get_BoundingBox(view) for t in tags]
+elHeight = map(ElSize,bb1)
+margin1 = min(elHeight)
+v1 = view.RightDirection.Multiply(margin1)
+Ltags, Rtags = [], []
+for i in xrange(len(tags)):
+	if isRight[i]:Rtags.append([tags[i],elHeight[i],tagHead[i]])
+	else: Ltags.append([tags[i],elHeight[i],tagHead[i]])
+TransactionManager.Instance.EnsureInTransaction(doc)
+distTags(Ltags)
+distTags(Rtags)
+map(AddElbow,Ltags)
+v1 = v1.Negate()
+map(AddElbow,Rtags)
+TransactionManager.Instance.TransactionTaskDone()
+OUT = elHeight</Script>
+    </DSIronPythonNode.PythonNode>
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="1f9472a5-45f2-4ee5-bc6b-f239c5586089" start_index="0" end="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="33577a35-463f-44c1-898b-a197f9c33cc1" start_index="0" end="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" end_index="5" portType="0" />
+    <Dynamo.Models.ConnectorModel start="97ddea52-f3b9-4091-b7f4-ef9aa6cfc501" start_index="0" end="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="a1b2bdb2-2b58-47d6-9893-bbec75dc83cf" start_index="0" end="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" end_index="4" portType="0" />
+    <Dynamo.Models.ConnectorModel start="e2ca6d49-fc50-4990-a152-972e983e3105" start_index="0" end="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="14d7e011-6fb5-4e58-bda7-a1e4198d3fee" start_index="0" end="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" end_index="3" portType="0" />
+    <Dynamo.Models.ConnectorModel start="fd77fce9-1a7c-43ad-891f-e7088c7cd702" start_index="0" end="92ec0467-e66f-47c7-b83b-10f49f20c2ea" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="92ec0467-e66f-47c7-b83b-10f49f20c2ea" start_index="0" end="80afe97b-f9a6-45c0-a5e8-4ec821e9f2ff" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" start_index="0" end="38540bbc-4d9a-4a38-a78a-30d4efbc8462" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" start_index="0" end="92ec0467-e66f-47c7-b83b-10f49f20c2ea" end_index="1" portType="0" />
+  </Connectors>
+  <Notes>
+    <Dynamo.Models.NoteModel guid="cd195be2-c2b6-4e92-a1d6-0a45fa97fa17" text="After running the graphfor the first time, Dynamo can't guess when you've made any changes inside Revit. Toggle the &quot;Refresh&quot; bool once to notify Dynamo of any changes. This may include but is not limited to:&#xD;&#xA;   - changing the active view&#xD;&#xA;   - editing the view crop box&#xD;&#xA;   - editing the view scale" x="-377.453209554926" y="339.971075860558" />
+    <Dynamo.Models.NoteModel guid="e138cbf8-a7e0-4920-bcf4-08f01227f28c" text="This is the depth at which &#xD;&#xA;elements will be tagged. &#xD;&#xA;Try to keep it to a realistic&#xD;&#xA;view depth. Can act as a&#xD;&#xA;Refresh switch too." x="-401.870644877704" y="109.067613191059" />
+    <Dynamo.Models.NoteModel guid="50e84785-eeb0-4e69-84a3-00ad37309d94" text="In our particular case all elements are&#xD;&#xA;modeled as Generic Models" x="-320.561980547198" y="47.3604411156888" />
+    <Dynamo.Models.NoteModel guid="27a2a3cb-864e-4909-8abc-ef8a1471f2d5" text="Please have only one&#xD;&#xA;instance of Revit open&#xD;&#xA;during execution." x="151.869760455054" y="384.615701776999" />
+  </Notes>
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="background_preview" eyeX="1952.708984375" eyeY="18.3658790588379" eyeZ="1865.03991699219" lookX="-161.525268554688" lookY="-101.162376403809" lookZ="13.8476142883301" />
+  </Cameras>
+</Workspace>
