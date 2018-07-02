@@ -1,3 +1,6 @@
 [submodule "RevitIfcImportClassMap"]
 	path = BIM/RevitIfcImportClassMap
 	url = https://github.com/OpeningDesign/RevitIfcImportClassMap.git
+[submodule "BIM/Dynamo Scripts/_Packages/OrchidForDynamo"]
+	path = BIM/Dynamo Scripts/_Packages/OrchidForDynamo
+	url = https://github.com/erfajo/OrchidForDynamo.git
