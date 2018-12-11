@@ -4,9 +4,6 @@
 *.ifc.log
 *.bak
 *.ifc.log.html
-Ryan_Random_Tests/
-Videos and Photos (added to gitignore)/
-_CLOSED/
 *.backup
 
 
