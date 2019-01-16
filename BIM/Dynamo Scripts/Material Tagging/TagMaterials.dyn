@@ -1,4 +1,4 @@
-<Workspace Version="0.8.2.2392" X="288.762245025471" Y="287.750863005745" zoom="0.575154263372676" Name="Home" Description="" RunType="Manual" RunPeriod="100" HasRunWithoutCrash="True">
+<Workspace Version="1.3.3.4111" X="707.95740441624" Y="47.3892288358534" zoom="0.679624216903676" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="100" HasRunWithoutCrash="True">
   <NamespaceResolutionMap>
     <ClassMap partialName="FamilySymbol" resolvedName="Revit.Elements.FamilySymbol" assemblyName="RevitNodes.dll" />
     <ClassMap partialName="Point" resolvedName="Autodesk.DesignScript.Geometry.Point" assemblyName="ProtoGeometry.dll" />
@@ -14,29 +14,25 @@
     <ClassMap partialName="NurbsCurve.Z" resolvedName="Autodesk.DesignScript.Geometry.NurbsCurve" assemblyName="ProtoGeometry.dll" />
     <ClassMap partialName="Thread" resolvedName="DSCore.Thread" assemblyName="DSCoreNodes.dll" />
     <ClassMap partialName="ModelCurve" resolvedName="Revit.Elements.ModelCurve" assemblyName="RevitNodes.dll" />
+    <ClassMap partialName="Category" resolvedName="Revit.Elements.Category" assemblyName="RevitNodes.dll" />
   </NamespaceResolutionMap>
   <Elements>
-    <DSRevitNodesUI.Categories guid="1f9472a5-45f2-4ee5-bc6b-f239c5586089" type="DSRevitNodesUI.Categories" nickname="Categories" x="-95.03569329368" y="31.4577483390583" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" index="371:GenericModel" />
-    <DSCoreNodesUI.BoolSelector guid="33577a35-463f-44c1-898b-a197f9c33cc1" type="DSCoreNodesUI.BoolSelector" nickname="Create new tags?" x="-62.03569329368" y="394.701827373539" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+    <CoreNodeModels.Input.DoubleSlider guid="97ddea52-f3b9-4091-b7f4-ef9aa6cfc501" type="CoreNodeModels.Input.DoubleSlider" nickname="View depth cut-off distance [feet]" x="-229.247442774443" y="123.835711867558" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Double>5.001</System.Double>
+      <Range min="0.001" max="15" step="0.1" />
+    </CoreNodeModels.Input.DoubleSlider>
+    <CoreNodeModels.Input.BoolSelector guid="a1b2bdb2-2b58-47d6-9893-bbec75dc83cf" type="CoreNodeModels.Input.BoolSelector" nickname="Add an Elbow" x="-229.247442774443" y="270.696607592447" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.Boolean>True</System.Boolean>
-    </DSCoreNodesUI.BoolSelector>
-    <DSCoreNodesUI.Input.DoubleSlider guid="97ddea52-f3b9-4091-b7f4-ef9aa6cfc501" type="DSCoreNodesUI.Input.DoubleSlider" nickname="View depth cut-off distance [feet]" x="-235.03569329368" y="114.106564145954" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
-      <System.Double>2.181</System.Double>
-      <Range min="0.001" max="11" step="0.01" />
-    </DSCoreNodesUI.Input.DoubleSlider>
-    <DSCoreNodesUI.BoolSelector guid="a1b2bdb2-2b58-47d6-9893-bbec75dc83cf" type="DSCoreNodesUI.BoolSelector" nickname="Refresh" x="-62.03569329368" y="337.053011566643" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
-      <System.Boolean>False</System.Boolean>
-    </DSCoreNodesUI.BoolSelector>
-    <DSRevitNodesUI.FamilyTypes guid="e2ca6d49-fc50-4990-a152-972e983e3105" type="DSRevitNodesUI.FamilyTypes" nickname="Material Tag Type" x="-137.03569329368" y="171.755379952851" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" index="532:Material Tag 1:Right" />
-    <DSRevitNodesUI.FamilyTypes guid="14d7e011-6fb5-4e58-bda7-a1e4198d3fee" type="DSRevitNodesUI.FamilyTypes" nickname="Material Tag Type" x="-130.03569329368" y="254.404195759747" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" index="531:Material Tag 1:Left" />
-    <Dynamo.Nodes.Watch guid="38540bbc-4d9a-4a38-a78a-30d4efbc8462" type="Dynamo.Nodes.Watch" nickname="Watch" x="324.305540636607" y="197.634844228204" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" />
-    <Dynamo.Nodes.CodeBlockNodeModel guid="2c0f7535-32c4-4cef-bd21-df7f6e8c4c6c" type="Dynamo.Nodes.CodeBlockNodeModel" nickname="Code Block" x="160.600516994404" y="-41.6236034194895" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" CodeText="//The workflow had to be split in two parts.&#xA;//Therefore you must run the graph twice.&#xA;//The initial run must be set to False&#xA;//and the secondary run must be set to True" ShouldFocus="false" />
-    <Dynamo.Nodes.CodeBlockNodeModel guid="951e740f-a859-482b-be43-670ba9c1cc32" type="Dynamo.Nodes.CodeBlockNodeModel" nickname="Code Block" x="-338.726889035372" y="-215.617684406943" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" CodeText="/* TO DO:&#xA;+ need to re-work the tag uncrossing algorithm (no uncrossing atm)&#xA;+ find a workaround for the tag size (so that we can merge the scripts)&#xA;+ further improve the tag distribution algorithm?&#xA;*/;" ShouldFocus="false" />
-    <DSCoreNodesUI.BoolSelector guid="fd77fce9-1a7c-43ad-891f-e7088c7cd702" type="DSCoreNodesUI.BoolSelector" nickname="SET ME" x="153.185165134464" y="104.615708555618" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
-      <System.Boolean>True</System.Boolean>
-    </DSCoreNodesUI.BoolSelector>
-    <Dynamo.Nodes.CodeBlockNodeModel guid="92ec0467-e66f-47c7-b83b-10f49f20c2ea" type="Dynamo.Nodes.CodeBlockNodeModel" nickname="Code Block" x="324.305540636607" y="104.615708555618" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" CodeText="switch ? input : null;" ShouldFocus="false" />
-    <DSIronPythonNode.PythonNode guid="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" type="DSIronPythonNode.PythonNode" nickname="Pandora's box" x="156.785165134464" y="162.796174583609" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" inputcount="6">
+    </CoreNodeModels.Input.BoolSelector>
+    <DSRevitNodesUI.FamilyTypes guid="e2ca6d49-fc50-4990-a152-972e983e3105" type="DSRevitNodesUI.FamilyTypes" nickname="Right Material Tag Type" x="243.0974902379" y="373.860610342805" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="365:OD_Material Tag:RIGHT" />
+    <DSRevitNodesUI.FamilyTypes guid="14d7e011-6fb5-4e58-bda7-a1e4198d3fee" type="DSRevitNodesUI.FamilyTypes" nickname="Left Material Tag Type" x="243.0974902379" y="457.002245466941" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="364:OD_Material Tag:LEFT" />
+    <PythonNodeModels.PythonNode guid="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" type="PythonNodeModels.PythonNode" nickname="Tag Creation Script" x="680.581730692949" y="92.6225814487399" isVisible="true" isUpstreamVisible="false" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="6">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+      <PortInfo index="3" default="False" />
+      <PortInfo index="4" default="False" />
+      <PortInfo index="5" default="False" />
       <Script>import clr
 from math import floor
 
@@ -45,9 +41,11 @@ from RevitServices.Persistence import DocumentManager
 from RevitServices.Transactions import TransactionManager
 doc = DocumentManager.Instance.CurrentDBDocument
 uidoc = DocumentManager.Instance.CurrentUIApplication.ActiveUIDocument
+app = DocumentManager.Instance.CurrentUIApplication.Application
+uiapp = DocumentManager.Instance.CurrentUIApplication
 
 clr.AddReference("RevitAPI")
-from  Autodesk.Revit.DB import *
+import  Autodesk.Revit.DB as DB
 
 clr.AddReference("RevitNodes")
 import Revit
@@ -55,7 +53,7 @@ clr.ImportExtensions(Revit.Elements)
 clr.ImportExtensions(Revit.GeometryConversion)
 
 clr.AddReference('ProtoGeometry')
-from Autodesk.DesignScript.Geometry import *
+import Autodesk.DesignScript.Geometry as DS
 
 clr.AddReference("System")
 import System
@@ -65,7 +63,25 @@ Lib_path = '\IronPython 2.7\Lib'
 import sys
 sys.path.append("%s%s" % (PF_path, Lib_path))
 import ctypes
-import time
+
+def getFirstSolid(geo):
+	for g in geo:
+		if isinstance(g, DB.GeometryInstance):
+			return getFirstSolid(g.GetInstanceGeometry())
+		else:
+			v = getattr(g, "Volume", 0)
+			if v != 0:
+				return g
+
+def getSolidBoundPts(s):
+	x, y, z = [], [], []
+	for e in s.Edges:
+		p = e.Evaluate(0)
+		x.append(p.X)
+		y.append(p.Y)
+		z.append(p.Z)
+	
+	return DB.XYZ(min(x), min(y), min(z)), DB.XYZ(max(x), max(y), max(z))
 
 SetForegroundWindow = ctypes.windll.user32.SetForegroundWindow
 SendKeys = ctypes.windll.user32.keybd_event
@@ -77,142 +93,129 @@ def DN1():
 	SendKeys(0x28, 0, 0, 0)
 	SendKeys(0x28, 0, 0x0002, 0)
 
-Cat1 = UnwrapElement(IN[0])
-cutoff1 = IN[1]
-IfcTag = UnwrapElement(IN[2])
-IfcTag_L = UnwrapElement(IN[3])
-boolean = IN[5]
+# INPUT
+Cat1, cutoff_depth, TAG_PLACEMENT_MODE, _, IfcTag, IfcTagLeft = UnwrapElement(IN)
+IfcTagId, IfcTagLeftId = IfcTag.Id, IfcTagLeft.Id
 
-#get active view's data
+# get active view's data
 view = doc.ActiveView
-view_or = view.Origin.ToPoint()
-view_nr = view.ViewDirection.ToVector()
-view_pl = Plane.ByOriginNormal(view_or,view_nr)
-vscale = view.Scale
-viewR = view.RightDirection.ToVector()
-#temporarily modify the view's clip depth
+def pullOntoViewPlane(pt, n=view.ViewDirection, o=view.Origin):
+	d = n.DotProduct(o) - n.DotProduct(pt)
+	return pt + n * d
+
+# temporarily modify the view's clip depth to get the visible elements
 TransactionManager.Instance.EnsureInTransaction(doc)
-fco = view.LookupParameter("Far Clip Offset")
-subT = SubTransaction(doc)
-subT.Start()
-parset1 = fco.Set(cutoff1)
-doc.Regenerate()
-#extract only the visible elements
-fec1 = FilteredElementCollector(doc, view.Id).OfCategoryId(Cat1.Id).ToElements()
-VisibleEl = [e.ToDSType(True) for e in fec1]
-subT.RollBack()
+
+cropMan = view.GetCropRegionShapeManager()
+if cropMan.Split:
+	with DB.SubTransaction(doc) as subT:
+		subT.Start()
+		min0, max0 = cropMan.GetSplitRegionMinimum(0), cropMan.GetSplitRegionMaximum(0)
+		min1, max1 = cropMan.GetSplitRegionMinimum(1), cropMan.GetSplitRegionMaximum(1)
+		cropMan.RemoveSplit()
+		crop1 = cropMan.GetCropShape()
+		subT.RollBack()
+else:
+	crop1 = cropMan.GetCropShape()
+
+fec1 = DB.FilteredElementCollector(doc, view.Id).OfCategoryId(Cat1.Id)
+VisibleEl = [e for e in fec1]
+
+# get the crop region and shrink appropriately to the tagscale
+cropSolid = DB.GeometryCreationUtilities.CreateExtrusionGeometry(crop1, view.ViewDirection, cutoff_depth)
+
+cropCenter = crop1[0].GetPlane().Origin
+viewRight = view.RightDirection
+cropHalfWidth = abs(view.CropBox.Max.X - view.CropBox.Min.X) / 2 + 0.5 # a bit of a buffer
+cropCenter_dot = viewRight.DotProduct(cropCenter)
+
+# collect all existing tags in the view and find their host elements
+ViewTags = DB.FilteredElementCollector(doc, view.Id).OfClass(DB.IndependentTag)
+TaggedElId = set(t.TaggedLocalElementId.IntegerValue for t in ViewTags)
+
+geoOpt = DB.Options()
+intOptions = DB.SolidCurveIntersectionOptions()
+intOptions.ResultType = DB.SolidCurveIntersectionMode.CurveSegmentsInside
+
+# find a point inside each element. Elements that are already
+# tagged or that are beyond the crop's depth will be ignored
+toTag = []
+avrgPt, avrgCount = DB.XYZ.Zero, 0
+for e in VisibleEl:
+	if e.Id.IntegerValue in TaggedElId:
+		continue
+	
+	elSolid = getFirstSolid(e.Geometry[geoOpt])
+	intersectedSolid = DB.BooleanOperationsUtils.ExecuteBooleanOperation(
+		cropSolid, elSolid, DB.BooleanOperationsType.Intersect)
+	if intersectedSolid.Volume == 0:
+		continue
+	a, b = getSolidBoundPts(intersectedSolid)
+	a, b = pullOntoViewPlane(a), pullOntoViewPlane(b)
+	l = DB.Line.CreateBound(a, b)
+	xResult = intersectedSolid.IntersectWithCurve(l, intOptions)
+	l.Dispose()
+	
+	curves = [c for c in xResult]
+	curves.sort(key=lambda c: c.Length)
+	tagPt = curves[-1].Evaluate(0.5, 1)
+	toTag.append((e, tagPt))
+	avrgPt += tagPt
+	avrgCount += 1
+
+# place the actual tags and compute the final tag position
+tm1 = DB.TagMode.TM_ADDBY_MATERIAL
+to1 = DB.TagOrientation.Horizontal
+tags, areRight = [], []
+if avrgCount:
+	avrgPt /= avrgCount
+	avrgPt_dot = viewRight.DotProduct(avrgPt)
+	for elem, tagPt in toTag:
+		tagPt_dot = viewRight.DotProduct(tagPt)
+		distToCenter = cropCenter_dot - tagPt_dot
+		distToAvrg = avrgPt_dot - tagPt_dot
+		rightOfCenter = distToCenter &lt; 0
+		
+		if TAG_PLACEMENT_MODE == 0:
+			shiftRight = distToAvrg &lt; 0
+		elif TAG_PLACEMENT_MODE == 1:
+			shiftRight = False
+		else:
+			shiftRight = True
+		
+		mul = distToCenter + cropHalfWidth if shiftRight else distToCenter - cropHalfWidth
+		headPt = tagPt + mul * viewRight
+		
+		tag = DB.IndependentTag.Create(doc, view.Id, DB.Reference(e), 1, tm1, to1, tagPt)
+		typeId = IfcTagId if shiftRight else IfcTagLeftId
+		tag.ChangeTypeId(typeId)
+		tag.LeaderEnd = tagPt
+		tag.TagHeadPosition = headPt
+		tags.append(tag)
+		areRight.append(shiftRight)
+
 TransactionManager.Instance.TransactionTaskDone()
-#get the crop region and shrink appropriately to the tagscale
-crop1 = view.GetCropRegionShapeManager().GetCropRegionShape()
-crop_pl = crop1.GetPlane()
-viewdims = crop1.GetRectangularHeight(crop_pl) 
-viewdims1 = crop1.GetRectangularWidth(crop_pl)
-dynpts = [c.GetEndPoint(0).ToPoint() for c in crop1]
-crop_perimeter = Rectangle.ByCornerPoints(dynpts)
-v1 = Vector.ByTwoPoints(dynpts[0], dynpts[3]).Normalized().Scale(viewdims *0.1) #10% buffer
-v2 = Vector.ByTwoPoints(dynpts[0], dynpts[1]).Normalized().Scale(viewdims1 *0.1)
-dynpts[0] = dynpts[0].Add(v1.Reverse()).Add(v2)
-dynpts[1] = dynpts[1].Add(v1.Reverse()).Add(v2.Reverse())
-dynpts[2] = dynpts[2].Add(v1).Add(v2.Reverse())
-dynpts[3] = dynpts[3].Add(v1).Add(v2)
-dyncrop = Rectangle.ByCornerPoints(dynpts)
-#get an accurate element location point in the view
-cbox = view.CropBox
-boxmin =cbox.Min.ToPoint()
-boxmax = cbox.Max.ToPoint()
-viewbox = Cuboid.ByCorners(boxmin, boxmax)
-tf1 = cbox.Transform
-cs1 = CoordinateSystem.ByOriginVectors(tf1.Origin.ToPoint(),tf1.BasisX.ToVector(),tf1.BasisY.ToVector(), tf1.BasisZ.ToVector())
-viewbox = viewbox.Transform(cs1)
-#elements that fail at any step, will be popped out of the list; xrange + pop is convoluted but faster to execute
-ElLoc1 = []
-for i in xrange(len(VisibleEl)-1,-1,-1):
-	try:
-		s1 = viewbox.Intersect(VisibleEl[i].Geometry()[0])[0]
-		pl1 = Plane.ByOriginNormal(s1.Centroid(), view_nr)
-		sf1 = s1.Intersect(pl1)[0]
-		p1 = sf1.PointAtParameter(0,0)
-		p2 = sf1.PointAtParameter(1,1)
-		l1 = Line.ByStartPointEndPoint(p1,p2)
-		cl1 = sf1.Intersect(l1)
-		if len(cl1) &lt;= 1:
-			p1 = sf1.PointAtParameter(0,1)
-			p2 = sf1.PointAtParameter(1,0)
-			l1 = Line.ByStartPointEndPoint(p1,p2)
-			cl1 = sf1.Intersect(l1)
-		cl_pt = min(cl1, key = dyncrop.DistanceTo).PointAtParameter(0.5)
-		ElLoc1.append(view_pl.ClosestPointTo(cl_pt))
-		to_disp = [cl_pt,l1,p1,p2,sf1,pl1,s1]
-		[x.Dispose() for x in to_disp]
-		[x.Dispose() for x in cl1]
-	except: VisibleEl.pop(i) ; pass
-ElLoc1.reverse()
-#helper function for sorting
-def sortElements(l1): return l1[1].Z
-VisibleEl2 = [[a,b] for a,b in zip(VisibleEl, ElLoc1)]
-VisibleEl3 = sorted(VisibleEl2, key = sortElements)
-ElLoc3 = [e[1] for e in VisibleEl3]
-VisibleEl3 = [e[0] for e in VisibleEl3]
-#get the location points @ cropbox
-def Avrg(l1): return sum(l1)/len(l1)
-def PtAvrg(pts):
-	xA = Avrg([p.X for p in pts])
-	yA = Avrg([p.Y for p in pts])
-	zA = Avrg([p.Z for p in pts])
-	return Point.ByCoordinates(xA,yA,zA)
-def TagPts1(pt1,ap1,box,v1,margin,pl1):
-	isRight = True
-	l1 = Line.ByStartPointDirectionLength(pt1,v1,margin)
-	l2 = Line.ByStartPointDirectionLength(pt1,v1.Reverse(),margin)
-	try:
-		pt2a = box.Intersect(l1)[0]
-		pt2b = box.Intersect(l2)[0]
-		dist1 = pt1.DistanceTo(pt2a)
-		dist2 = pt1.DistanceTo(pt2b)
-		if dist1 &gt; dist2: pt2 = pt2b; isRight = False
-		else: pt2 = pt2a
-	except: pt2 = pt1
-	try: pt2.Z
-	except: pt2 = pt2.PointAtParameter(0)
-	return pt2, isRight
-ap1 = PtAvrg(ElLoc3)
-ElLoc4 = [TagPts1(pt1,ap1,crop_perimeter,viewR,viewdims,view_pl) for pt1 in ElLoc3]
-isRight = [e[1] for e in ElLoc4]
-ElLoc4 = [e[0] for e in ElLoc4]
-ElementsToTag = UnwrapElement(VisibleEl3)
-#create the tags
-if boolean:
-	#collect all existing tags in the view and the tagged elements
-	ViewTags = FilteredElementCollector(doc).OfClass(IndependentTag).OwnedByView(view.Id).ToElements()
-	TaggedElId = [t.TaggedLocalElementId for t in ViewTags]
-	tags = []
-	tagHead = [p.ToXyz(True) for p in ElLoc4]
-	tagEnd = [p1.ToXyz(True) for p1 in ElLoc3]
-	tm1 = TagMode.TM_ADDBY_MATERIAL
-	to1 = TagOrientation.Horizontal
-	TransactionManager.Instance.EnsureInTransaction(doc)
-	for i, j, k, l in zip(ElementsToTag, tagHead, tagEnd, isRight):
-		if i.Id not in TaggedElId:
-			tag = doc.Create.NewTag(view, i, True , tm1, to1, j)
-			if l: tag.ChangeTypeId(IfcTag.Id)
-			else: tag.ChangeTypeId(IfcTag_L.Id)
-			tag.LeaderEnd = k
-			tag.TagHeadPosition = j
-			tags.append(tag)
-	tagsId = [t.Id for t in tags]
-	tagsId2 = List[ElementId](tagsId)
-	uidoc.Selection.SetElementIds(tagsId2)
-	TransactionManager.Instance.TransactionTaskDone()
+
+geoOpt.Dispose()
+intOptions.Dispose()
+
+tagsId = List[DB.ElementId](t.Id for t in tags)
+uidoc.Selection.SetElementIds(tagsId)
+
+if "2019" in app.VersionNumber:
+	rvt_winH = uiapp.MainWindowHandle
+else:
 	rvt_proc = System.Diagnostics.Process.GetProcessesByName("Revit")
 	rvt_winH = rvt_proc[0].MainWindowHandle
-	active_win = SetForegroundWindow(rvt_winH)
-	UP1()
-	DN1()
-	OUT = tags, tagHead, isRight
-else:
-	OUT = "Tag creation is disabled.\nPlease set to True"</Script>
-    </DSIronPythonNode.PythonNode>
-    <DSIronPythonNode.PythonNode guid="80afe97b-f9a6-45c0-a5e8-4ec821e9f2ff" type="DSIronPythonNode.PythonNode" nickname="Tag alignment" x="605.458739170328" y="107.189694237312" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" inputcount="1">
+active_win = SetForegroundWindow(rvt_winH)
+UP1()
+DN1()
+
+OUT = [t.Id.IntegerValue for t in tags], areRight, [c.ToProtoType(1) for c in crop1[0]]</Script>
+    </PythonNodeModels.PythonNode>
+    <PythonNodeModels.PythonNode guid="b9d43e0d-db34-41f4-a4fd-a29e106d638a" type="PythonNodeModels.PythonNode" nickname="Tag Distribution Script" x="2291.13864233826" y="234.398404071235" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="2">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
       <Script>import clr
 
 clr.AddReference("RevitServices")
@@ -220,76 +223,193 @@ from RevitServices.Persistence import DocumentManager
 from RevitServices.Transactions import TransactionManager
 doc = DocumentManager.Instance.CurrentDBDocument
 
-clr.AddReference("RevitAPI")
-from  Autodesk.Revit.DB import *
+import System
+import sys
+pf_path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.ProgramFilesX86)
+sys.path.append('%s\IronPython 2.7\Lib' % pf_path)
+import csv
 
-def ElSize(bb):
+clr.AddReference('RevitAPI')
+import Autodesk.Revit.DB as DB
+
+clr.AddReference('RevitNodes')
+import Revit
+clr.ImportExtensions(Revit.Elements)
+
+def tagHeight(bb):
 	min = bb.Min
 	max = bb.Max
-	corner = XYZ(max.X,max.Y,min.Z)
-	len1 = min.DistanceTo(corner)
-	h1 = max.DistanceTo(corner)
-	return h1
-def distTags(taglist):
-	z1 = taglist[0][2].Z
-	for i in xrange(len(taglist)):
-		oldPt = taglist[i][2]
-		if oldPt.Z &lt; z1:
-			newPt = XYZ(oldPt.X, oldPt.Y, z1)
-			taglist[i][0].TagHeadPosition = newPt
-		elif oldPt.Z &gt;= z1:
-			z1 = oldPt.Z
-		if i + 1 &lt; len(taglist): z1 += (taglist[i][1]*0.6 + taglist[i+1][1]*0.6)
-	return None
-def AddElbow(tag):
-	head = tag[0].TagHeadPosition
-	tag[0].LeaderElbow = head.Add(v1)
-	
-input1 = UnwrapElement(IN[0])
-tags = input1[0]
-tagHead = input1[1]
-isRight = input1[2]
+	return abs(max.Z - min.Z)
 
 view = doc.ActiveView
-bb1 = [t.get_BoundingBox(view) for t in tags]
-elHeight = map(ElSize,bb1)
-margin1 = min(elHeight)
-v1 = view.RightDirection.Multiply(margin1)
-Ltags, Rtags = [], []
-for i in xrange(len(tags)):
-	if isRight[i]:Rtags.append([tags[i],elHeight[i],tagHead[i]])
-	else: Ltags.append([tags[i],elHeight[i],tagHead[i]])
-TransactionManager.Instance.EnsureInTransaction(doc)
-distTags(Ltags)
-distTags(Rtags)
-map(AddElbow,Ltags)
-v1 = v1.Negate()
-map(AddElbow,Rtags)
-TransactionManager.Instance.TransactionTaskDone()
-OUT = elHeight</Script>
-    </DSIronPythonNode.PythonNode>
+def distributeTags(tags, elbowVector=None):
+	tags = sorted(tags, key=lambda t: t.LeaderEnd.Z)
+	tagHeights = map(tagHeight, [t.get_BoundingBox(view) for t in tags])
+	half = sum(tagHeights) / 2
+	
+	z1 = tags[0].TagHeadPosition.Z
+	for i in xrange(len(tags)):
+		oldPt = tags[i].TagHeadPosition
+		if oldPt.Z &lt; z1:
+			newPt = DB.XYZ(oldPt.X, oldPt.Y, z1)
+			tags[i].TagHeadPosition = newPt
+		elif oldPt.Z &gt;= z1:
+			z1 = oldPt.Z
+			newPt = oldPt
+		if i + 1 &lt; len(tags): z1 += (tagHeights[i]*0.6 + tagHeights[i+1]*0.6)
+		
+		if elbowVector is not None:
+			tags[i].LeaderElbow = newPt + elbowVector
+	return
+	
+path = str(IN[0])
+addElbow = IN[1]
+
+with open(path, "r") as f:
+	shouldRun, rightId, leftId = f.readlines()
+
+shouldRun = int(shouldRun)
+if shouldRun:
+	rightTags = [doc.GetElement(DB.ElementId(int(i))) for i in rightId.split(",") if i.strip()]
+	leftTags =[doc.GetElement(DB.ElementId(int(i))) for i in leftId.split(",") if i.strip()]
+	TransactionManager.Instance.EnsureInTransaction(doc)
+	if rightTags:
+		elbowVector = view.RightDirection.Negate() * 0.4 if addElbow else None
+		distributeTags(rightTags, elbowVector)
+	if leftTags:
+		elbowVector = view.RightDirection * 0.4 if addElbow else None
+		distributeTags(leftTags, elbowVector)
+	
+	TransactionManager.Instance.TransactionTaskDone()
+	OUT = [t.ToDSType(1) for t in rightTags], [t.ToDSType(1) for t in leftTags]
+else:
+	with open(path, 'w') as f:
+		f.write("1\n")
+		f.write(rightId)
+		f.write(leftId)
+	OUT = "Run again", ""</Script>
+    </PythonNodeModels.PythonNode>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="d29a0b70-cc2d-4b2b-b74b-2b7382402519" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="List.FilterByBoolMask" x="1058.08398158502" y="91.2446381056527" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.List.FilterByBoolMask@var[]..[],var[]..[]">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="adebc225-25e2-4c90-b540-bdb5c8348207" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="847.98894305611" y="100.256991351523" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="tags = r[0];&#xA;isRight = r[1];" ShouldFocus="false">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.CodeBlockNodeModel>
+    <CoreNodeModels.CreateList guid="1267530b-8f0e-45c3-a4ff-e3dbc48cdfbc" type="CoreNodeModels.CreateList" nickname="List.Create" x="1259.17549823279" y="62.2083845238015" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="3">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+    </CoreNodeModels.CreateList>
+    <PythonNodeModels.PythonNode guid="db4da3b4-8b9a-461f-afc8-7e662d6613e8" type="PythonNodeModels.PythonNode" nickname="GetATempPath" x="1513.86057276836" y="17.3651420869498" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" inputcount="0">
+      <Script>import System
+
+OUT = System.IO.Path.GetTempFileName().Replace(".tmp", ".csv")</Script>
+    </PythonNodeModels.PythonNode>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="7ce56f17-ea55-4d81-b3f2-5d736b2cbe3d" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="CSV.WriteToFile" x="1751.28803734335" y="36.7428044476203" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.IO.CSV.WriteToFile@string,var[][]">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Input.FileObject guid="feaef797-4063-427b-9e5e-4ffcf6bfd4c9" type="CoreNodeModels.Input.FileObject" nickname="File.FromPath" x="1754.28114656615" y="182.517175363748" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Input.FileObject>
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="1bc1bdbc-7698-4510-8e9e-c87a7f6802ca" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1060.86493262545" y="7.22933080521949" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="shouldRun = 0;" ShouldFocus="false" />
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="710d43ac-aea6-493d-9ed7-2b2f7edea1cf" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Passthrough" x="1978.83849784431" y="158.01799612985" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <ID value="ecce77dc-1290-438e-a056-970b256fd553" />
+      <Name value="Passthrough" />
+      <Description value="Forces a sequential order of execution. The node wired into the output of the Passthrough node will be executed *after* the node wired into the waitFor input (e.g. important for some Revit operations). The value of the passThrough input will be passed on to the node wired into the output port of the Passthrough node." />
+      <Inputs>
+        <Input value="passThrough" />
+        <Input value="waitFor" />
+      </Inputs>
+      <Outputs>
+        <Output value="passThrough" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <CoreNodeModels.Watch guid="e877f3b3-b7c2-483a-bbb8-566bfa84c7fa" type="CoreNodeModels.Watch" nickname="Right Tags" x="-228.651790351936" y="479.672072154803" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <CoreNodeModels.Input.BoolSelector guid="5d17bc29-63e1-455c-a93e-17c2c71d3fe0" type="CoreNodeModels.Input.BoolSelector" nickname="Refresh The View" x="-229.247442774443" y="344.127055454891" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>True</System.Boolean>
+    </CoreNodeModels.Input.BoolSelector>
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="2eaa951f-8762-4a94-837d-a96f1f3f8c7b" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="2478.53700124463" y="240.564233694523" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="right = r[0];&#xA;left = r[1];" ShouldFocus="false">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.CodeBlockNodeModel>
+    <CoreNodeModels.Watch guid="61754dd8-d42f-476f-b76c-4aa3259ad8d2" type="CoreNodeModels.Watch" nickname="Left Tags" x="-8.18988232482286" y="479.672072154803" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="1ca3bec4-d8a9-47cb-a0a8-1e53ed5e7aae" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="-975.61157434483" y="-56.1372220596215" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="/*&#xA;&#xA;DYNAMO VERSION: 1.3x&#xA;&#xA;Created by: Dimitar Venkov&#xA;Created on: 14/01/2019&#xA;&#xA;Modified by:&#xA;Modified on:&#xA;&#xA;REQUIRED PACKAGES:&#xA;------------------------------&#xA;- Clockwork 1.32.0&#xA;&#xA;DESCRIPTION:&#xA;------------------------------&#xA;- This graph will material tag all Gemeric Model&#xA;  Model-In-Place families. The execution is broken&#xA;  up into two parts - a tag creation part and a&#xA;  tag distribution part. That means you have to&#xA;  run the graph *TWICE* consecutively.&#xA;&#xA;ISSUES AND LIMITATIONS:&#xA;------------------------------&#xA;- If working in Revit 2018 or earlier, make sure&#xA;  that you have only one instance of Revit open&#xA;  during execution.&#xA;&#xA;*/;" ShouldFocus="false" />
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="ab1375bc-8084-4a38-a3ea-4f9d5ebf9ab1" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="-229.247442774443" y="25.4052640051136" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="Category.ByName(&quot;Generic Models&quot;);" ShouldFocus="false" />
+    <CoreNodeModels.Input.IntegerSlider guid="e1638745-079d-4b4a-a1ec-8c666a8a5a23" type="CoreNodeModels.Input.IntegerSlider" nickname="Tag Placement Mode" x="-229.247442774443" y="197.266159730002" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Int32>2</System.Int32>
+      <Range min="0" max="2" step="1" />
+    </CoreNodeModels.Input.IntegerSlider>
   </Elements>
   <Connectors>
-    <Dynamo.Models.ConnectorModel start="1f9472a5-45f2-4ee5-bc6b-f239c5586089" start_index="0" end="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" end_index="0" portType="0" />
-    <Dynamo.Models.ConnectorModel start="33577a35-463f-44c1-898b-a197f9c33cc1" start_index="0" end="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" end_index="5" portType="0" />
-    <Dynamo.Models.ConnectorModel start="97ddea52-f3b9-4091-b7f4-ef9aa6cfc501" start_index="0" end="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" end_index="1" portType="0" />
-    <Dynamo.Models.ConnectorModel start="a1b2bdb2-2b58-47d6-9893-bbec75dc83cf" start_index="0" end="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" end_index="4" portType="0" />
-    <Dynamo.Models.ConnectorModel start="e2ca6d49-fc50-4990-a152-972e983e3105" start_index="0" end="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" end_index="2" portType="0" />
-    <Dynamo.Models.ConnectorModel start="14d7e011-6fb5-4e58-bda7-a1e4198d3fee" start_index="0" end="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" end_index="3" portType="0" />
-    <Dynamo.Models.ConnectorModel start="fd77fce9-1a7c-43ad-891f-e7088c7cd702" start_index="0" end="92ec0467-e66f-47c7-b83b-10f49f20c2ea" end_index="0" portType="0" />
-    <Dynamo.Models.ConnectorModel start="92ec0467-e66f-47c7-b83b-10f49f20c2ea" start_index="0" end="80afe97b-f9a6-45c0-a5e8-4ec821e9f2ff" end_index="0" portType="0" />
-    <Dynamo.Models.ConnectorModel start="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" start_index="0" end="38540bbc-4d9a-4a38-a78a-30d4efbc8462" end_index="0" portType="0" />
-    <Dynamo.Models.ConnectorModel start="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" start_index="0" end="92ec0467-e66f-47c7-b83b-10f49f20c2ea" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="97ddea52-f3b9-4091-b7f4-ef9aa6cfc501" start_index="0" end="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="a1b2bdb2-2b58-47d6-9893-bbec75dc83cf" start_index="0" end="b9d43e0d-db34-41f4-a4fd-a29e106d638a" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="e2ca6d49-fc50-4990-a152-972e983e3105" start_index="0" end="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" end_index="4" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="14d7e011-6fb5-4e58-bda7-a1e4198d3fee" start_index="0" end="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" end_index="5" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" start_index="0" end="adebc225-25e2-4c90-b540-bdb5c8348207" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="b9d43e0d-db34-41f4-a4fd-a29e106d638a" start_index="0" end="2eaa951f-8762-4a94-837d-a96f1f3f8c7b" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="d29a0b70-cc2d-4b2b-b74b-2b7382402519" start_index="0" end="1267530b-8f0e-45c3-a4ff-e3dbc48cdfbc" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="d29a0b70-cc2d-4b2b-b74b-2b7382402519" start_index="1" end="1267530b-8f0e-45c3-a4ff-e3dbc48cdfbc" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="adebc225-25e2-4c90-b540-bdb5c8348207" start_index="0" end="d29a0b70-cc2d-4b2b-b74b-2b7382402519" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="adebc225-25e2-4c90-b540-bdb5c8348207" start_index="1" end="d29a0b70-cc2d-4b2b-b74b-2b7382402519" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="1267530b-8f0e-45c3-a4ff-e3dbc48cdfbc" start_index="0" end="7ce56f17-ea55-4d81-b3f2-5d736b2cbe3d" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="db4da3b4-8b9a-461f-afc8-7e662d6613e8" start_index="0" end="7ce56f17-ea55-4d81-b3f2-5d736b2cbe3d" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="db4da3b4-8b9a-461f-afc8-7e662d6613e8" start_index="0" end="feaef797-4063-427b-9e5e-4ffcf6bfd4c9" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="7ce56f17-ea55-4d81-b3f2-5d736b2cbe3d" start_index="0" end="710d43ac-aea6-493d-9ed7-2b2f7edea1cf" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="feaef797-4063-427b-9e5e-4ffcf6bfd4c9" start_index="0" end="710d43ac-aea6-493d-9ed7-2b2f7edea1cf" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="1bc1bdbc-7698-4510-8e9e-c87a7f6802ca" start_index="0" end="1267530b-8f0e-45c3-a4ff-e3dbc48cdfbc" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="710d43ac-aea6-493d-9ed7-2b2f7edea1cf" start_index="0" end="b9d43e0d-db34-41f4-a4fd-a29e106d638a" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="5d17bc29-63e1-455c-a93e-17c2c71d3fe0" start_index="0" end="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" end_index="3" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="2eaa951f-8762-4a94-837d-a96f1f3f8c7b" start_index="0" end="e877f3b3-b7c2-483a-bbb8-566bfa84c7fa" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="2eaa951f-8762-4a94-837d-a96f1f3f8c7b" start_index="1" end="61754dd8-d42f-476f-b76c-4aa3259ad8d2" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="ab1375bc-8084-4a38-a3ea-4f9d5ebf9ab1" start_index="0" end="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="e1638745-079d-4b4a-a1ec-8c666a8a5a23" start_index="0" end="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" end_index="2" portType="0" />
   </Connectors>
   <Notes>
-    <Dynamo.Models.NoteModel guid="cd195be2-c2b6-4e92-a1d6-0a45fa97fa17" text="After running the graphfor the first time, Dynamo can't guess when you've made any changes inside Revit. Toggle the &quot;Refresh&quot; bool once to notify Dynamo of any changes. This may include but is not limited to:&#xD;&#xA;   - changing the active view&#xD;&#xA;   - editing the view crop box&#xD;&#xA;   - editing the view scale" x="-377.453209554926" y="339.971075860558" />
-    <Dynamo.Models.NoteModel guid="e138cbf8-a7e0-4920-bcf4-08f01227f28c" text="This is the depth at which &#xD;&#xA;elements will be tagged. &#xD;&#xA;Try to keep it to a realistic&#xD;&#xA;view depth. Can act as a&#xD;&#xA;Refresh switch too." x="-401.870644877704" y="109.067613191059" />
-    <Dynamo.Models.NoteModel guid="50e84785-eeb0-4e69-84a3-00ad37309d94" text="In our particular case all elements are&#xD;&#xA;modeled as Generic Models" x="-320.561980547198" y="47.3604411156888" />
-    <Dynamo.Models.NoteModel guid="27a2a3cb-864e-4909-8abc-ef8a1471f2d5" text="Please have only one&#xD;&#xA;instance of Revit open&#xD;&#xA;during execution." x="151.869760455054" y="384.615701776999" />
+    <Dynamo.Graph.Notes.NoteModel guid="cdacb71c-3d83-43ef-895a-70b33be513b0" text="In our particular case all elements are&#xD;&#xA;modeled as Generic Models" x="-464.189325954711" y="63.3825475373775" />
+    <Dynamo.Graph.Notes.NoteModel guid="4c569e4d-db89-4c78-a140-f7fd9771b107" text="This is the depth at which  elements&#xD;&#xA;will be tagged.  Try to keep it to a realistic&#xD;&#xA;view depth. Can act as a Refresh switch too." x="-497.189325954711" y="129.91585817444" />
+    <Dynamo.Graph.Notes.NoteModel guid="2a8fce64-8c28-4694-95e9-0dfcc3643a46" text="After running the graphfor the first time, Dynamo can't guess when you've made any changes inside Revit. Toggle the &quot;Refresh&quot; bool once to notify Dynamo of any changes. This may include but is not limited to:&#xD;&#xA;   - changing the active view&#xD;&#xA;   - editing the view crop box&#xD;&#xA;   - editing the view scale" x="-542.669029852418" y="355.876180132872" />
+    <Dynamo.Graph.Notes.NoteModel guid="bffd51c7-43db-4912-a876-3298353666d5" text="This slider controls the final position&#xD;&#xA;of the tags:&#xD;&#xA;0 - automatic mode&#xD;&#xA;1 - place all tags LEFT&#xD;&#xA;2 - place all tags RIGHT" x="-458.189325954711" y="209.33623134239" />
   </Notes>
-  <Annotations />
+  <Annotations>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="215a25c8-77f5-4854-841b-a8ead1231e1b" annotationText="INPUT:" left="-239.247442774443" top="-20.5947359948864" width="330" height="432.721791449777" fontSize="30" InitialTop="25.4052640051136" InitialHeight="463.708175620675" TextblockHeight="36" backgrouund="#FFC1D676">
+      <Models ModelGuid="97ddea52-f3b9-4091-b7f4-ef9aa6cfc501" />
+      <Models ModelGuid="a1b2bdb2-2b58-47d6-9893-bbec75dc83cf" />
+      <Models ModelGuid="5d17bc29-63e1-455c-a93e-17c2c71d3fe0" />
+      <Models ModelGuid="ab1375bc-8084-4a38-a3ea-4f9d5ebf9ab1" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="6f4bd620-89cd-4cdf-bcc6-b55fbbcdef17" annotationText="Part 1 : Tag Creation" left="670.581730692949" top="-38.7706691947805" width="718.593767539843" height="354.39325064352" fontSize="30" InitialTop="7.22933080521949" InitialHeight="313.140536588638" TextblockHeight="36" backgrouund="#FFD8D8D8">
+      <Models ModelGuid="8a8bbd29-e33f-490a-bdb6-19542d54a0d4" />
+      <Models ModelGuid="d29a0b70-cc2d-4b2b-b74b-2b7382402519" />
+      <Models ModelGuid="adebc225-25e2-4c90-b540-bdb5c8348207" />
+      <Models ModelGuid="1267530b-8f0e-45c3-a4ff-e3dbc48cdfbc" />
+      <Models ModelGuid="1bc1bdbc-7698-4510-8e9e-c87a7f6802ca" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="614beecd-3ae0-4770-bb82-c1cd4c074aa4" annotationText="Part 2 : Tag Distribution" left="1503.86057276836" top="-28.6348579130502" width="1140.67642847626" height="372.199091607573" fontSize="30" InitialTop="17.3651420869498" InitialHeight="347.17220367226" TextblockHeight="36" backgrouund="#FFD8D8D8">
+      <Models ModelGuid="b9d43e0d-db34-41f4-a4fd-a29e106d638a" />
+      <Models ModelGuid="db4da3b4-8b9a-461f-afc8-7e662d6613e8" />
+      <Models ModelGuid="7ce56f17-ea55-4d81-b3f2-5d736b2cbe3d" />
+      <Models ModelGuid="feaef797-4063-427b-9e5e-4ffcf6bfd4c9" />
+      <Models ModelGuid="710d43ac-aea6-493d-9ed7-2b2f7edea1cf" />
+      <Models ModelGuid="2eaa951f-8762-4a94-837d-a96f1f3f8c7b" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="13f3d1b5-bfed-49fa-8caa-5c89070c295d" annotationText="Report" left="-238.651790351936" top="433.672072154803" width="348.461908027114" height="424" fontSize="30" InitialTop="479.672072154803" InitialHeight="132.725043959943" TextblockHeight="36" backgrouund="#FFBB87C6">
+      <Models ModelGuid="e877f3b3-b7c2-483a-bbb8-566bfa84c7fa" />
+      <Models ModelGuid="61754dd8-d42f-476f-b76c-4aa3259ad8d2" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="7dc5cda6-a975-4bcc-bb6f-438cc32d032b" annotationText="Verify" left="233.0974902379" top="327.860610342805" width="254" height="222.141635124136" fontSize="30" InitialTop="373.860610342805" InitialHeight="206.141635124136" TextblockHeight="36" backgrouund="#FFFFAA45">
+      <Models ModelGuid="e2ca6d49-fc50-4990-a152-972e983e3105" />
+      <Models ModelGuid="14d7e011-6fb5-4e58-bda7-a1e4198d3fee" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+  </Annotations>
   <Presets />
   <Cameras>
-    <Camera Name="background_preview" eyeX="1952.708984375" eyeY="18.3658790588379" eyeZ="1865.03991699219" lookX="-161.525268554688" lookY="-101.162376403809" lookZ="13.8476142883301" />
+    <Camera Name="Background Preview" eyeX="7.9616584777832" eyeY="44.010570526123" eyeZ="-10.7294301986694" lookX="-4.16684484481812" lookY="-0.136738806962967" lookZ="0.0225908905267715" upX="0.182232841849327" upY="0.983254849910736" upZ="-0.000987990526482463" />
   </Cameras>
 </Workspace>
