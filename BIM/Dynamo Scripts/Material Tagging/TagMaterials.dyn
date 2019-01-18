@@ -126,7 +126,7 @@ cropSolid = DB.GeometryCreationUtilities.CreateExtrusionGeometry(crop1, view.Vie
 
 cropCenter = crop1[0].GetPlane().Origin
 viewRight = view.RightDirection
-cropHalfWidth = abs(view.CropBox.Max.X - view.CropBox.Min.X) / 2 + 0.5 # a bit of a buffer
+cropHalfWidth = abs(view.CropBox.Max.X - view.CropBox.Min.X) / 2 + 0.4 # a bit of a buffer
 cropCenter_dot = viewRight.DotProduct(cropCenter)
 
 # collect all existing tags in the view and find their host elements
