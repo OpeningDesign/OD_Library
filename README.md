@@ -1,3 +1,7 @@
+<p align="right" style="" >
+<img src="https://raw.githubusercontent.com/OpeningDesign/OD_Library/master/Marketing/Logos/od_icon_logo_2.jpg" width="120px"/>
+</p>
+
 # Library
 An evolving content library for OpeningDesign
 
