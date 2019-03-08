@@ -1,0 +1,568 @@
+{
+  "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "Finish Key_Read_3",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [
+    {
+      "Id": "8a2a5825305b4435a635d39b6b04b003",
+      "Name": "CSV File Path",
+      "Type": "string",
+      "Value": "..\\..\\..\\..\\Code\\Code Information.csv",
+      "Description": "Allows you to select a file on the system to get its filename"
+    },
+    {
+      "Id": "3f21436c35a141d29dc668cb43c5c869",
+      "Name": "Refresh",
+      "Type": "boolean",
+      "Value": "false",
+      "Description": "Selection between a true and false."
+    },
+    {
+      "Id": "aee38477dfcd43838c0bf18fc41db905",
+      "Name": "Replace NewLine",
+      "Type": "boolean",
+      "Value": "false",
+      "Description": "Selection between a true and false."
+    },
+    {
+      "Id": "fa6a663b2db244e0b94559b5b0aa1e96",
+      "Name": "Replacement",
+      "Type": "string",
+      "Value": ", ",
+      "Description": "Creates a string."
+    }
+  ],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "DSRevitNodesUI.Views, DSRevitNodesUI",
+      "SelectedIndex": 44,
+      "NodeType": "ExtensionNode",
+      "Id": "b9bb771dcfd34df2aeeb9d44732c64fd",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "55d115ec29d74a3f96b571ebdc5fd647",
+          "Name": "Views",
+          "Description": "The selected Views",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "All views available in the current document."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.Filename, CoreNodeModels",
+      "HintPath": "C:\\Dropbox\\GitHub\\OD_Library\\Code\\Code Information.csv",
+      "InputValue": "..\\..\\..\\..\\Code\\Code Information.csv",
+      "NodeType": "ExtensionNode",
+      "Id": "8a2a5825305b4435a635d39b6b04b003",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "dd66b6447fed49aeae8236864e70cc7a",
+          "Name": "",
+          "Description": "Filename",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows you to select a file on the system to get its filename"
+    },
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "# Copyright(c) 2016, Bad Monkeys\n# www.badmonkeys.net\n\nimport clr\nimport System\npf_path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.ProgramFilesX86)\nimport sys\nsys.path.append('%s\\IronPython 2.7\\Lib' %pf_path)\nimport csv\nimport io\n\ncsv_path, to_replace, rep, _ = IN\n\nwith io.open(csv_path, 'rU', encoding='utf-8') as f:\n\tdata = csv.reader(f)\n\tOUT = [[c.replace('\\n', rep) for c in row] for row in data] if to_replace else list(data)",
+      "VariableInputPorts": true,
+      "Id": "b3e9e0046e804110961e8d411c7b8494",
+      "Inputs": [
+        {
+          "Id": "0851eab4fa804a368f005f343e639cc1",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "48b8677470264e6d9cbed1bc79a36dab",
+          "Name": "IN[1]",
+          "Description": "Input #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "87f44d3ad7e646178071aae4514c2cc1",
+          "Name": "IN[2]",
+          "Description": "Input #2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c2978f4af82c4f7a96e35ddf4eccc643",
+          "Name": "IN[3]",
+          "Description": "Input #3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "89a04d1950634c869db716265403dc58",
+          "Name": "OUT",
+          "Description": "Result of the python script",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Runs an embedded IronPython script."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.Deconstruct@var[]..[]",
+      "Id": "87cb1247b81d4eb8ae0f28aba9a6d838",
+      "Inputs": [
+        {
+          "Id": "708f7be1cbd0466ca09e250a9bafde2c",
+          "Name": "list",
+          "Description": "List to be split.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "79f6883ab71d4e3d9bc50c54aa4687d9",
+          "Name": "first",
+          "Description": "First item in the list.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3b1632e4f6f44830857b09d9e9dff429",
+          "Name": "rest",
+          "Description": "Rest of the list.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Given a list, produces the first item in the list, and a new list containing all items except the first.\n\nList.Deconstruct (list: var[]..[]): var[]..[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "250a82aaad6c4f5aa02339ad8505c8d0",
+      "Inputs": [
+        {
+          "Id": "4c263fe86a9c45e8a5ef68968c4a4c8f",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "0e1084777a824c05bdc3eae5ae3f878b",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "# Copyright(c) 2017, Dimitar Venkov\r\n# @5devene, dimitar.ven@gmail.com\r\n# www.badmonkeys.net\r\n# inspired by the Key Schedule node from arcni-lab.net\r\n\r\nimport clr\r\n\r\nclr.AddReference('RevitAPI')\r\nfrom Autodesk.Revit.DB import *\r\n\r\nclr.AddReference('RevitServices')\r\nfrom RevitServices.Persistence import DocumentManager\r\nfrom RevitServices.Transactions import TransactionManager\r\ndoc = DocumentManager.Instance.CurrentDBDocument\r\n\r\nks1 = UnwrapElement(IN[0])\r\nheaders = IN[1]\r\ndata = IN[2]\r\n\r\ntry:\r\n\tTransactionManager.Instance.EnsureInTransaction(doc)\r\n\tif any(isinstance(item, list) for item in data):\r\n\t\tcol_count = max(map(len, data) )\r\n\t\tif col_count != ks1.Definition.GetFieldCount() or col_count != len(headers):\r\n\t\t\traise Exception('Prepare the key schedule fields in\\nadvance, so that they match the data set.')\r\n\t\telse:\r\n\t\t\ttableData = ks1.GetTableData()\r\n\t\t\tsectionData = tableData.GetSectionData(SectionType.Body)\r\n\t\t\trow_count = sectionData.NumberOfRows\r\n\t\t\tfirstRows = 1\r\n\t\t\tif row_count != 1:\r\n\t\t\t\tst1 = SubTransaction(doc)\r\n\t\t\t\tst1.Start()\r\n\t\t\t\ttry:\r\n\t\t\t\t\tsectionData.RemoveRow(1)\r\n\t\t\t\texcept:\r\n\t\t\t\t\tfirstRows = 2\r\n\t\t\t\tst1.RollBack()\r\n\t\t\t\tst1.Dispose()\r\n\t\t\tif row_count - firstRows < len(data):\r\n\t\t\t\trowsToAdd = len(data) - row_count + firstRows\r\n\t\t\t\tfor _ in xrange(0, rowsToAdd):\r\n\t\t\t\t\tsectionData.InsertRow(0)\r\n\t\t\telse:\r\n\t\t\t\t# schedule when updating might already have too many rows \r\n\t\t\t\trowsToDelete = row_count - firstRows - len(data)\r\n\t\t\t\tfor i in xrange(row_count -1, row_count - rowsToDelete -1, -1):\r\n\t\t\t\t\tsectionData.RemoveRow(i)\r\n\t\t\tdoc.Regenerate()\r\n\t\t\trow_elems = FilteredElementCollector(doc, ks1.Id)\r\n\t\t\ti = 0\r\n\t\t\tfor e in row_elems:\r\n\t\t\t\tparams = e.ParametersMap\r\n\t\t\t\tfor j in xrange(col_count):\r\n\t\t\t\t\tparams[headers[j] ].Set(unicode(data[i][j]) )\r\n\t\t\t\ti += 1\r\n\tTransactionManager.Instance.TransactionTaskDone()\r\n\tOUT = \"Schedule set successfully.\"\r\nexcept Exception, ex:\r\n\tOUT = ex",
+      "VariableInputPorts": true,
+      "Id": "ae88e609d7dc404db280deca278f3027",
+      "Inputs": [
+        {
+          "Id": "b7170f221dc74b9b845a3ced781cc5a7",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2ad4672e33644a8aabcf47c7c112cb98",
+          "Name": "IN[1]",
+          "Description": "Input #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f1cd51b90f7147b2b9d1eacd357159ea",
+          "Name": "IN[2]",
+          "Description": "Input #2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a08b9d322f924b65b3f808bd0adeef39",
+          "Name": "IN[3]",
+          "Description": "Input #3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "54d593a6a2c14cfdafc2d03b155faca9",
+          "Name": "OUT",
+          "Description": "Result of the python script",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Runs an embedded IronPython script."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
+      "NodeType": "BooleanInputNode",
+      "InputValue": false,
+      "Id": "3f21436c35a141d29dc668cb43c5c869",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "c08df7e2a7044c3f99e563d07a34611d",
+          "Name": "",
+          "Description": "Boolean",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Selection between a true and false."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "/*\n\nDYNAMO VERSION: 1.3+\nREVIT VERSION: 2016+\n\nCreated by: Dimitar Venkov\nCreated on: 09/01/17\n\nModified by: Dimitar Venkov\nModified on: 12/03/18\n\nModified by:\nModified on:\n\nREQUIRED PACKAGES:\n------------------------------\n\nDESCRIPTION:\n------------------------------\n- All files must be encoded as UTF-8.\n\n- Make sure that you've created a Schedule beforehand\n  and have added a new Text field (Fields > Add Parameter,\n  Type of Parameter > Text) for each header name in the\n  csv file.\n\n- As of the graph creation date, key schedule fields can\n  not be created and added programatically through the API.\n\nISSUES:\n------------------------------\n\n*/;",
+      "Id": "c031061287e0467ca1432a7b4fbea68b",
+      "Inputs": [],
+      "Outputs": [],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
+      "NodeType": "BooleanInputNode",
+      "InputValue": false,
+      "Id": "aee38477dfcd43838c0bf18fc41db905",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "69ce1f0dc90342dea16a8e7f4b514f86",
+          "Name": "",
+          "Description": "Boolean",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Selection between a true and false."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": ", ",
+      "Id": "fa6a663b2db244e0b94559b5b0aa1e96",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "70f36a3f6f8c48949e00fc47347a32bc",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "55d115ec29d74a3f96b571ebdc5fd647",
+      "End": "b7170f221dc74b9b845a3ced781cc5a7",
+      "Id": "d1f7e25790194a36bd1128266fd52d3e"
+    },
+    {
+      "Start": "dd66b6447fed49aeae8236864e70cc7a",
+      "End": "0851eab4fa804a368f005f343e639cc1",
+      "Id": "64c2b49c014249389cbb22e694018816"
+    },
+    {
+      "Start": "89a04d1950634c869db716265403dc58",
+      "End": "708f7be1cbd0466ca09e250a9bafde2c",
+      "Id": "d948241b252a4e2bbf42d448566d8169"
+    },
+    {
+      "Start": "79f6883ab71d4e3d9bc50c54aa4687d9",
+      "End": "2ad4672e33644a8aabcf47c7c112cb98",
+      "Id": "74041b21fbc4417bb00594d3f714ddba"
+    },
+    {
+      "Start": "3b1632e4f6f44830857b09d9e9dff429",
+      "End": "f1cd51b90f7147b2b9d1eacd357159ea",
+      "Id": "bbd66cc6420a49f7b0907a193a048786"
+    },
+    {
+      "Start": "54d593a6a2c14cfdafc2d03b155faca9",
+      "End": "4c263fe86a9c45e8a5ef68968c4a4c8f",
+      "Id": "ce1977f069354351b9d14fb86346b482"
+    },
+    {
+      "Start": "c08df7e2a7044c3f99e563d07a34611d",
+      "End": "a08b9d322f924b65b3f808bd0adeef39",
+      "Id": "b9ce9499b92147a6a137a376163db677"
+    },
+    {
+      "Start": "c08df7e2a7044c3f99e563d07a34611d",
+      "End": "c2978f4af82c4f7a96e35ddf4eccc643",
+      "Id": "1250bf1d265b48bab5d5f64783bb016b"
+    },
+    {
+      "Start": "69ce1f0dc90342dea16a8e7f4b514f86",
+      "End": "48b8677470264e6d9cbed1bc79a36dab",
+      "Id": "c71745ecbcdd41509312616e2b3e085d"
+    },
+    {
+      "Start": "70f36a3f6f8c48949e00fc47347a32bc",
+      "End": "87f44d3ad7e646178071aae4514c2cc1",
+      "Id": "0da16d84573a428eaff6127cadfa6479"
+    }
+  ],
+  "Dependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.0.2.6826",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Schedule View",
+        "Id": "b9bb771dcfd34df2aeeb9d44732c64fd",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1662.77230550043,
+        "Y": 769.94732600849
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "CSV File Path",
+        "Id": "8a2a5825305b4435a635d39b6b04b003",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1662.77230550043,
+        "Y": 855.685643099918
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "csv.ReadUnicode",
+        "Id": "b3e9e0046e804110961e8d411c7b8494",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2156.38991458643,
+        "Y": 856.642913909998
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List.Deconstruct",
+        "Id": "87cb1247b81d4eb8ae0f28aba9a6d838",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2304.23941830452,
+        "Y": 855.896552452774
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "250a82aaad6c4f5aa02339ad8505c8d0",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2879.27291820314,
+        "Y": 817.218553272954
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "KeySchedule.Populate",
+        "Id": "ae88e609d7dc404db280deca278f3027",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2710.75543431257,
+        "Y": 819.328790154528
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Refresh",
+        "Id": "3f21436c35a141d29dc668cb43c5c869",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1662.77230550043,
+        "Y": 1083.74166137266
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "c031061287e0467ca1432a7b4fbea68b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1142.08195373453,
+        "Y": 735.865696137215
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Replace NewLine",
+        "Id": "aee38477dfcd43838c0bf18fc41db905",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1662.77230550043,
+        "Y": 950.758428420376
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Replacement",
+        "Id": "fa6a663b2db244e0b94559b5b0aa1e96",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1662.77230550043,
+        "Y": 1009.63815339506
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "9614cf5b56944fa4a5877ed1d63f42a1",
+        "Title": "INPUT:",
+        "Nodes": [
+          "b9bb771dcfd34df2aeeb9d44732c64fd",
+          "8a2a5825305b4435a635d39b6b04b003",
+          "3f21436c35a141d29dc668cb43c5c869",
+          "aee38477dfcd43838c0bf18fc41db905",
+          "fa6a663b2db244e0b94559b5b0aa1e96"
+        ],
+        "Left": 1652.77230550043,
+        "Top": 739.94732600849,
+        "Width": 269.0,
+        "Height": 411.79433536417,
+        "FontSize": 14.0,
+        "InitialTop": 769.94732600849,
+        "InitialHeight": 458.79433536417,
+        "TextblockHeight": 20.0,
+        "Background": "#FF848484"
+      },
+      {
+        "Id": "e839ffb5792f4f5196fcb30a604643ef",
+        "Title": "filePath: string\r\nrepNewLine: bool\r\nreplacement: str\r\nRefresh: bool",
+        "Nodes": [],
+        "Left": 2033.7604683447,
+        "Top": 913.767755575526,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "5b8043e65ef44f9dbde5e8f5b8258a22",
+        "Title": "scheduleView: view\r\nheaders: string[]\r\ndata: string[][]\r\nrefresh: bool",
+        "Nodes": [],
+        "Left": 2561.83054685524,
+        "Top": 868.260847724039,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": -759.23982906755737,
+    "Y": -416.320218987813,
+    "Zoom": 0.71395775646133186
+  }
+}

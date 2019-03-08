@@ -90,7 +90,7 @@
       "Id": "5d17bc2963e1455ca93e17c2c71d3fe0",
       "Name": "Refresh The View",
       "Type": "boolean",
-      "Value": "false",
+      "Value": "true",
       "Description": "Selection between a true and false."
     },
     {
@@ -153,7 +153,7 @@
     },
     {
       "ConcreteType": "DSRevitNodesUI.FamilyTypes, DSRevitNodesUI",
-      "SelectedIndex": 1847,
+      "SelectedIndex": 1354,
       "NodeType": "ExtensionNode",
       "Id": "e2ca6d49fc504990a152972e983e3105",
       "Inputs": [],
@@ -173,7 +173,7 @@
     },
     {
       "ConcreteType": "DSRevitNodesUI.FamilyTypes, DSRevitNodesUI",
-      "SelectedIndex": -1,
+      "SelectedIndex": 1353,
       "NodeType": "ExtensionNode",
       "Id": "14d7e0116fb54e58bda7a1e4198d3fee",
       "Inputs": [],
@@ -623,7 +623,7 @@
     {
       "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
       "NodeType": "BooleanInputNode",
-      "InputValue": false,
+      "InputValue": true,
       "Id": "5d17bc2963e1455ca93e17c2c71d3fe0",
       "Inputs": [],
       "Outputs": [
@@ -1182,8 +1182,8 @@
         ],
         "Left": -238.651790351936,
         "Top": 433.672072154803,
-        "Width": 318.46190802711317,
-        "Height": 155.0,
+        "Width": 348.46190802711317,
+        "Height": 424.0,
         "FontSize": 30.0,
         "InitialTop": 479.672072154803,
         "InitialHeight": 145.0,
@@ -1199,7 +1199,7 @@
         ],
         "Left": 233.0974902379,
         "Top": 327.860610342805,
-        "Width": 263.0,
+        "Width": 254.0,
         "Height": 222.14163512413603,
         "FontSize": 30.0,
         "InitialTop": 373.860610342805,
@@ -1264,8 +1264,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 318.45618712389046,
-    "Y": -8.8077635969633548,
-    "Zoom": 0.92190840110987349
+    "X": 221.09549594960527,
+    "Y": 88.528516159859123,
+    "Zoom": 0.65958935228290883
   }
 }

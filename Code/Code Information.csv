@@ -1,0 +1,88 @@
+Column_1,Column_2,Column_3,Column_4
+Applicable Codes:,"General:
+• Building/Dwelling Code IBC 2015
+• (WI Commercial Building Code SPS 362)
+Existing:
+• International Existing Building Code 2015
+• (WI Commercial Building Code SPS 366)
+Energy Conservation:
+• International  Energy  Conservation  Code 2015
+• (WI Commercial Building Code v363)
+Plumbing:
+• WI Commercial Building Code SPS 381-387
+Mechanical:
+• Mechanical Code IMC 2015
+• (WI Commercial Building Code SPS 364)
+Electrical:
+• Electrical Code NEC 2008
+• (WI Commercial Building Code SPS 316
+Fire:
+• Fire/Life Safety Code 2009 NFPA-1
+• (WI Commercial Building Code SPS 314 & 330)
+Accessibility:
+• ANSI Standard A117.1-2009- for Accessibility
+• (WI Commercial Building Code SPS 362)
+Fuel:
+• International Fuel Gas Code 2009
+• (WI Commercial Building Code Chapter 365)",,
+Sprinklers (Section 903 Automatic Sprinkler Systems):,No,https://up.codes/viewer/wyoming/ibc-2015/chapter/9/fire-protection-systems#903,
+Basement:,No Basement,,
+Chapter 5 Classification of Work:,New & Alteration – Level 2,https://up.codes/viewer/wyoming/iebc-2015/chapter/5/classification-of-work#5,
+Chapter 3 Use and Occupancy Classification:,"309.1 Mercantile Group M
+(A-2 Incidential Use)",https://up.codes/viewer/wyoming/ibc-2015/chapter/3/use-and-occupancy-classification#3,"- Assembly (see Section 303): Groups A-1, A-2, A-3, A-4 and A-5.
+- Business (see Section 304): Group B. 
+- Educational (see Section 305): Group E. 
+- Factory and Industrial (see Section 306): Groups F-1 and F-2. 
+- High Hazard (see Section 307): Groups H-1, H-2, H-3, H-4 and H-5. 
+- Institutional (see Section 308): Groups I-1, I-2, I-3 and I-4. 
+- Mercantile (see Section 309): Group M. 
+- Residential (see Section 310): Groups R-1, R-2, R-3 and R-4. 
+- Storage (see Section 311): Groups S-1 and S-2. 
+- Utility and Miscellaneous (see Section 312): Group U."
+Chapter 4 Special Detailed Requirements Based on Use and Occupancy:,N/A,,
+Section 602 Construction Classification:,VB,https://up.codes/viewer/wyoming/ibc-2015/chapter/6/types-of-construction#602,
+Table 504.3a Allowable Building Height In Feet Above Grade Plane:,"Allowed:1
+Actual:1
+505.2.1 Area Limitation
+Mezzanine less than 1/3 of the retail area on the 1st floor",https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#504.3,
+506.2 Allowable Area Determination:,9000 sf,https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#506.2,
+506.3 Frontage Increase:,Calculation not used,https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#506.3,
+508.3 Nonseparated Occupancies:,N/A,https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#508.3,
+508.4 Separated Occupancies,N/A,https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#508.4,
+Table 602 Fire-resistance Rating Requirements For Exterior Walls Based On Fire Separation Distance:,"Structural Frame: 0 hr
+Bearing Walls- exterior: 0 hr
+Bearing Walls-interior: 0 hr
+Non-bearing walls-exterior - 
+Fire Separation Distance
+      • X < 5c = 0 hr
+      • 5 = X< 10 = 0 hr
+      • 10 = X< 30 = 0 hr
+      • X = 30 = 0 hr
+Non-bearing walls-interior: 0 hr
+Floor Construction: 0 hr
+Roof Construction: 0 hr",https://up.codes/viewer/wyoming/ibc-2015/chapter/6/types-of-construction#602,
+Table 1020.1 Corridor Fire-resistance Rating:,0 hr with Sprinklers,https://up.codes/viewer/wyoming/ibc-2015/chapter/10/means-of-egress#1020,
+1006.2.1 Egress Based on Occupant Load and Common Path of Egress Travel Distance:,"Maximum Common Path without Sprinkler System: 75ft
+Maximum Occupant Load Of Space With One Exit:
+      • M: 49ft",https://up.codes/viewer/wyoming/ibc-2015/chapter/10/means-of-egress#1006.2.1,
+Section 1017 Exit Access Travel Distance:,Maximum Exit Access Travel Distance without Sprinklers: 200ft,https://up.codes/viewer/wyoming/ibc-2015/chapter/10/means-of-egress#1017,
+1020.4 Dead Ends:,20ft,https://up.codes/viewer/wyoming/iebc-2015/chapter/8/alterations-level-2#805.6,https://up.codes/viewer/wyoming/ibc-2015/chapter/10/means-of-egress#1020.4
+Table 906.3(1) Fire Extinguishers For Class A Fire Hazards ,"Type 2-A: 
+      • (everywhere except kitchen)
+      • Maximum Floor Area Per Unit of A: 1,500sf
+      • Maximum Distance to Extinguisher: 75ft
+      • Hazard Classification: Ordinary (Moderate)
+Type K:
+      • 2.5-gallon or (2)1.5-gallon
+      • Maximum Distance to Extinguisher:Within 30ft of cooking equipment
+      • Hazard Classification:Ordinary (Moderate)",https://up.codes/viewer/wyoming/ifc-2015/chapter/9/fire-protection-systems#906,
+2902.1 Minimum Number of Fixtures,"Classification & Occupancy: 
+      • Business (M)3. 2902.2 Separate Facilities exception 1: Separate facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or less.
+Water Closets: 1 per 500
+      • Women & Men (Required/Provided): 1/2(one ADA restroom provided on 1st floor)
+Lavatories: 1 per 750
+      • Women & Men (Required/Provided): 1/2(one ADA restroom provided on 1st floor)
+Bathtubs/Showers: N/A
+Drinking Fountains:
+      • (Required/Provided): 1/1
+Other: N/A",https://up.codes/viewer/wyoming/ibc-2015/chapter/29/plumbing-systems#2902.1,
