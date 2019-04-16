@@ -153,7 +153,7 @@
     },
     {
       "ConcreteType": "DSRevitNodesUI.FamilyTypes, DSRevitNodesUI",
-      "SelectedIndex": 1354,
+      "SelectedIndex": 480,
       "NodeType": "ExtensionNode",
       "Id": "e2ca6d49fc504990a152972e983e3105",
       "Inputs": [],
@@ -173,7 +173,7 @@
     },
     {
       "ConcreteType": "DSRevitNodesUI.FamilyTypes, DSRevitNodesUI",
-      "SelectedIndex": 1353,
+      "SelectedIndex": 479,
       "NodeType": "ExtensionNode",
       "Id": "14d7e0116fb54e58bda7a1e4198d3fee",
       "Inputs": [],
@@ -1183,7 +1183,7 @@
         "Left": -238.651790351936,
         "Top": 433.672072154803,
         "Width": 348.46190802711317,
-        "Height": 424.0,
+        "Height": 264.0,
         "FontSize": 30.0,
         "InitialTop": 479.672072154803,
         "InitialHeight": 145.0,
