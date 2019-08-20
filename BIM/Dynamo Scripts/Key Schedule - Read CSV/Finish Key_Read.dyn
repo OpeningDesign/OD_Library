@@ -2,7 +2,7 @@
   "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
   "IsCustomNode": false,
   "Description": "",
-  "Name": "Finish Key_Read_3",
+  "Name": "Finish Key_Read",
   "ElementResolver": {
     "ResolutionMap": {}
   },
@@ -11,7 +11,7 @@
       "Id": "8a2a5825305b4435a635d39b6b04b003",
       "Name": "CSV File Path",
       "Type": "string",
-      "Value": "..\\..\\..\\..\\Code\\Code Information.csv",
+      "Value": "..\\..\\..\\Code\\Code Information.csv",
       "Description": "Allows you to select a file on the system to get its filename"
     },
     {
@@ -25,7 +25,7 @@
       "Id": "aee38477dfcd43838c0bf18fc41db905",
       "Name": "Replace NewLine",
       "Type": "boolean",
-      "Value": "false",
+      "Value": "true",
       "Description": "Selection between a true and false."
     },
     {
@@ -40,7 +40,7 @@
   "Nodes": [
     {
       "ConcreteType": "DSRevitNodesUI.Views, DSRevitNodesUI",
-      "SelectedIndex": 44,
+      "SelectedIndex": 35,
       "NodeType": "ExtensionNode",
       "Id": "b9bb771dcfd34df2aeeb9d44732c64fd",
       "Inputs": [],
@@ -61,7 +61,7 @@
     {
       "ConcreteType": "CoreNodeModels.Input.Filename, CoreNodeModels",
       "HintPath": "C:\\Dropbox\\GitHub\\OD_Library\\Code\\Code Information.csv",
-      "InputValue": "..\\..\\..\\..\\Code\\Code Information.csv",
+      "InputValue": "..\\..\\..\\Code\\Code Information.csv",
       "NodeType": "ExtensionNode",
       "Id": "8a2a5825305b4435a635d39b6b04b003",
       "Inputs": [],
@@ -296,7 +296,7 @@
     {
       "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
       "NodeType": "BooleanInputNode",
-      "InputValue": false,
+      "InputValue": true,
       "Id": "aee38477dfcd43838c0bf18fc41db905",
       "Inputs": [],
       "Outputs": [
@@ -438,7 +438,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": 2156.38991458643,
-        "Y": 856.642913909998
+        "Y": 844.03712607654461
       },
       {
         "ShowGeometry": true,
@@ -524,7 +524,7 @@
         ],
         "Left": 1652.77230550043,
         "Top": 739.94732600849,
-        "Width": 269.0,
+        "Width": 228.0,
         "Height": 411.79433536417,
         "FontSize": 14.0,
         "InitialTop": 769.94732600849,
@@ -561,8 +561,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -759.23982906755737,
-    "Y": -416.320218987813,
+    "X": -688.23982906755737,
+    "Y": -391.320218987813,
     "Zoom": 0.71395775646133186
   }
 }

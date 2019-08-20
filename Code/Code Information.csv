@@ -1,4 +1,4 @@
-Column_1,Column_2,Column_3,Column_4
+Column_1,Column_2,Column_3,Column_4,Column_5
 Applicable Codes:,"General:
 • Building/Dwelling Code IBC 2015
 • (WI Commercial Building Code SPS 362)
@@ -24,11 +24,12 @@ Accessibility:
 • (WI Commercial Building Code SPS 362)
 Fuel:
 • International Fuel Gas Code 2009
-• (WI Commercial Building Code Chapter 365)",,
-Sprinklers (Section 903 Automatic Sprinkler Systems):,No,https://up.codes/viewer/wyoming/ibc-2015/chapter/9/fire-protection-systems#903,
-Basement:,No Basement,,
-Chapter 5 Classification of Work:,New,https://up.codes/viewer/wyoming/iebc-2015/chapter/5/classification-of-work#5,
-Chapter 3 Use and Occupancy Classification:,"311.2 Moderate-Hazard Storage, Group S-1",https://up.codes/viewer/wyoming/ibc-2015/chapter/3/use-and-occupancy-classification#3,"- Assembly (see Section 303): Groups A-1, A-2, A-3, A-4 and A-5.
+• (WI Commercial Building Code Chapter 365)",,,
+Sprinklers (Section 903 Automatic Sprinkler Systems):,Yes (R-2),,https://up.codes/viewer/wyoming/ibc-2015/chapter/9/fire-protection-systems#903.2.8,
+Basement:,Yes,,,
+Chapter 5 Classification of Work:,New,,https://up.codes/viewer/wyoming/iebc-2015/chapter/5/classification-of-work#5,
+Chapter 3 Use and Occupancy Classification:,"1st-3rd Floors: 310.4 Residential Group R-2
+Basement Parking: Moderate-Hazard Storage, Group S-1",,https://up.codes/viewer/wyoming/ibc-2015/chapter/3/use-and-occupancy-classification#3,"- Assembly (see Section 303): Groups A-1, A-2, A-3, A-4 and A-5.
 - Business (see Section 304): Group B. 
 - Educational (see Section 305): Group E. 
 - Factory and Industrial (see Section 306): Groups F-1 and F-2. 
@@ -38,38 +39,93 @@ Chapter 3 Use and Occupancy Classification:,"311.2 Moderate-Hazard Storage, Grou
 - Residential (see Section 310): Groups R-1, R-2, R-3 and R-4. 
 - Storage (see Section 311): Groups S-1 and S-2. 
 - Utility and Miscellaneous (see Section 312): Group U."
-Chapter 4 Special Detailed Requirements Based on Use and Occupancy:,406.8 Repair Garages,,
-Section 602 Construction Classification:,VB,https://up.codes/viewer/wyoming/ibc-2015/chapter/6/types-of-construction#602,
-Table 504.3a Allowable Building Height In Feet Above Grade Plane:,"Allowed:1
-Actual:1",https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#504.3,
-506.2 Allowable Area Determination:,9000 sf,https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#506.2,
-506.3 Frontage Increase:,Calculation not used,https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#506.3,
-508.3 Nonseparated Occupancies:,N/A,https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#508.3,
-508.4 Separated Occupancies,N/A,https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#508.4,
-Table 602 Fire-resistance Rating Requirements For Exterior Walls Based On Fire Separation Distance:,"Structural Frame: 0 hr
-Bearing Walls- exterior: 0 hr
-Bearing Walls-interior: 0 hr
-Non-bearing walls-exterior - 
-Fire Separation Distance
+Chapter 4 Special Detailed Requirements Based on Use and Occupancy:,Section 420 Groups R-2,,,
+Section 602 Construction Classification:,Type-VB,,https://up.codes/viewer/wyoming/ibc-2015/chapter/6/types-of-construction#602,
+"Table 504.4a, Allowable Number Of Stories Above Grade Plane","R-2 (sprinklered):
+  • Actual: 3
+  • Allowed: 3
+S-1(sprinklered):
+  • Actual: 1
+  • Allowed: 2",,https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#504.3,
+"506.2 Allowable Area Determination
+&
+506.3 Frontage Increase:","Facing North:
+  • 174ft (60ft to R.O.W)
+Facing East:
+  • 145 (60ft to R.O.W)
+Facing South:
+  • 73ft (6ft to P.L.)
+  • 33ft (117ft to P.L)
+  • 73ft (6ft to P.L.)
+Facing West:
+  • 145Ft (13ft to P.L.)
+
+For R-2
+  • Allowable area per floor:  23,082sf (w/ Frontage Increase)
+    • Actual
+      • 1st Floor:20,889sf
+      • 2nd Floor:22,879sf
+      • 3rd Floor: 22,957sf
+    • Total allowable area:69,246sf
+      • Actual: 66,725sf
+For S-1
+  • Type 1B (144,000 w/o Frontage Increase)
+    • Actual: 29,041sf",,"https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#506.2
+https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#506.3",
+508.3 Nonseparated Occupancies:,Yes,N/A,https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#508.3,
+508.4 Separated Occupancies,,N/A,https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#508.4,
+510.4 Parking Beneath Group R,2hr Floor separation between R-2 and S-1,"Where a maximum one story above grade plane Group S-2 parking garage, enclosed or open, or combination thereof, of Type I construction or open of Type IV construction, with grade entrance, is provided under a building of Group R, the number of stories to be used in determining the minimum type of construction shall be measured from the floor above such a parking area. The floor assembly between the parking garage and the Group R above shall comply with the type of construction required for the parking garage and shall also provide a fire resistance rating not less than the mixed occupancy separation required in Section 508.4.",https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#510.4,
+Table 602 Fire-resistance Rating Requirements For Exterior Walls Based On Fire Separation Distance:,"For Type VB
+  Structural Frame: 0 hr
+  Bearing Walls- exterior: 0 hr
+  Bearing Walls-interior: 0 hr
+  Non-bearing walls-exterior - 
+  Fire Separation Distance
       • X < 5c = 0 hr
       • 5 = X< 10 = 0 hr
       • 10 = X< 30 = 0 hr
       • X = 30 = 0 hr
-Non-bearing walls-interior: 0 hr
-Floor Construction: 0 hr
-Roof Construction: 0 hr",https://up.codes/viewer/wyoming/ibc-2015/chapter/6/types-of-construction#602,
-Table 1020.1 Corridor Fire-resistance Rating:,0 hr with Sprinklers,https://up.codes/viewer/wyoming/ibc-2015/chapter/10/means-of-egress#1020,
-1006.2.1 Egress Based on Occupant Load and Common Path of Egress Travel Distance:,"Maximum Common Path without Sprinkler System: 75ft
-Maximum Occupant Load Of Space With One Exit:
-      • M: 49ft",https://up.codes/viewer/wyoming/ibc-2015/chapter/10/means-of-egress#1006.2.1,
-Section 1017 Exit Access Travel Distance:,Maximum Exit Access Travel Distance without Sprinklers: 200ft,https://up.codes/viewer/wyoming/ibc-2015/chapter/10/means-of-egress#1017,
-1020.4 Dead Ends:,20ft,https://up.codes/viewer/wyoming/iebc-2015/chapter/8/alterations-level-2#805.6,https://up.codes/viewer/wyoming/ibc-2015/chapter/10/means-of-egress#1020.4
+  Non-bearing walls-interior: 0 hr
+  Floor Construction: 0 hr
+  Roof Construction: 0 hr
+
+For Type 1B
+  Structural Frame: 2 hr
+  Bearing Walls- exterior: 2 hr
+  Bearing Walls-interior: 2 hr
+  Non-bearing walls-exterior - 
+  Fire Separation Distance
+      • X < 5c = 1 hr
+      • 5 = X< 10 = 1 hr
+      • 10 = X< 30 = 1 hr
+      • X = 30 = 0 hr
+  Non-bearing walls-interior: 0 hr
+  Floor Construction: 2 hr
+  Roof Construction: 1.5 hr",,https://up.codes/viewer/wyoming/ibc-2015/chapter/6/types-of-construction#602,
+708.3 Fire-Resistance Rating,"Corridors: 1/2hr rated
+Between Dwelling Units: 1/2hr rated","Exceptions:
+
+1. Corridor walls permitted to have a 1/2-hour fire-resistance rating by Table 1020.1.
+
+2. Dwelling unit and sleeping unit separations in buildings of Type IIB, IIIB and VB construction shall have fire-resistance ratings of not less than 1/2 hour in buildings equipped throughout with an automatic sprinkler system in accordance with Section 903.3.1.1.",https://up.codes/viewer/wyoming/ibc-2015/chapter/7/fire-and-smoke-protection-features#708.3,
+711.2.4.3 Dwelling Units and Sleeping Units,Between Dwelling Units: 1/2hr rated,"Exception: Horizontal assemblies separating dwelling units and sleeping units shall be not less than 1/2-hour fire-resistance-rated construction in a building of Type IIB, IIIB and VB construction, where the building is equipped throughout with an automatic sprinkler system in accordance with Section 903.3.1.1.",https://up.codes/viewer/wyoming/ibc-2015/chapter/7/fire-and-smoke-protection-features#711.2.4.3,
+Section 1020 Corridors,Corridors: 1/2hr rated,½ rated with automatic sprinkler system,https://up.codes/viewer/wyoming/ibc-2015/chapter/10/means-of-egress#1020,
+1006.2.1 Egress Based on Occupant Load and Common Path of Egress Travel Distance:,"For R-2
+  Maximum Common Path with Sprinkler System: 125ft
+  Maximum Occupant Load Of Space With One Exit: 49
+For S-1
+  Maximum Common Path with Sprinkler System: 100ft
+  Maximum Occupant Load Of Space With One Exit: 29",,https://up.codes/viewer/wyoming/ibc-2015/chapter/10/means-of-egress#1006.2.1,
+Section 1017 Exit Access Travel Distance:,"For R-2: 250 (w/sprinkler)
+For S-1: 250 (w/sprinkler)",,https://up.codes/viewer/wyoming/ibc-2015/chapter/10/means-of-egress#1017,
+1020.4 Dead Ends:,50ft,,https://up.codes/viewer/wyoming/iebc-2015/chapter/8/alterations-level-2#805.6,https://up.codes/viewer/wyoming/ibc-2015/chapter/10/means-of-egress#1020.4
 Table 906.3(1) Fire Extinguishers For Class A Fire Hazards ,"Type 2-A: 
       • (everywhere except kitchen)
-      • Maximum Floor Area Per Unit of A: 1,500sf
+      • Maximum Floor Area Per Unit of A: 3,000sf
+      • Maximum floor area for extinguisher: 11,250sf
       • Maximum Distance to Extinguisher: 75ft
-      • Hazard Classification: Ordinary (Moderate)
-",https://up.codes/viewer/wyoming/ifc-2015/chapter/9/fire-protection-systems#906,
+      • Hazard Classification: Ordinary (Low)
+",,https://up.codes/viewer/wyoming/ifc-2015/chapter/9/fire-protection-systems#906.3.1,
 2902.1 Minimum Number of Fixtures,"Classification & Occupancy: 
       • S1
 Water Closets: 1 per100
@@ -78,17 +134,17 @@ Water Closets: 1 per100
 Lavatories: 1 per 100
       • Women (Required/Provided) 1/1
       • Men (Required/Provided): 1/1
-",https://up.codes/viewer/wyoming/ibc-2015/chapter/29/plumbing-systems#2902.1,
-,,,
-,,,
-,,,
-,"Type K:
+",,https://up.codes/viewer/wyoming/ibc-2015/chapter/29/plumbing-systems#2902.1,
+,,,,
+,,,,
+,,,,
+,,"Type K:
       • 2.5-gallon or (2)1.5-gallon
       • Maximum Distance to Extinguisher:Within 30ft of cooking equipment
       • Hazard Classification:Ordinary (Moderate)",,
-,,,
-,,,
-,"Bathtubs/Showers: N/A
+,,,,
+,,,,
+,,"Bathtubs/Showers: N/A
 Drinking Fountains:
       • (Required/Provided): 1/1
 Other: N/A",,
