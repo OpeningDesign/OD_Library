@@ -2,6 +2,7 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:freecad="http://www.freecadweb.org/wiki/index.php?title=Svg_Namespace"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -4560,13 +4561,14 @@
            y="2666.6897"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic';text-align:end;text-anchor:end;fill:#486b86;fill-opacity:1">Sheet Title - (A.100)</tspan></text>
       <text
+         freecad:editable="ADDRESS"
          sodipodi:linespacing="125%"
          id="text5187"
          y="2649.8408"
          x="1161.571"
          style="font-style:normal;font-weight:normal;font-size:22.0025425px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#486b86;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"
-         freecad:editable="ADDRESS"><tspan
+         xml:space="preserve">
+         <tspan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic';text-align:end;text-anchor:end;fill:#486b86;fill-opacity:1"
            y="2649.8408"
            x="1161.571"
