@@ -11,7 +11,7 @@
       "Id": "8a2a5825305b4435a635d39b6b04b003",
       "Name": "CSV File Path",
       "Type": "string",
-      "Value": "..\\..\\..\\Code\\Code Information.csv",
+      "Value": ".\\Code Information.csv",
       "Description": "Allows you to select a file on the system to get its filename"
     },
     {
@@ -40,7 +40,7 @@
   "Nodes": [
     {
       "ConcreteType": "DSRevitNodesUI.Views, DSRevitNodesUI",
-      "SelectedIndex": 35,
+      "SelectedIndex": -1,
       "NodeType": "ExtensionNode",
       "Id": "b9bb771dcfd34df2aeeb9d44732c64fd",
       "Inputs": [],
@@ -60,8 +60,8 @@
     },
     {
       "ConcreteType": "CoreNodeModels.Input.Filename, CoreNodeModels",
-      "HintPath": "C:\\Dropbox\\GitHub\\OD_Library\\Code\\Code Information.csv",
-      "InputValue": "..\\..\\..\\Code\\Code Information.csv",
+      "HintPath": "C:\\Users\\DEV-DT\\Downloads\\Code Information.csv",
+      "InputValue": ".\\Code Information.csv",
       "NodeType": "ExtensionNode",
       "Id": "8a2a5825305b4435a635d39b6b04b003",
       "Inputs": [],
@@ -78,64 +78,6 @@
       ],
       "Replication": "Disabled",
       "Description": "Allows you to select a file on the system to get its filename"
-    },
-    {
-      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
-      "NodeType": "PythonScriptNode",
-      "Code": "# Copyright(c) 2016, Bad Monkeys\n# www.badmonkeys.net\n\nimport clr\nimport System\npf_path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.ProgramFilesX86)\nimport sys\nsys.path.append('%s\\IronPython 2.7\\Lib' %pf_path)\nimport csv\nimport io\n\ncsv_path, to_replace, rep, _ = IN\n\nwith io.open(csv_path, 'rU', encoding='utf-8') as f:\n\tdata = csv.reader(f)\n\tOUT = [[c.replace('\\n', rep) for c in row] for row in data] if to_replace else list(data)",
-      "VariableInputPorts": true,
-      "Id": "b3e9e0046e804110961e8d411c7b8494",
-      "Inputs": [
-        {
-          "Id": "0851eab4fa804a368f005f343e639cc1",
-          "Name": "IN[0]",
-          "Description": "Input #0",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "48b8677470264e6d9cbed1bc79a36dab",
-          "Name": "IN[1]",
-          "Description": "Input #1",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "87f44d3ad7e646178071aae4514c2cc1",
-          "Name": "IN[2]",
-          "Description": "Input #2",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "c2978f4af82c4f7a96e35ddf4eccc643",
-          "Name": "IN[3]",
-          "Description": "Input #3",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "89a04d1950634c869db716265403dc58",
-          "Name": "OUT",
-          "Description": "Result of the python script",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Runs an embedded IronPython script."
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -332,6 +274,64 @@
       ],
       "Replication": "Disabled",
       "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "# Copyright(c) 2016, Bad Monkeys\n# www.badmonkeys.net\n\nimport clr\nimport System\npf_path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.ProgramFilesX86)\nimport sys\nsys.path.append('%s\\IronPython 2.7\\Lib' %pf_path)\nimport csv\n\ndef iterStream(csv_path):\n\twith System.IO.File.OpenText(csv_path) as f:\n\t\twhile not f.EndOfStream:\n\t\t\tyield f.ReadLine()\n\t\treturn\n\ncsv_path, to_replace, rep, _ = IN\ndata = csv.reader((iterStream(csv_path)))\nOUT = [[c.replace('\\n', rep) for c in row] for row in data] if to_replace else list(data)",
+      "VariableInputPorts": true,
+      "Id": "7a570d7a86fe4dcd973a5f07f098b47a",
+      "Inputs": [
+        {
+          "Id": "2df606021f6d4ccb85e01e928e30ddb7",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d96e75644644423a8fa943d22ffe37f0",
+          "Name": "IN[1]",
+          "Description": "Input #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4e57d4997c0540c9970f16d49628dafa",
+          "Name": "IN[2]",
+          "Description": "Input #2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3dfabc3d2dff4fcbaabfdac20d696340",
+          "Name": "IN[3]",
+          "Description": "Input #3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "8d50bb315dfc4fed90af578b44729744",
+          "Name": "OUT",
+          "Description": "Result of the python script",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Runs an embedded IronPython script."
     }
   ],
   "Connectors": [
@@ -342,13 +342,8 @@
     },
     {
       "Start": "dd66b6447fed49aeae8236864e70cc7a",
-      "End": "0851eab4fa804a368f005f343e639cc1",
-      "Id": "64c2b49c014249389cbb22e694018816"
-    },
-    {
-      "Start": "89a04d1950634c869db716265403dc58",
-      "End": "708f7be1cbd0466ca09e250a9bafde2c",
-      "Id": "d948241b252a4e2bbf42d448566d8169"
+      "End": "2df606021f6d4ccb85e01e928e30ddb7",
+      "Id": "30be6de49f4147408f62471b0c810c6d"
     },
     {
       "Start": "79f6883ab71d4e3d9bc50c54aa4687d9",
@@ -372,18 +367,23 @@
     },
     {
       "Start": "c08df7e2a7044c3f99e563d07a34611d",
-      "End": "c2978f4af82c4f7a96e35ddf4eccc643",
-      "Id": "1250bf1d265b48bab5d5f64783bb016b"
+      "End": "3dfabc3d2dff4fcbaabfdac20d696340",
+      "Id": "1b21f14ce7674d6882f5add1cbd91e97"
     },
     {
       "Start": "69ce1f0dc90342dea16a8e7f4b514f86",
-      "End": "48b8677470264e6d9cbed1bc79a36dab",
-      "Id": "c71745ecbcdd41509312616e2b3e085d"
+      "End": "d96e75644644423a8fa943d22ffe37f0",
+      "Id": "41abedebcad14d42bfc5164d7f7a2cff"
     },
     {
       "Start": "70f36a3f6f8c48949e00fc47347a32bc",
-      "End": "87f44d3ad7e646178071aae4514c2cc1",
-      "Id": "0da16d84573a428eaff6127cadfa6479"
+      "End": "4e57d4997c0540c9970f16d49628dafa",
+      "Id": "250ead98462c441d8c88b3bb0c1aa3d2"
+    },
+    {
+      "Start": "8d50bb315dfc4fed90af578b44729744",
+      "End": "708f7be1cbd0466ca09e250a9bafde2c",
+      "Id": "828e1cf90c5b4164adca905306840c9c"
     }
   ],
   "Dependencies": [],
@@ -393,7 +393,7 @@
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.2.6826",
+      "Version": "2.0.3.8810",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -429,16 +429,6 @@
         "Excluded": false,
         "X": 1662.77230550043,
         "Y": 855.685643099918
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "csv.ReadUnicode",
-        "Id": "b3e9e0046e804110961e8d411c7b8494",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 2156.38991458643,
-        "Y": 844.03712607654461
       },
       {
         "ShowGeometry": true,
@@ -509,6 +499,16 @@
         "Excluded": false,
         "X": 1662.77230550043,
         "Y": 1009.63815339506
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "csv.ReadUnicode",
+        "Id": "7a570d7a86fe4dcd973a5f07f098b47a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2161.0392173452205,
+        "Y": 855.02371619849009
       }
     ],
     "Annotations": [
@@ -524,7 +524,7 @@
         ],
         "Left": 1652.77230550043,
         "Top": 739.94732600849,
-        "Width": 228.0,
+        "Width": 167.0,
         "Height": 411.79433536417,
         "FontSize": 14.0,
         "InitialTop": 769.94732600849,
@@ -561,8 +561,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -688.23982906755737,
-    "Y": -391.320218987813,
-    "Zoom": 0.71395775646133186
+    "X": -2157.6209256985012,
+    "Y": -834.46024945200509,
+    "Zoom": 1.222613908674727
   }
 }

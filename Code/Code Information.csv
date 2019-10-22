@@ -14,7 +14,7 @@ Mechanical:
 • Mechanical Code IMC 2015
 • (WI Commercial Building Code SPS 364)
 Electrical:
-• Electrical Code NEC 2008
+• Electrical Code NEC 2017
 • (WI Commercial Building Code SPS 316
 Fire:
 • Fire/Life Safety Code 2009 NFPA-1
@@ -23,13 +23,13 @@ Accessibility:
 • ANSI Standard A117.1-2009- for Accessibility
 • (WI Commercial Building Code SPS 362)
 Fuel:
-• International Fuel Gas Code 2009
+• International Fuel Gas Code 2015
 • (WI Commercial Building Code Chapter 365)",,,
-Sprinklers (Section 903 Automatic Sprinkler Systems):,Yes (R-2),,https://up.codes/viewer/wyoming/ibc-2015/chapter/9/fire-protection-systems#903.2.8,
-Basement:,Yes,,,
+Sprinklers (Section 903 Automatic Sprinkler Systems):,"Yes, NFPA 13 Sprinkler throughout project (R-2)",,https://up.codes/viewer/wyoming/ibc-2015/chapter/9/fire-protection-systems#903.2.8,
 Chapter 5 Classification of Work:,New,,https://up.codes/viewer/wyoming/iebc-2015/chapter/5/classification-of-work#5,
 Chapter 3 Use and Occupancy Classification:,"1st-3rd Floors: 310.4 Residential Group R-2
-Basement Parking: Moderate-Hazard Storage, Group S-1",,https://up.codes/viewer/wyoming/ibc-2015/chapter/3/use-and-occupancy-classification#3,"- Assembly (see Section 303): Groups A-1, A-2, A-3, A-4 and A-5.
+Basement Parking: Moderate-Hazard Storage, Group S-1
+1st Floor Common Area: A-2",,https://up.codes/viewer/wyoming/ibc-2015/chapter/3/use-and-occupancy-classification#3,"- Assembly (see Section 303): Groups A-1, A-2, A-3, A-4 and A-5.
 - Business (see Section 304): Group B. 
 - Educational (see Section 305): Group E. 
 - Factory and Industrial (see Section 306): Groups F-1 and F-2. 
@@ -39,14 +39,18 @@ Basement Parking: Moderate-Hazard Storage, Group S-1",,https://up.codes/viewer/w
 - Residential (see Section 310): Groups R-1, R-2, R-3 and R-4. 
 - Storage (see Section 311): Groups S-1 and S-2. 
 - Utility and Miscellaneous (see Section 312): Group U."
-Chapter 4 Special Detailed Requirements Based on Use and Occupancy:,Section 420 Groups R-2,,,
+Chapter 4 Special Detailed Requirements Based on Use and Occupancy:,"Section 420 Groups R-2
+  • fire partitions in accordance with Section 708
+  • horizontal assemblies in accordance with Section 711.",,,
 Section 602 Construction Classification:,Type-VB,,https://up.codes/viewer/wyoming/ibc-2015/chapter/6/types-of-construction#602,
 "Table 504.4a, Allowable Number Of Stories Above Grade Plane","R-2 (sprinklered):
   • Actual: 3
   • Allowed: 3
 S-1(sprinklered):
   • Actual: 1
-  • Allowed: 2",,https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#504.3,
+  • Allowed: 2
+
+",,https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#504.3,
 "506.2 Allowable Area Determination
 &
 506.3 Frontage Increase:","Facing North:
@@ -70,10 +74,12 @@ For R-2
       • Actual: 66,725sf
 For S-1
   • Type 1B (144,000 w/o Frontage Increase)
-    • Actual: 29,041sf",,"https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#506.2
+    • Actual: 29,041sf
+
+",,"https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#506.2
 https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#506.3",
-508.3 Nonseparated Occupancies:,Yes,N/A,https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#508.3,
-508.4 Separated Occupancies,,N/A,https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#508.4,
+508.3 Nonseparated Occupancies:,,N/A,https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#508.3,
+508.4 Separated Occupancies,Yes,N/A,https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#508.4,
 510.4 Parking Beneath Group R,2hr Floor separation between R-2 and S-1,"Where a maximum one story above grade plane Group S-2 parking garage, enclosed or open, or combination thereof, of Type I construction or open of Type IV construction, with grade entrance, is provided under a building of Group R, the number of stories to be used in determining the minimum type of construction shall be measured from the floor above such a parking area. The floor assembly between the parking garage and the Group R above shall comply with the type of construction required for the parking garage and shall also provide a fire resistance rating not less than the mixed occupancy separation required in Section 508.4.",https://up.codes/viewer/wyoming/ibc-2015/chapter/5/general-building-heights-and-areas#510.4,
 Table 602 Fire-resistance Rating Requirements For Exterior Walls Based On Fire Separation Distance:,"For Type VB
   Structural Frame: 0 hr
@@ -101,7 +107,9 @@ For Type 1B
       • X = 30 = 0 hr
   Non-bearing walls-interior: 0 hr
   Floor Construction: 2 hr
-  Roof Construction: 1.5 hr",,https://up.codes/viewer/wyoming/ibc-2015/chapter/6/types-of-construction#602,
+  Roof Construction: 1.5 hr
+
+",,https://up.codes/viewer/wyoming/ibc-2015/chapter/6/types-of-construction#602,
 708.3 Fire-Resistance Rating,"Corridors: 1/2hr rated
 Between Dwelling Units: 1/2hr rated","Exceptions:
 
@@ -115,9 +123,13 @@ Section 1020 Corridors,Corridors: 1/2hr rated,½ rated with automatic sprinkler 
   Maximum Occupant Load Of Space With One Exit: 49
 For S-1
   Maximum Common Path with Sprinkler System: 100ft
-  Maximum Occupant Load Of Space With One Exit: 29",,https://up.codes/viewer/wyoming/ibc-2015/chapter/10/means-of-egress#1006.2.1,
+  Maximum Occupant Load Of Space With One Exit: 29
+
+",,https://up.codes/viewer/wyoming/ibc-2015/chapter/10/means-of-egress#1006.2.1,
 Section 1017 Exit Access Travel Distance:,"For R-2: 250 (w/sprinkler)
-For S-1: 250 (w/sprinkler)",,https://up.codes/viewer/wyoming/ibc-2015/chapter/10/means-of-egress#1017,
+For S-1: 250 (w/sprinkler)
+
+",,https://up.codes/viewer/wyoming/ibc-2015/chapter/10/means-of-egress#1017,
 1020.4 Dead Ends:,50ft,,https://up.codes/viewer/wyoming/iebc-2015/chapter/8/alterations-level-2#805.6,https://up.codes/viewer/wyoming/ibc-2015/chapter/10/means-of-egress#1020.4
 Table 906.3(1) Fire Extinguishers For Class A Fire Hazards ,"Type 2-A: 
       • (everywhere except kitchen)
@@ -127,13 +139,47 @@ Table 906.3(1) Fire Extinguishers For Class A Fire Hazards ,"Type 2-A:
       • Hazard Classification: Ordinary (Low)
 ",,https://up.codes/viewer/wyoming/ifc-2015/chapter/9/fire-protection-systems#906.3.1,
 2902.1 Minimum Number of Fixtures,"Classification & Occupancy: 
-      • S1
-Water Closets: 1 per100
-      • Women (Required/Provided) 1/1
-      • Men (Required/Provided): 1/1
+
+---
+
+R-2
+  • Water Closets: 1 per dwelling
+    • (Required/Provided) 71/88
+  • Lavatories: 1 per dwelling
+    • (Required/Provided) 71/88
+
+---
+
+ A-2 (44 occupants)
+  • Water Closets: 1 per 75
+      • Women: .29
+      • Men: .29
+  • Lavatories: 1 per 75
+      • Women: .29
+      • Men: .29
+
+---
+
+S-1 (128 occupants)
+  •   • Water Closets: 1 per 100
+      • Women: .64
+      • Men: .64
 Lavatories: 1 per 100
-      • Women (Required/Provided) 1/1
-      • Men (Required/Provided): 1/1
+      • Women: .64
+      • Men: .64
+
+---
+
+A-2 & S-1 Combined
+  • Water Closets: 1 per 100
+      • Women: 1
+      • Men: 1
+  • Lavatories: 1 per 100
+      • Women: 1
+      • Men: 1
+
+
+
 ",,https://up.codes/viewer/wyoming/ibc-2015/chapter/29/plumbing-systems#2902.1,
 ,,,,
 ,,,,
