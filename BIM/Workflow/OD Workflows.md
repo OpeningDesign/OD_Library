@@ -1,15 +1,22 @@
- - Revit Specific..
-	 - Try not to use the following, if possible...
-		 1. Dumb text notes. Prioritize the following instead.
-				 - 1st priority: Material Tags
-				 - 2nd priority: "OD_Keynote_Text Only" generic annotation
-				 - 3rd priority: dumb text
-		 2. Detail Lines and Detail Items. 
-			 - Use 3D objects as much as possible
-		 3. override graphics view by element
-			 - use Visibility/Graphic Overrides for Categories instead, or better yet, use View Templates
-		 4. Paint a material on an object. (apply a material via a type, or to entire object)
+ ### Revit Specific
+ 
+- Try not to use the following, if possible...
+	1. Dumb text notes. Prioritize the following instead.
+		- 1st priority: Material Tags
+		- 2nd priority: "OD_Keynote_Text Only" generic annotation
+		- 3rd priority: dumb text
+	2. Detail Lines and Detail Items. 
+		- Use 3D objects as much as possible
+	3. override graphics view by element
+		- use Visibility/Graphic Overrides for Categories instead, or better yet, use View Templates
+	4. Paint a material on an object. (apply a material via a type, or to entire object)
 
+### FreeCAD Specific
+
+- Export IFC files very soon and very often, test them in [IFC++](https://ifcquery.com/) first, then in Revit. Detect issues early
+- Use simple extrusions as much as possible (Arch Wall/Structures/Panels or Part Extrude)
+- Objects exported as IFC structural elements (beams, columns) often give problems in Revit. If needed, use BuildingElement Proxies (Will come as generic models, Revit won't apply any transformation on them)
+- Keep list of materials clean, merge duplicates, make sure all objects have a material
 
 ### File Management
 
