@@ -22,17 +22,22 @@
 
 1. Create a github account: https://github.com/join
 2. Download and install https://desktop.github.com/
-3. install https://gitforwindows.org/
+3. Download and install https://tortoisegit.org/download/
+4. Download and install https://gitforwindows.org/
 	- choose all the default settings
-4. Set longpath on windows 
-	- https://www.youtube.com/watch?v=mAGQZ7RvKFk
+5. Set longpath on windows 
+	- Long answer: https://www.youtube.com/watch?v=mAGQZ7RvKFk
 		- Short answer: Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem
 			- Set LongPathsEnabled
 				- Value data: 1
 
-5. set longpath on git
-	- https://stackoverflow.com/questions/22575662/filename-too-long-in-git-for-windows/22575737#22575737
-		- Short answer: `git config --system core.longpaths true`
+6. Run **Git Bash** in administrator mode, like [this](https://www.dropbox.com/s/wk3l5weh1pt70oh/3TOLBa3Rs0.mp4?dl=0) and do the following 3 commands.  Do them in the exact following order.
+	- `git config --system core.longpaths true`
+		- Long answer [here](https://stackoverflow.com/questions/22575662/filename-too-long-in-git-for-windows/22575737#22575737)
+	- `git config --system --unset core.autocrlf`
+	- `git config --global core.autocrlf true`
+
+
 
 
 
@@ -65,8 +70,9 @@ C:\Users\ryan\.gnupg
 	- https://stackoverflow.com/questions/45799650/git-bash-error-could-not-fork-child-process-there-are-no-available-terminals/
 	- kill the 'agent' process that you last used.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDU5Mzk1MTksMjEyOTg2OTcyMywxOD
-UwOTE5NTU1LC0xNjA1ODY1NzQzLDE2NzIyMzMyMDEsMTY3NTM1
-NzA0MCwtMTg4NzEyNDY4NiwxMDc2MTA5OTI0LDU2NDc3ODk1M1
-19
+eyJoaXN0b3J5IjpbLTY1MDY5NTMxNSwyMDg1MzY3NDg5LC0xND
+Y1MzI2MzA3LC0yMDA1OTM5NTE5LDIxMjk4Njk3MjMsMTg1MDkx
+OTU1NSwtMTYwNTg2NTc0MywxNjcyMjMzMjAxLDE2NzUzNTcwND
+AsLTE4ODcxMjQ2ODYsMTA3NjEwOTkyNCw1NjQ3Nzg5NTNdfQ==
+
 -->
