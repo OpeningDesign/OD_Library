@@ -11,12 +11,16 @@
 		- use Visibility/Graphic Overrides for Categories instead, or better yet, use View Templates
 	4. Paint a material on an object. (apply a material via a type, or to entire object)
 
+---
+
 ### FreeCAD Specific
 
 - Export IFC files very soon and very often, test them in [IFC++](https://ifcquery.com/) first, then in Revit. Detect issues early
 - Use simple extrusions as much as possible (Arch Wall/Structures/Panels or Part Extrude)
 - Objects exported as IFC structural elements (beams, columns) often give problems in Revit. If needed, use BuildingElement Proxies (Will come as generic models, Revit won't apply any transformation on them)
 - Keep list of materials clean, merge duplicates, make sure all objects have a material
+
+---
 
 ### File Management
 
@@ -45,8 +49,28 @@
 
 
 
-----------
 
+
+
+---
+### File to large to push to Github
+If your file ever gets above 100mbs and you can't push to Github, try...
+    
+
+    
+[](https://matrix.to/#/!uiaTztjLjbfSXeuBkn:matrix.org/$1560980161377209qhDgq:matrix.org?via=matrix.org)
+    
+
+ 1. Purge all.  Run this (3) times to fully purge everything.
+
+   ![image.png](https://matrix.org/_matrix/media/r0/thumbnail/matrix.org/XwGzEppwEgvdMOxuDrSTUxde?width=800&height=600)
+ 
+2. For whatever reason, if you do a 'save as' to a temporary file name, and do another 'save as' to overwrite the original file. it reduces the file size.
+
+
+---
+
+### Random Errors
 
 - If warnings..
   - warning: LF will be replaced by CRLF. 
@@ -70,9 +94,10 @@ C:\Users\ryan\.gnupg
 	- https://stackoverflow.com/questions/45799650/git-bash-error-could-not-fork-child-process-there-are-no-available-terminals/
 	- kill the 'agent' process that you last used.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MDY5NTMxNSwyMDg1MzY3NDg5LC0xND
-Y1MzI2MzA3LC0yMDA1OTM5NTE5LDIxMjk4Njk3MjMsMTg1MDkx
-OTU1NSwtMTYwNTg2NTc0MywxNjcyMjMzMjAxLDE2NzUzNTcwND
-AsLTE4ODcxMjQ2ODYsMTA3NjEwOTkyNCw1NjQ3Nzg5NTNdfQ==
-
+eyJoaXN0b3J5IjpbMTI2MjMwNDg2NCwxMzA5Mjk3OTg0LC03NT
+I0MDgzNzUsMTQ5NTc2NzAzMSwtNjUwNjk1MzE1LDIwODUzNjc0
+ODksLTE0NjUzMjYzMDcsLTIwMDU5Mzk1MTksMjEyOTg2OTcyMy
+wxODUwOTE5NTU1LC0xNjA1ODY1NzQzLDE2NzIyMzMyMDEsMTY3
+NTM1NzA0MCwtMTg4NzEyNDY4NiwxMDc2MTA5OTI0LDU2NDc3OD
+k1M119
 -->
