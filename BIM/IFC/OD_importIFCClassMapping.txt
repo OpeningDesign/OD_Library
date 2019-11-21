@@ -1,0 +1,161 @@
+# IFC Class Name and Type to Revit Category/Sub-Category Table
+# Maps IFC Class and Type to Revit Category/Sub-Category
+# You may edit using File -> Import/Export Settings -> IFC Options... .
+# -----------------------------------------------------
+IfcAirTerminal		Air Terminals	
+IfcAirTerminalType		Air Terminals	
+IfcAnnotation		Generic Annotations	
+IfcBeam		Structural Framing	
+IfcBeamType		Structural Framing	
+IfcBoiler		Mechanical Equipment	
+IfcBoilerType		Mechanical Equipment	
+IfcBuildingElementPart		Parts	
+IfcBuildingElementPartType		Parts	
+IfcBuildingElementProxy		Generic Models	
+IfcBuildingElementProxyType		Generic Models	
+IfcCableCarrierFitting		Cable Tray Fittings	
+IfcCableCarrierFittingType		Cable Tray Fittings	
+IfcCableCarrierSegment		Cable Trays	
+IfcCableCarrierSegmentType		Cable Trays	
+IfcColumn		Columns	
+IfcColumn	[LoadBearing]	Structural Columns	
+IfcColumn	COLUMN	Columns	
+IfcColumn	NOTDEFINED	Columns	
+IfcColumn	USERDEFINED	Columns	
+IfcColumnType		Columns	
+IfcColumnType	[LoadBearing]	Structural Columns	
+IfcColumnType	COLUMN	Columns	
+IfcColumnType	NOTDEFINED	Columns	
+IfcColumnType	USERDEFINED	Columns	
+IfcController		Specialty Equipment	
+IfcControllerType		Specialty Equipment	
+IfcCovering		Generic Models	
+IfcCovering	CEILING	Ceilings	
+IfcCovering	FLOORING	Floors	
+IfcCovering	ROOFING	Roofs	
+IfcCoveringType		Generic Models	
+IfcCoveringType	CEILING	Ceilings	
+IfcCoveringType	FLOORING	Floors	
+IfcCoveringType	ROOFING	Roofs	
+IfcCurtainWall		Curtain Systems	
+IfcCurtainWallType		Curtain Systems	
+IfcDiscreteAccessory		Specialty Equipment	
+IfcDiscreteAccessoryType		Specialty Equipment	
+IfcDistributionFlowElement		Mechanical Equipment	
+IfcDoor		Doors	
+IfcDoorStyle		Doors	
+IfcDoorType		Doors	
+IfcDuctFitting		Duct Fittings	
+IfcDuctFittingType		Duct Fittings	
+IfcDuctSegment		Ducts	
+IfcDuctSegmentType		Ducts	
+IfcElectricAppliance	DISHWASHER	Plumbing Fixtures	
+IfcElectricAppliance	ELECTRICCOOKER	Electrical Fixtures	
+IfcElectricAppliance	FRIDGE_FREEZER	Specialty Equipment	
+IfcElectricAppliance	TUMBLEDRYER	Electrical Fixtures	
+IfcElectricAppliance	USERDEFINED	Electrical Fixtures	
+IfcElectricAppliance	WASHINGMACHINE	Electrical Fixtures	
+IfcElectricApplianceType	DISHWASHER	Plumbing Fixtures	
+IfcElectricApplianceType	ELECTRICCOOKER	Electrical Fixtures	
+IfcElectricApplianceType	FRIDGE_FREEZER	Specialty Equipment	
+IfcElectricApplianceType	TUMBLEDRYER	Electrical Fixtures	
+IfcElectricApplianceType	USERDEFINED	Electrical Fixtures	
+IfcElectricApplianceType	WASHINGMACHINE	Electrical Fixtures	
+IfcEnergyConversionDevice		Mechanical Equipment	
+IfcFan		Mechanical Equipment	
+IfcFanType		Mechanical Equipment	
+IfcFastener		Structural Connections	
+IfcFastenerType		Structural Connections	
+IfcFireSuppressionTerminal	SPRINKLER	Sprinklers	
+IfcFireSuppressionTerminalType	SPRINKLER	Sprinklers	
+IfcFlowController		Generic Models	
+IfcFlowControllerType		Generic Models	
+IfcFlowMovingDevice		Mechanical Equipment	
+IfcFlowStorageDevice		Specialty Equipment	
+IfcFlowTerminal		Generic Models	
+IfcFooting		Structural Foundations	
+IfcFootingType		Structural Foundations	
+IfcFurnishingElement		Furniture	
+IfcFurnishingElementType		Furniture	
+IfcFurniture		Furniture	
+IfcFurnitureType		Furniture	
+IfcGeographicElement		Site	
+IfcGeographicElementType		Site	
+IfcLamp		Lighting Devices	
+IfcLampType		Lighting Devices	
+IfcLightFixture		Lighting Fixtures	
+IfcLightFixtureType		Lighting Fixtures	
+IfcMechanicalFastener		Specialty Equipment	
+IfcMechanicalFastenerType		Specialty Equipment	
+IfcMember		Structural Framing	
+IfcMember	MULLION	Curtain Wall Mullions	
+IfcMemberType		Structural Framing	
+IfcMemberType	MULLION	Curtain Wall Mullions	
+IfcOpeningElement		Generic Models	
+IfcPile		Structural Foundations	
+IfcPileType		Structural Foundations	
+IfcPipeFitting		Pipe Fittings	
+IfcPipeFittingType		Pipe Fittings	
+IfcPipeSegment		Pipes	
+IfcPipeSegmentType		Pipes	
+IfcPlate		Structural Framing	
+IfcPlate	CURTAIN_PANEL	Curtain Panels	
+IfcPlateType		Structural Framing	
+IfcPlateType	CURTAIN_PANEL	Curtain Panels	
+IfcPump		Mechanical Equipment	
+IfcPumpType		Mechanical Equipment	
+IfcRailing		Railings	
+IfcRailingType		Railings	
+IfcRamp		Ramps	
+IfcRampFlight		Ramps	
+IfcRampFlightType		Ramps	
+IfcRampType		Ramps	
+IfcReinforcingBar		Structural Rebar	
+IfcReinforcingBarType		Structural Rebar	
+IfcReinforcingMesh		Structural Fabric Areas	
+IfcReinforcingMeshType		Structural Fabric Areas	
+IfcRoof		Roofs	
+IfcRoofType		Roofs	
+IfcSanitaryTerminal		Plumbing Fixtures	
+IfcSanitaryTerminalType		Plumbing Fixtures	
+IfcSensor		Specialty Equipment	
+IfcSensorType		Specialty Equipment	
+IfcSite		Site	
+IfcSlab		Generic Models	
+IfcSlab	BASESLAB	Structural Foundations	
+IfcSlab	FLOOR	Floors	
+IfcSlab	LANDING	Stairs	Landings
+IfcSlab	ROOF	Roofs	
+IfcSlabType		Generic Models	
+IfcSlabType	BASESLAB	Structural Foundations	
+IfcSlabType	FLOOR	Floors	
+IfcSlabType	LANDING	Stairs	Landings
+IfcSlabType	ROOF	Roofs	
+IfcSpace		Generic Models	
+IfcSpaceHeater		Mechanical Equipment	
+IfcSpaceHeaterType		Mechanical Equipment	
+IfcSpaceType		Generic Models	
+IfcStair		Stairs	
+IfcStairFlight		Stairs	
+IfcStairFlightType		Stairs	
+IfcStairType		Stairs	
+IfcSwitchingDevice		Electrical Fixtures	
+IfcSwitchingDeviceType		Electrical Fixtures	
+IfcSystemFurnitureElement		Furniture	
+IfcSystemFurnitureElementType		Furniture	
+IfcTank		Specialty Equipment	
+IfcTankType		Specialty Equipment	
+IfcTransportElement		Specialty Equipment	
+IfcTransportElementType		Specialty Equipment	
+IfcValve		Pipe Accessories	
+IfcValve	DRAWOFFCOCK	Plumbing Fixtures	
+IfcValve	FAUCET	Plumbing Fixtures	
+IfcValveType		Pipe Accessories	
+IfcValveType	DRAWOFFCOCK	Plumbing Fixtures	
+IfcValveType	FAUCET	Plumbing Fixtures	
+IfcWall		Walls	
+IfcWallStandardCase		Walls	
+IfcWallType		Walls	
+IfcWindow		Windows	
+IfcWindowStyle		Windows	
+IfcWindowType		Windows	

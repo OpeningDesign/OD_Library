@@ -22,7 +22,7 @@
 
 ---
 
-### File Management
+### File Management on Windows
 
 1. Create a github account: https://github.com/join
 2. Download and install https://desktop.github.com/
@@ -53,7 +53,7 @@
 
 
 ---
-### File to large to push to Github
+### File too large to push to Github
 If your file ever gets above 100mbs and you can't push to Github, try...
     
 
@@ -94,10 +94,10 @@ C:\Users\ryan\.gnupg
 	- https://stackoverflow.com/questions/45799650/git-bash-error-could-not-fork-child-process-there-are-no-available-terminals/
 	- kill the 'agent' process that you last used.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MjMwNDg2NCwxMzA5Mjk3OTg0LC03NT
-I0MDgzNzUsMTQ5NTc2NzAzMSwtNjUwNjk1MzE1LDIwODUzNjc0
-ODksLTE0NjUzMjYzMDcsLTIwMDU5Mzk1MTksMjEyOTg2OTcyMy
-wxODUwOTE5NTU1LC0xNjA1ODY1NzQzLDE2NzIyMzMyMDEsMTY3
-NTM1NzA0MCwtMTg4NzEyNDY4NiwxMDc2MTA5OTI0LDU2NDc3OD
-k1M119
+eyJoaXN0b3J5IjpbNjM5OTA5MDA1LDEyNjIzMDQ4NjQsMTMwOT
+I5Nzk4NCwtNzUyNDA4Mzc1LDE0OTU3NjcwMzEsLTY1MDY5NTMx
+NSwyMDg1MzY3NDg5LC0xNDY1MzI2MzA3LC0yMDA1OTM5NTE5LD
+IxMjk4Njk3MjMsMTg1MDkxOTU1NSwtMTYwNTg2NTc0MywxNjcy
+MjMzMjAxLDE2NzUzNTcwNDAsLTE4ODcxMjQ2ODYsMTA3NjEwOT
+kyNCw1NjQ3Nzg5NTNdfQ==
 -->
