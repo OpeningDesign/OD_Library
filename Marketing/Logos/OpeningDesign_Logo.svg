@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="8.5in"
+   height="8.5in"
+   viewBox="0 0 215.9 215.9"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="OpeningDesign_Logo.svg"
+   inkscape:export-filename="C:\Dropbox\GitHub\OpeningDesign_Practice\Marketing\Logo\OpeningDesign_Logo.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs2">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter5321">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood5311" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="out"
+         result="composite1"
+         id="feComposite5313" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="3.5999999999999996"
+         result="blur"
+         id="feGaussianBlur5315" />
+      <feOffset
+         dx="3.4000000000000004"
+         dy="7.2999999999999998"
+         result="offset"
+         id="feOffset5317" />
+      <feComposite
+         in="offset"
+         in2="SourceGraphic"
+         operator="atop"
+         result="composite2"
+         id="feComposite5319" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="name shadow"
+       id="filter5444">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood5434" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="out"
+         result="composite1"
+         id="feComposite5436" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.5"
+         result="blur"
+         id="feGaussianBlur5438" />
+      <feOffset
+         dx="1"
+         dy="1"
+         result="offset"
+         id="feOffset5440" />
+      <feComposite
+         in="offset"
+         in2="SourceGraphic"
+         operator="atop"
+         result="composite2"
+         id="feComposite5442" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-398.24257"
+     inkscape:cy="206.01882"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="in"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-81.09998)">
+    <path
+       style="opacity:1;vector-effect:none;fill:#bfceda;fill-opacity:1;stroke:none;stroke-width:25.86089134;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:25.86089165, 25.86089165;stroke-dashoffset:0.67549974;stroke-opacity:1;filter:url(#filter5321)"
+       d="M 123.00391,36.855469 A 62.042133,62.042133 0 0 0 60.962891,98.896484 62.042133,62.042133 0 0 0 123.00391,160.93945 62.042133,62.042133 0 0 0 185.04688,98.896484 62.042133,62.042133 0 0 0 123.00391,36.855469 Z m 0,30.248047 A 31.792736,31.792736 0 0 1 154.79688,98.896484 31.792736,31.792736 0 0 1 123.00391,130.68945 31.792736,31.792736 0 0 1 91.210938,98.896484 31.792736,31.792736 0 0 1 123.00391,67.103516 Z"
+       transform="matrix(0.31773806,0,0,0.31773806,31.107141,97.814325)"
+       id="path4496-0"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;vector-effect:none;fill:#85accd;fill-opacity:1;stroke:none;stroke-width:57.38156891;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:57.38157687, 57.38157687;stroke-dashoffset:0.67549974;stroke-opacity:1;filter:url(#filter5321)"
+       d="M 341.84961,35.621094 V 203.24219 A 138.59161,136.73963 0 0 0 249.25,168.03906 138.59161,136.73963 0 0 0 110.6582,304.77734 138.59161,136.73963 0 0 0 249.25,441.51758 138.59161,136.73963 0 0 0 341.84961,406.29883 v 29.97265 h 52.47266 V 35.621094 Z M 249.25,216.80859 A 89.161644,87.970189 0 0 1 338.41016,304.77734 89.161644,87.970189 0 0 1 249.25,392.74805 89.161644,87.970189 0 0 1 160.08789,304.77734 89.161644,87.970189 0 0 1 249.25,216.80859 Z"
+       id="path4496-0-7"
+       transform="matrix(0.31773806,0,0,0.31773806,31.107141,97.814325)"
+       inkscape:connector-curvature="0" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5390"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#3f719b;fill-opacity:1;stroke:none;filter:url(#filter5444);enable-background:new"
+       transform="matrix(0.66206283,0,0,0.66206283,-6.9572031,-41.01103)"><flowRegion
+         id="flowRegion5392"
+         style="fill:#3f719b;fill-opacity:1"><rect
+           id="rect5394"
+           width="320"
+           height="167.14285"
+           x="22.857143"
+           y="434.28571"
+           style="fill:#3f719b;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara5396"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic';fill:#3f719b;fill-opacity:1">OpeningDesign</flowPara></flowRoot>  </g>
+</svg>
