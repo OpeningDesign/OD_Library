@@ -93,11 +93,16 @@ C:\Users\ryan\.gnupg
 - Git bash Error: Could not fork child process: 
 	- https://stackoverflow.com/questions/45799650/git-bash-error-could-not-fork-child-process-there-are-no-available-terminals/
 	- kill the 'agent' process that you last used.
+
+
+
+- To reset harder!
+	- https://stackoverflow.com/a/4327720
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM5OTA5MDA1LDEyNjIzMDQ4NjQsMTMwOT
-I5Nzk4NCwtNzUyNDA4Mzc1LDE0OTU3NjcwMzEsLTY1MDY5NTMx
-NSwyMDg1MzY3NDg5LC0xNDY1MzI2MzA3LC0yMDA1OTM5NTE5LD
-IxMjk4Njk3MjMsMTg1MDkxOTU1NSwtMTYwNTg2NTc0MywxNjcy
-MjMzMjAxLDE2NzUzNTcwNDAsLTE4ODcxMjQ2ODYsMTA3NjEwOT
-kyNCw1NjQ3Nzg5NTNdfQ==
+eyJoaXN0b3J5IjpbMzY1NTA1NjE2LDYzOTkwOTAwNSwxMjYyMz
+A0ODY0LDEzMDkyOTc5ODQsLTc1MjQwODM3NSwxNDk1NzY3MDMx
+LC02NTA2OTUzMTUsMjA4NTM2NzQ4OSwtMTQ2NTMyNjMwNywtMj
+AwNTkzOTUxOSwyMTI5ODY5NzIzLDE4NTA5MTk1NTUsLTE2MDU4
+NjU3NDMsMTY3MjIzMzIwMSwxNjc1MzU3MDQwLC0xODg3MTI0Nj
+g2LDEwNzYxMDk5MjQsNTY0Nzc4OTUzXX0=
 -->
