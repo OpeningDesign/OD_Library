@@ -42,17 +42,16 @@
 	- `git config --global core.autocrlf true`
 
 
+---
 
+### Creating a New Revit Family
 
-
-
-
-
-
-
+1. When creating a new revit family, one of the cardinal rules when making families is that the objects should be constained to reference planes. 
+2. There might be exceptions, but another cardinal rule is to start with a family template of the thing you're modeling... that is, use awindow template for windows, door template for doors, etc. 
 
 
 ---
+
 ### File too large to push to Github
 If your file ever gets above 100mbs and you can't push to Github, try...
     

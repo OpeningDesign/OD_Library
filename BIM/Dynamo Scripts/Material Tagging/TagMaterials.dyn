@@ -72,7 +72,7 @@
       "Id": "97ddea52f3b94091b7f4ef9aa6cfc501",
       "Name": "View depth cut-off distance [feet]",
       "Type": "number",
-      "Value": "12.901",
+      "Value": "5.001",
       "MaximumValue": 15.0,
       "MinimumValue": 0.001,
       "StepValue": 0.1,
@@ -90,7 +90,7 @@
       "Id": "5d17bc2963e1455ca93e17c2c71d3fe0",
       "Name": "Refresh The View",
       "Type": "boolean",
-      "Value": "false",
+      "Value": "true",
       "Description": "Selection between a true and false."
     },
     {
@@ -114,7 +114,7 @@
       "MaximumValue": 15.0,
       "MinimumValue": 0.001,
       "StepValue": 0.1,
-      "InputValue": 12.901,
+      "InputValue": 5.001,
       "Id": "97ddea52f3b94091b7f4ef9aa6cfc501",
       "Inputs": [],
       "Outputs": [
@@ -153,7 +153,7 @@
     },
     {
       "ConcreteType": "DSRevitNodesUI.FamilyTypes, DSRevitNodesUI",
-      "SelectedIndex": 24,
+      "SelectedIndex": 1958,
       "SelectedString": "OD_Material Tag:RIGHT",
       "NodeType": "ExtensionNode",
       "Id": "e2ca6d49fc504990a152972e983e3105",
@@ -174,7 +174,7 @@
     },
     {
       "ConcreteType": "DSRevitNodesUI.FamilyTypes, DSRevitNodesUI",
-      "SelectedIndex": 23,
+      "SelectedIndex": 1957,
       "SelectedString": "OD_Material Tag:LEFT",
       "NodeType": "ExtensionNode",
       "Id": "14d7e0116fb54e58bda7a1e4198d3fee",
@@ -625,7 +625,7 @@
     {
       "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
       "NodeType": "BooleanInputNode",
-      "InputValue": false,
+      "InputValue": true,
       "Id": "5d17bc2963e1455ca93e17c2c71d3fe0",
       "Inputs": [],
       "Outputs": [
@@ -880,23 +880,13 @@
   "Dependencies": [
     "ecce77dc-1290-438e-a056-970b256fd553"
   ],
-  "NodeLibraryDependencies": [
-    {
-      "Name": "Clockwork for Dynamo 2.x",
-      "Version": "2.1.2",
-      "ReferenceType": "Package",
-      "Nodes": [
-        "710d43acaea6493d9ed72b2f7edea1cf"
-      ]
-    }
-  ],
   "Bindings": [],
   "View": {
     "Dynamo": {
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.3.0.5885",
+      "Version": "2.2.1.5175",
       "RunType": "Manual",
       "RunPeriod": "100"
     },
@@ -940,8 +930,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 243.0974902379,
-        "Y": 373.860610342805
+        "X": 213.8240099234884,
+        "Y": 403.13409065721669
       },
       {
         "ShowGeometry": true,
@@ -950,8 +940,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 243.0974902379,
-        "Y": 457.002245466941
+        "X": 213.8240099234884,
+        "Y": 486.27572578135272
       },
       {
         "ShowGeometry": true,
@@ -1070,8 +1060,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -230.94958097406615,
-        "Y": 345.82919365451414
+        "X": -226.456147512397,
+        "Y": 345.057487208906
       },
       {
         "ShowGeometry": true,
@@ -1134,13 +1124,13 @@
           "5d17bc2963e1455ca93e17c2c71d3fe0",
           "ab1375bc80844a38a3ea4f9d5ebf9ab1"
         ],
-        "Left": -240.94958097406615,
+        "Left": -239.247442774443,
         "Top": -20.5947359948864,
-        "Width": 331.70213819962316,
-        "Height": 434.42392964940052,
+        "Width": 330.0,
+        "Height": 433.6522232037924,
         "FontSize": 30.0,
         "InitialTop": 25.4052640051136,
-        "InitialHeight": 465.42392964940052,
+        "InitialHeight": 464.65222320379269,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -1209,12 +1199,12 @@
           "e2ca6d49fc504990a152972e983e3105",
           "14d7e0116fb54e58bda7a1e4198d3fee"
         ],
-        "Left": 233.0974902379,
-        "Top": 327.860610342805,
+        "Left": 203.8240099234884,
+        "Top": 357.13409065721669,
         "Width": 254.0,
         "Height": 222.14163512413603,
         "FontSize": 30.0,
-        "InitialTop": 373.860610342805,
+        "InitialTop": 403.13409065721669,
         "InitialHeight": 228.14163512413603,
         "TextblockHeight": 36.0,
         "Background": "#FFFFAA45"
@@ -1276,8 +1266,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 357.462873273882,
-    "Y": 3.8259067134050611,
-    "Zoom": 0.90121392445391213
+    "X": 385.68606208314145,
+    "Y": -184.83896683488058,
+    "Zoom": 1.3177156527299698
   }
 }
