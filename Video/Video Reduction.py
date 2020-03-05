@@ -2,7 +2,6 @@
 #--automatically built--
 
 adm = Avidemux()
-adm.loadVideo("D:/Dropbox/GitHub/Castle_Rock_Residence/_Encrypted/Transfer/20200218 - from owner - existing documentation/Exterior - North and East Sides.mp4")
 adm.clearSegments()
 adm.addSegment(0, 0, 92589000)
 adm.markerA = 0
