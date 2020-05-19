@@ -1,0 +1,69 @@
+PT_Column_1,PT_Column_2,PT_Column_3,PT_Column_4,PT_Column_5,PT_Column_6,PT_Column_7,PT_Column_8,PT_Column_9
+,,,,,,,,
+"CORE MATERIAL
+(1ST LETTER)",,,,,,,,
+,W=,WOOD,,,,,,
+,M=,METAL,,,,,,
+,C=,CONCRETE,,,,,,
+,M=,"MASONRY
+TEST",,,,,,
+,,,,,,,,
+"SIZE OF CORE
+(2ND NUMBER)",,,,,,,,
+,,WOOD: NOMINAL STUD SIZES (EX: 4 = 3 1/2”),,,,,,
+,,METAL STUD: (EX 358 = 3 5/8”),,,,,,
+,,CONCRETE: ACTUAL WALL THICKNESS (EX: 8 = 8”),,,,,,
+,,MASONRY: NOMINAL BRICK MODULES (EX: 8 = 7 5/8”),,,,,,
+,,,,,,,,
+LAYER MATERIAL,,,,,,,,
+(3RD LETTER),,,,,,,,
+,,"LAYER 1
+(TAG SIDE)","LAYER 2
+(TAG SIDE)","LAYER 3
+(TAG SIDE)",CORE,LAYER 1,LAYER 2,LAYER 3
+,A=,-,-,-,-,-,-,-
+,B=,-,-,5/8” GYP. BD.,STUDS 16” O.C. (20 GA. IF METAL),5/8” GYP. BD.,-,-
+,C=,-,-,5/8” GYP. BD.,"STUDS 16” O.C.  (20 GA. IF METAL)
+BATT INSULATION",5/8” GYP. BD.,-,-
+,D=,-,-,5/8” GYP. BD.,STUDS 16” O.C. (20 GA. IF METAL),-,-,-
+,E=,-,-,5/8” GYP. BD.,"STUDS 16” O.C.  (20 GA. IF METAL)
+BATT INSULATION",-,-,-
+,F=,-,-,5/8” GYP. BD.,"STUDS 16” O.C.  (20 GA. IF METAL)
+RIGID INSULATION",-,-,-
+,,,,,,,,
+,,,,,,,,
+"FIRE RATING
+(4TH – NUMBER)",,,,,,,,
+,Ø=,0 HOUR,,,,,,
+,1=,1 HOUR,,,,,,
+,2=,1 HOUR,,,,,,
+,3=,1 HOUR,,,,,,
+,5=,½ HOUR,,,,,,
+,,,,,,,,
+"MODIFIERS
+(5TH – LETTER)",A=,<USER CREATED>,,,,,,
+,B=,<USER CREATED>,,,,,,
+,C=,<USER CREATED>,,,,,,
+,D=,<USER CREATED>,,,,,,
+,E=,<USER CREATED>,,,,,,
+,F=,FULL HEIGHT PARTITION,,,,,,
+,G=,<USER CREATED>,,,,,,
+,H=,<USER CREATED>,,,,,,
+,I=,<USER CREATED>,,,,,,
+,J=,<USER CREATED>,,,,,,
+,K=,KNEE WALL PARTITION,,,,,,
+,L=,<USER CREATED>,,,,,,
+,M=,<USER CREATED>,,,,,,
+,N=,<USER CREATED>,,,,,,
+,O=,<USER CREATED>,,,,,,
+,P=,PARTIAL HEIGHT PARTITION,,,,,,
+,Q=,<USER CREATED>,,,,,,
+,R=,<USER CREATED>,,,,,,
+,S=,<USER CREATED>,,,,,,
+,T=,<USER CREATED>,,,,,,
+,U=,<USER CREATED>,,,,,,
+,V=,<USER CREATED>,,,,,,
+,W=,<USER CREATED>,,,,,,
+,X=,<USER CREATED>,,,,,,
+,Y=,<USER CREATED>,,,,,,
+,Z=,<USER CREATED>,,,,,,
