@@ -30,7 +30,7 @@ def convert(filein):
     adm.audioSetDrc(0, 0)
     adm.audioSetShift(0, 0, 0)
     adm.setContainer("MP4", "muxerType=0", "optimize=1", "forceAspectRatio=False", "aspectRatio=1", "rotation=0")
-    adm.save(dir + sep + "testy" + filename)
+    adm.save(dir + sep + "REDUCED" + filename)
     print("Done")
 
 #
