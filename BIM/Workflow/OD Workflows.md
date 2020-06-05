@@ -97,12 +97,20 @@ C:\Users\ryan\.gnupg
 
 - To reset harder!
 	- https://stackoverflow.com/a/4327720
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMzQxNTc5MywzNjU1MDU2MTYsNjM5OT
-A5MDA1LDEyNjIzMDQ4NjQsMTMwOTI5Nzk4NCwtNzUyNDA4Mzc1
-LDE0OTU3NjcwMzEsLTY1MDY5NTMxNSwyMDg1MzY3NDg5LC0xND
-Y1MzI2MzA3LC0yMDA1OTM5NTE5LDIxMjk4Njk3MjMsMTg1MDkx
-OTU1NSwtMTYwNTg2NTc0MywxNjcyMjMzMjAxLDE2NzUzNTcwND
-AsLTE4ODcxMjQ2ODYsMTA3NjEwOTkyNCw1NjQ3Nzg5NTNdfQ==
 
+- Buffer error
+	- RPC failed; HTTP 524 curl 22 The requested URL returned error: 524 fatal: the remote end hung up unexpectedly: https://confluence.atlassian.com/bitbucketserverkb/git-push-fails-fatal-the-remote-end-hung-up-unexpectedly-779171796.html
+		- `git config --global http.postBuffer 157286400`
+
+
+
+- [rm -f .git/index.lock](https://stackoverflow.com/questions/9282632/git-index-lock-file-exists-when-i-try-to-commit-but-cannot-delete-the-file/11466435#11466435)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTMxNzU5MDEyNiwtODgxNTA3NzcsMTUwNj
+U3MTY0OCwzNjU1MDU2MTYsNjM5OTA5MDA1LDEyNjIzMDQ4NjQs
+MTMwOTI5Nzk4NCwtNzUyNDA4Mzc1LDE0OTU3NjcwMzEsLTY1MD
+Y5NTMxNSwyMDg1MzY3NDg5LC0xNDY1MzI2MzA3LC0yMDA1OTM5
+NTE5LDIxMjk4Njk3MjMsMTg1MDkxOTU1NSwtMTYwNTg2NTc0My
+wxNjcyMjMzMjAxLDE2NzUzNTcwNDAsLTE4ODcxMjQ2ODYsMTA3
+NjEwOTkyNF19
 -->
