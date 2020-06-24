@@ -11,7 +11,7 @@
       "Id": "8a2a5825305b4435a635d39b6b04b003",
       "Name": "CSV File Path",
       "Type": "string",
-      "Value": "..\\..\\Spreadsheets\\SHEET INDEX.csv",
+      "Value": "..\\..\\..\\..\\CTR\\Models & CAD\\Current Spreadsheets\\SHEET INDEX.csv",
       "Description": "Allows you to select a file on the system to get its filename"
     },
     {
@@ -61,8 +61,8 @@
     },
     {
       "ConcreteType": "CoreNodeModels.Input.Filename, CoreNodeModels",
-      "HintPath": "D:\\Dropbox\\GitHub\\OD_Library\\BIM\\Spreadsheets\\SHEET INDEX.csv",
-      "InputValue": "..\\..\\Spreadsheets\\SHEET INDEX.csv",
+      "HintPath": "D:\\Dropbox\\GitHub\\CTR\\Models & CAD\\Current Spreadsheets\\SHEET INDEX.csv",
+      "InputValue": "..\\..\\..\\..\\CTR\\Models & CAD\\Current Spreadsheets\\SHEET INDEX.csv",
       "NodeType": "ExtensionNode",
       "Id": "8a2a5825305b4435a635d39b6b04b003",
       "Inputs": [],
@@ -526,7 +526,7 @@
         ],
         "Left": 1652.77230550043,
         "Top": 739.94732600849,
-        "Width": 239.0,
+        "Width": 377.0,
         "Height": 411.79433536417,
         "FontSize": 14.0,
         "InitialTop": 769.94732600849,

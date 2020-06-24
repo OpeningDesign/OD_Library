@@ -92,6 +92,7 @@ C:\Users\ryan\.gnupg
 - Git bash Error: Could not fork child process: 
 	- https://stackoverflow.com/questions/45799650/git-bash-error-could-not-fork-child-process-there-are-no-available-terminals/
 	- kill the 'agent' process that you last used.
+		- might be: gpg-agent.exe
 
 
 
@@ -106,11 +107,11 @@ C:\Users\ryan\.gnupg
 
 - [rm -f .git/index.lock](https://stackoverflow.com/questions/9282632/git-index-lock-file-exists-when-i-try-to-commit-but-cannot-delete-the-file/11466435#11466435)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNzU5MDEyNiwtODgxNTA3NzcsMTUwNj
-U3MTY0OCwzNjU1MDU2MTYsNjM5OTA5MDA1LDEyNjIzMDQ4NjQs
-MTMwOTI5Nzk4NCwtNzUyNDA4Mzc1LDE0OTU3NjcwMzEsLTY1MD
-Y5NTMxNSwyMDg1MzY3NDg5LC0xNDY1MzI2MzA3LC0yMDA1OTM5
-NTE5LDIxMjk4Njk3MjMsMTg1MDkxOTU1NSwtMTYwNTg2NTc0My
-wxNjcyMjMzMjAxLDE2NzUzNTcwNDAsLTE4ODcxMjQ2ODYsMTA3
-NjEwOTkyNF19
+eyJoaXN0b3J5IjpbLTgyOTA4NzI3NywxMzE3NTkwMTI2LC04OD
+E1MDc3NywxNTA2NTcxNjQ4LDM2NTUwNTYxNiw2Mzk5MDkwMDUs
+MTI2MjMwNDg2NCwxMzA5Mjk3OTg0LC03NTI0MDgzNzUsMTQ5NT
+c2NzAzMSwtNjUwNjk1MzE1LDIwODUzNjc0ODksLTE0NjUzMjYz
+MDcsLTIwMDU5Mzk1MTksMjEyOTg2OTcyMywxODUwOTE5NTU1LC
+0xNjA1ODY1NzQzLDE2NzIyMzMyMDEsMTY3NTM1NzA0MCwtMTg4
+NzEyNDY4Nl19
 -->

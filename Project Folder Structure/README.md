@@ -1,6 +1,6 @@
-<p align="right" style="" >
-<img src="https://raw.githubusercontent.com/OpeningDesign/OD_Library/master/Marketing/Logos/od_icon_logo_2.jpg" width="120px"/>
-</p>
+<div align="right">
+<img src="https://raw.githubusercontent.com/OpeningDesign/OD_Marketing/master/Logos/od_icon_logo_2.jpg" width="120px"/>
+</div>
 
 ## OpeningDesign
 
@@ -24,9 +24,9 @@ Per usual, unless otherwise noted, all content associated with [OpeningDesign](h
 
 ---
 
-<p align="right" style="" >
-<img src="https://dl.dropbox.com/s/w0h59r3fxbrp38s/OpeningDetail_with%20name.JPG?dl=0" width="120px"/>
-</p>
+<div align="right">
+<img src="https://dl.dropbox.com/s/w0h59r3fxbrp38s/OpeningDetail_with%20name.JPG" width="120px"/>
+</div>
 
 ## OpeningDETAIL
 
