@@ -1,12 +1,19 @@
-<p align="right" style="" >
-<img src="https://raw.githubusercontent.com/OpeningDesign/OD_Library/master/Marketing/Logos/od_icon_logo_2.jpg" width="120px"/>
-</p>
 
-# Library
+# OD_Library
 An evolving content library for OpeningDesign
 
+---
+
+<div align="right">
+<img src="https://raw.githubusercontent.com/OpeningDesign/OD_Marketing/master/Logos/od_icon_logo_2.jpg" width="120px" align="right"/>
+</div>
+
+## OpeningDesign
+
+An (uberly) transparent & open source architectural studio.
 
 ---
+
 #### In-the-Open
 
 All of [OpeningDesign's](http://openingdesign.com/) projects are conducted out in the open.  That is, during the development of any one project, all team communication and content is hosted [publicly](https://github.com/OpeningDesign) (here on GitHub) and is <a href="#license">open source</a>.
