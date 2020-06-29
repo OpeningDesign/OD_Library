@@ -1,5 +1,7 @@
-<div align="right">
+<div align="right" >
+<p align="right" >
 <img src="https://raw.githubusercontent.com/OpeningDesign/OD_Marketing/master/Logos/od_icon_logo_2.jpg" width="120px"/>
+</p>
 </div>
 
 ## OpeningDesign
@@ -24,8 +26,10 @@ Per usual, unless otherwise noted, all content associated with [OpeningDesign](h
 
 ---
 
-<div align="right">
+<div align="right" >
+<p align="right" >
 <img src="https://dl.dropbox.com/s/w0h59r3fxbrp38s/OpeningDetail_with%20name.JPG" width="120px"/>
+</p>
 </div>
 
 ## OpeningDETAIL
