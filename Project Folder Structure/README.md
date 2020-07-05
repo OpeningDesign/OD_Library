@@ -12,11 +12,13 @@ An (uberly) transparent & open source architectural studio.
 
 #### In-the-Open
 
-All of [OpeningDesign's](http://openingdesign.com/) projects are conducted out in the open.  That is, during the development of any one project, all the content is hosted publically on either [Github](https://github.com/OpeningDesign) or [Gitlab](https://gitlab.com/OpeningDesign) and and is [open source](https://en.wikipedia.org/wiki/Open_source).  All team communication is conducted through public [Riot.im](http://openingdesign.com/communication/) chat rooms.
+All of [OpeningDesign's](http://openingdesign.com/) projects are conducted out-in-the-open.  That is, during the development of any one project, all the content is hosted publicly on either [Github](https://github.com/OpeningDesign) or [Gitlab](https://gitlab.com/OpeningDesign) and is [open source](https://en.wikipedia.org/wiki/Open_source).  All team communication is conducted through public [Riot.im](http://openingdesign.com/communication/) chat rooms.
 
 
 
 Our [about page](http://openingdesign.com/about/) provides a more nuanced description of this open approach.
+
+
 
 ---
 
@@ -42,9 +44,13 @@ Your DETAIL Detail. OpeningDETAIL helps architecture firms draft & develop their
 
 #### In-the-Open
 
-All of [OpeningDETAIL's](http://openingdetail.com/) projects are conducted out in the open.  That is, during the development of any one project, all team communication and content is hosted [publicly](https://github.com/OpeningDETAIL) (here on GitHub) and is [open source](https://en.wikipedia.org/wiki/Open_source).
+All of [OpeningDETAIL's](http://openingdetail.com/) projects are conducted out-in-the-open. That is, during the development of any one project, all team communication and content is hosted [publicly](https://github.com/OpeningDETAIL) (here on GitHub) and is [open source](https://en.wikipedia.org/wiki/Open_source).
+
+
 
 Our [about page](http://openingdetail.com/about/) provides a more nuanced description of this open approach.
+
+
 
 ---
 
