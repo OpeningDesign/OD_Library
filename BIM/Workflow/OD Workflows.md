@@ -24,22 +24,54 @@
 
 ### File Management on Windows
 
-1. Create a github account: https://github.com/join
-2. Download and install https://desktop.github.com/
-3. Download and install https://tortoisegit.org/download/
-4. Download and install https://gitforwindows.org/
-	- choose all the default settings
-5. Set longpath on windows 
-	- Long answer: https://www.youtube.com/watch?v=mAGQZ7RvKFk
-		- Short answer: Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem
-			- Set LongPathsEnabled
-				- Value data: 1
+ - download favorite text editor
+	 - example: https://atom.io/
+		 - run as admin
+ - Download and install https://gitforwindows.org/
+   - Download the executable Git file from git-scm.com/download
+   - Run the installation file with Administrator rights
+   - Choose an appropriate installation location such as C:\_tools\git
+   - Install the default components, including Git GUI Here and Git Bash Here
+   - Choose default location of 'start menu folder'
+   - Choose your preferred Git default editor.
+	   - For example, choose Atom.io, if that's your preferred, and installed text editor.
+   - Choose recommended 'path environment'
+   - use openSSL library
+   - Accept the default line ending conversion for Unix and Windows compatibility
+   - Use MinTTY
+   - Default (fast-forward or merge)
+   - Extra options
+	   - Enable file system caching
+	   - Enable GIT Credential Manager
+   - Click Finish to complete the install.
+   - After Install
+	 - Set longpath on windows 
+		- Long answer: https://www.youtube.com/watch?v=mAGQZ7RvKFk
+			- Short answer: Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem
+				- Set LongPathsEnabled
+					- Value data: 1
 
-6. Run **Git Bash** in administrator mode, like [this](https://www.dropbox.com/s/wk3l5weh1pt70oh/3TOLBa3Rs0.mp4?dl=0) and do the following 3 commands.  Do them in the exact following order.
-	- `git config --system core.longpaths true`
-		- Long answer [here](https://stackoverflow.com/questions/22575662/filename-too-long-in-git-for-windows/22575737#22575737)
-	- `git config --system --unset core.autocrlf`
-	- `git config --global core.autocrlf true`
+	 - Run **Git Bash** in administrator mode, like [this](https://www.dropbox.com/s/wk3l5weh1pt70oh/3TOLBa3Rs0.mp4?dl=0) and do the following 3 commands.  Do them in the exact following order.
+		- `git config --system core.longpaths true`
+			- Long answer [here](https://stackoverflow.com/questions/22575662/filename-too-long-in-git-for-windows/22575737#22575737)
+		- `git config --system --unset core.autocrlf`
+		- `git config --global core.autocrlf true`
+
+  - Download and install https://tortoisegit.org/download/
+	  - TortoiseGitPlink based on PuTTY...
+	  - choose defaults
+	  - First startup wizard
+		  - Language
+		  - Point to git.exe (probably will default to the proper location)
+		  - Configure user information
+			  - add name and email
+		  - Authentication and credential store
+			  - choose defaults
+ - Install [gpg4win](https://www.gpg4win.org/download.html) with admin privileges
+	 - choose default components
+ - Create a github account: https://github.com/join
+ - Download and install https://desktop.github.com/
+
 
 
 ---
@@ -107,11 +139,11 @@ C:\Users\ryan\.gnupg
 
 - [rm -f .git/index.lock](https://stackoverflow.com/questions/9282632/git-index-lock-file-exists-when-i-try-to-commit-but-cannot-delete-the-file/11466435#11466435)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyOTA4NzI3NywxMzE3NTkwMTI2LC04OD
-E1MDc3NywxNTA2NTcxNjQ4LDM2NTUwNTYxNiw2Mzk5MDkwMDUs
-MTI2MjMwNDg2NCwxMzA5Mjk3OTg0LC03NTI0MDgzNzUsMTQ5NT
-c2NzAzMSwtNjUwNjk1MzE1LDIwODUzNjc0ODksLTE0NjUzMjYz
-MDcsLTIwMDU5Mzk1MTksMjEyOTg2OTcyMywxODUwOTE5NTU1LC
-0xNjA1ODY1NzQzLDE2NzIyMzMyMDEsMTY3NTM1NzA0MCwtMTg4
-NzEyNDY4Nl19
+eyJoaXN0b3J5IjpbOTM5MTg0OTQ0LDgyMzAwNzM1NSwxMjE3MT
+I1NTMzLC0xMjI5NTYyNTkwLC03OTc3MjM3MzcsMTE5MTEwNDg2
+NCwtMTcyNjA2NzY4OSwtMzk4NTMxNDg2LC0xOTc1NDI4ODUwLC
+04MjkwODcyNzcsLTY0OTA3MjkyNCwxMzE3NTkwMTI2LC04ODE1
+MDc3NywxNTA2NTcxNjQ4LDM2NTUwNTYxNiw2Mzk5MDkwMDUsMT
+I2MjMwNDg2NCwxMzA5Mjk3OTg0LC03NTI0MDgzNzUsMTQ5NTc2
+NzAzMV19
 -->
