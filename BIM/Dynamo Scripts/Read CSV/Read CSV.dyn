@@ -11,14 +11,14 @@
       "Id": "8a2a5825305b4435a635d39b6b04b003",
       "Name": "CSV File Path",
       "Type": "string",
-      "Value": "..\\..\\..\\..\\CTR\\Models & CAD\\Current Spreadsheets\\SHEET INDEX.csv",
+      "Value": "..\\..\\..\\..\\OPENING DESIGN\\CTR\\Models & CAD\\Current Spreadsheets\\SHEET INDEX.csv",
       "Description": "Allows you to select a file on the system to get its filename"
     },
     {
       "Id": "3f21436c35a141d29dc668cb43c5c869",
       "Name": "Refresh",
       "Type": "boolean",
-      "Value": "true",
+      "Value": "false",
       "Description": "Selection between a true and false."
     },
     {
@@ -61,8 +61,8 @@
     },
     {
       "ConcreteType": "CoreNodeModels.Input.Filename, CoreNodeModels",
-      "HintPath": "D:\\Dropbox\\GitHub\\CTR\\Models & CAD\\Current Spreadsheets\\SHEET INDEX.csv",
-      "InputValue": "..\\..\\..\\..\\CTR\\Models & CAD\\Current Spreadsheets\\SHEET INDEX.csv",
+      "HintPath": "C:\\Users\\regis\\OneDrive\\Documents\\Github\\OPENING DESIGN\\CTR\\Models & CAD\\Current Spreadsheets\\SHEET INDEX.csv",
+      "InputValue": "..\\..\\..\\..\\OPENING DESIGN\\CTR\\Models & CAD\\Current Spreadsheets\\SHEET INDEX.csv",
       "NodeType": "ExtensionNode",
       "Id": "8a2a5825305b4435a635d39b6b04b003",
       "Inputs": [],
@@ -209,7 +209,7 @@
     {
       "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
       "NodeType": "BooleanInputNode",
-      "InputValue": true,
+      "InputValue": false,
       "Id": "3f21436c35a141d29dc668cb43c5c869",
       "Inputs": [],
       "Outputs": [
@@ -229,7 +229,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
       "NodeType": "CodeBlockNode",
-      "Code": "/*\n\nDYNAMO VERSION: 1.3+\nREVIT VERSION: 2016+\n\nCreated by: Dimitar Venkov\nCreated on: 09/01/17\n\nModified by: Dimitar Venkov\nModified on: 12/03/18\n\nModified by:\nModified on:\n\nREQUIRED PACKAGES:\n------------------------------\n\nDESCRIPTION:\n------------------------------\n- All files must be encoded as UTF-8.\n\n- Make sure that you've created a Schedule beforehand\n  and have added a new Text field (Fields > Add Parameter,\n  Type of Parameter > Text) for each header name in the\n  csv file.\n\n- As of the graph creation date, key schedule fields can\n  not be created and added programatically through the API.\n\nISSUES:\n------------------------------\n\n*/;",
+      "Code": "/*\n\nDYNAMO VERSION: 1.3+\nREVIT VERSION: 2016+\n\nCreated by: Dimitar Venkov\nCreated on: 09/01/17\n\nModified by: Dimitar Venkov\nModified on: 12/03/18\n\nModified by:\nModified on:\n\nREQUIRED PACKAGES:\n------------------------------\n\nDESCRIPTION:\n------------------------------\n- All files must be encoded as UTF-8.\n\n- Make sure that you've created a Schedule beforehand\n  and have added a new Text field (Fields > Add Parameter,\n  Type of Parameter > Text) for each header name in the\n  csv file.\n\n- As of the graph creation date, key schedule fields can\n  not be created and added programatically through the API.\n\n- Before 'Run' the command make sure that the CSV file\n  closed.\n\nISSUES:\n------------------------------\n\n*/;",
       "Id": "c031061287e0467ca1432a7b4fbea68b",
       "Inputs": [],
       "Outputs": [],
@@ -388,14 +388,13 @@
     }
   ],
   "Dependencies": [],
-  "NodeLibraryDependencies": [],
   "Bindings": [],
   "View": {
     "Dynamo": {
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.3.0.5885",
+      "Version": "2.2.1.5175",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -419,8 +418,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1662.77230550043,
-        "Y": 769.94732600849
+        "X": 1700.4674640102951,
+        "Y": 749.84324146989536
       },
       {
         "ShowGeometry": true,
@@ -429,8 +428,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1662.77230550043,
-        "Y": 855.685643099918
+        "X": 1700.4674640102951,
+        "Y": 835.58155856132339
       },
       {
         "ShowGeometry": true,
@@ -469,8 +468,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1662.77230550043,
-        "Y": 1083.74166137266
+        "X": 1700.4674640102951,
+        "Y": 1063.6375768340654
       },
       {
         "ShowGeometry": true,
@@ -479,8 +478,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1142.08195373453,
-        "Y": 735.865696137215
+        "X": 1170.9815752587594,
+        "Y": 613.984683621985
       },
       {
         "ShowGeometry": true,
@@ -489,8 +488,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1662.77230550043,
-        "Y": 950.758428420376
+        "X": 1700.4674640102951,
+        "Y": 930.65434388178141
       },
       {
         "ShowGeometry": true,
@@ -499,8 +498,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1662.77230550043,
-        "Y": 1009.63815339506
+        "X": 1700.4674640102951,
+        "Y": 989.53406885646541
       },
       {
         "ShowGeometry": true,
@@ -524,12 +523,12 @@
           "aee38477dfcd43838c0bf18fc41db905",
           "fa6a663b2db244e0b94559b5b0aa1e96"
         ],
-        "Left": 1652.77230550043,
-        "Top": 739.94732600849,
-        "Width": 377.0,
+        "Left": 1690.4674640102951,
+        "Top": 719.84324146989536,
+        "Width": 376.99999999999977,
         "Height": 411.79433536417,
         "FontSize": 14.0,
-        "InitialTop": 769.94732600849,
+        "InitialTop": 749.84324146989536,
         "InitialHeight": 458.79433536417,
         "TextblockHeight": 20.0,
         "Background": "#FF848484"
@@ -563,8 +562,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -1344.467381725424,
-    "Y": -708.85429792066066,
-    "Zoom": 1.1205726451770111
+    "X": -918.83580496190257,
+    "Y": -465.5376693323052,
+    "Zoom": 0.79585817346142507
   }
 }
