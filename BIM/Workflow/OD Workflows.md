@@ -138,12 +138,16 @@ C:\Users\ryan\.gnupg
 
 
 - [rm -f .git/index.lock](https://stackoverflow.com/questions/9282632/git-index-lock-file-exists-when-i-try-to-commit-but-cannot-delete-the-file/11466435#11466435)
+
+- assume-unchanged and skip-worktree flags
+	- https://fallengamer.livejournal.com/93321.html
+	- Usually: 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM5MTg0OTQ0LDgyMzAwNzM1NSwxMjE3MT
-I1NTMzLC0xMjI5NTYyNTkwLC03OTc3MjM3MzcsMTE5MTEwNDg2
-NCwtMTcyNjA2NzY4OSwtMzk4NTMxNDg2LC0xOTc1NDI4ODUwLC
-04MjkwODcyNzcsLTY0OTA3MjkyNCwxMzE3NTkwMTI2LC04ODE1
-MDc3NywxNTA2NTcxNjQ4LDM2NTUwNTYxNiw2Mzk5MDkwMDUsMT
-I2MjMwNDg2NCwxMzA5Mjk3OTg0LC03NTI0MDgzNzUsMTQ5NTc2
-NzAzMV19
+eyJoaXN0b3J5IjpbMTc5OTg4MTQ0OCw5MzkxODQ5NDQsODIzMD
+A3MzU1LDEyMTcxMjU1MzMsLTEyMjk1NjI1OTAsLTc5NzcyMzcz
+NywxMTkxMTA0ODY0LC0xNzI2MDY3Njg5LC0zOTg1MzE0ODYsLT
+E5NzU0Mjg4NTAsLTgyOTA4NzI3NywtNjQ5MDcyOTI0LDEzMTc1
+OTAxMjYsLTg4MTUwNzc3LDE1MDY1NzE2NDgsMzY1NTA1NjE2LD
+YzOTkwOTAwNSwxMjYyMzA0ODY0LDEzMDkyOTc5ODQsLTc1MjQw
+ODM3NV19
 -->
