@@ -1,6 +1,7 @@
 *.*.rvt
 *.*.rte
 *.*.rfa
+!*.ifc.rvt
 *.ifc.log
 *.bak
 *.ifc.log.html

@@ -142,12 +142,15 @@ C:\Users\ryan\.gnupg
 - assume-unchanged and skip-worktree flags
 	- https://fallengamer.livejournal.com/93321.html
 	- Usually: 
+
+
+- Record audio and mic on ShareX: https://softwarerecs.stackexchange.com/questions/42767/screen-recording-tool-that-records-both-speaker-o-p-as-well-as-mic-input/74728#74728
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5OTg4MTQ0OCw5MzkxODQ5NDQsODIzMD
-A3MzU1LDEyMTcxMjU1MzMsLTEyMjk1NjI1OTAsLTc5NzcyMzcz
-NywxMTkxMTA0ODY0LC0xNzI2MDY3Njg5LC0zOTg1MzE0ODYsLT
-E5NzU0Mjg4NTAsLTgyOTA4NzI3NywtNjQ5MDcyOTI0LDEzMTc1
-OTAxMjYsLTg4MTUwNzc3LDE1MDY1NzE2NDgsMzY1NTA1NjE2LD
-YzOTkwOTAwNSwxMjYyMzA0ODY0LDEzMDkyOTc5ODQsLTc1MjQw
-ODM3NV19
+eyJoaXN0b3J5IjpbLTE2MTg1NTAwMTAsMTc5OTg4MTQ0OCw5Mz
+kxODQ5NDQsODIzMDA3MzU1LDEyMTcxMjU1MzMsLTEyMjk1NjI1
+OTAsLTc5NzcyMzczNywxMTkxMTA0ODY0LC0xNzI2MDY3Njg5LC
+0zOTg1MzE0ODYsLTE5NzU0Mjg4NTAsLTgyOTA4NzI3NywtNjQ5
+MDcyOTI0LDEzMTc1OTAxMjYsLTg4MTUwNzc3LDE1MDY1NzE2ND
+gsMzY1NTA1NjE2LDYzOTkwOTAwNSwxMjYyMzA0ODY0LDEzMDky
+OTc5ODRdfQ==
 -->
